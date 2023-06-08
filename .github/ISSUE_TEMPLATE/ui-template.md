@@ -16,5 +16,10 @@ assignees: ''
 ## 설명
 > 간단한 설명을 적어주세요
 
+## TODO
+- [ ] todo1
+- [ ] todo2
+- [ ] todo3
+
 ## Addtional
 > 추가적인 내용이 있다면 적어주세요
