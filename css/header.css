@@ -1,0 +1,33 @@
+.header-container{
+    flex-direction: column;
+}
+
+.header-top{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.header-menu ul li a{
+    display: block;
+	padding: 1em;
+	font-size: 1.2rem;
+	font-weight: bold;
+    color: #747575;
+    transition: 0.5s;
+}
+
+.header-menu ul li a:hover{
+    color: #E54945;
+}
+
+.search-form > form{
+    
+}
+
+.logo {
+    width: 200px;
+    height: 91px;
+}
+
