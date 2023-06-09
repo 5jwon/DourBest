@@ -59,28 +59,72 @@
                 <div class="rapper">
                     <h1><strong>회원가입</strong></h1>
                     <form action="" method="get">
-                        <label for="userId">아이디(6자 이상)</label>
-                        <input type="text" id="userId"><br>
-                        <label for="password">비밀번호</label>
-                        <input type="password" id="password"><br>
-                        <label for="passwordConfirm">비밀번호 확인</label>
-                        <input type="password" id="passwordConfirm"><br>
-                        <label for="userName">이름</label>
-                        <input type="text" id="userName"><br>
-                        <label for="userName">이름</label>
-                        <input type="text" id="userName"><br>
-                        <label for="userName">이름</label>
-                        <input type="text" id="userName"><br>
+                        <ul>
+                            <li>
+                            <label for="userId">아이디(6자 이상)</label>
+                            <input type="text" id="userId" size="10"><br>
+                            </li>
+                            <li>
+                                <label for="password">비밀번호</label>
+                                <input type="password" id="password"><br>
+                            </li>
+                            <li>
+                                <label for="passwordConfirm">비밀번호 확인</label>
+                                <input type="password" id="passwordConfirm"><br>
+                            </li>
+                            <li>
+                                <label for="userName">이름</label>
+                                <input type="text" id="userName"><br>
+                            </li>
+                            <li>
+                                <label for="email">이메일</label>
+                                <input type="email" id="email"><br>
+                            </li>
+                            <li>
+                                <label for="phone">휴대폰</label>
+                                <input type="tel" id="phone"><br>
+                            </li>
+                        </ul>
                         
                         <br><br><br>
                         <fieldset>
-                        <legend>이용약관동의</legend>
-                    </fieldset>
-
-                    </form>
-                </div>
-            </section>
-        </main>
+                            <legend>이용약관동의</legend>
+                            <input type="checkbox" id="TremsArryAll">
+                            <label for="TremsArryAll">
+                            <ul>
+                            <span>전체 동의합니다.</span>
+                            <p>선택항목에 동의하지 않은 경우도 회원가입 및 일반적인 서비스를 이용할수 있습니다.</p>
+                        </label>
+                        <li>
+                            <input type="checkbox" id="RequiredTermsCondition">
+                            <span>이용약관 동의 (필수)</span><br>
+                        </li>
+                        
+                        <li>
+                            <input type="checkbox" id="RequiredTermsOfPrivacy">
+                            <span>개인정보 수집 이용동의(필수)</span><br>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="SignupEventAll">
+                            <span>무료배송 할인쿠폰 등 혜택/정보 수신동의(선택)</span><br>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="RequiredSignupAge">
+                            <span>본인은 만 14세 이상입니다.(필수)</span>
+                        </li>
+                    </ul>
+                    
+                </fieldset>
+                    <div>
+                        <input type="submit" value="가입하기" onclick="subm">
+                    </div>           
+                    
+                
+            </form>
+        </div>
+        
+    </section>
+</main>
         <!-- 푸터 -->
         <footer>
             <section></section>
