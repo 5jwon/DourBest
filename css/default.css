@@ -44,6 +44,7 @@ img {
 .wrapper{
     margin: 0 auto;
     max-width: 1280px;
+    min-width: 500px;
 }
 
 .flex-wrapper{
