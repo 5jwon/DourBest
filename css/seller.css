@@ -20,7 +20,7 @@
 .ad {
     background-color: #E54944;
     color: snow;
-    height: 310px;
+    height: 370px;
 }
 
 .ad h3 {
@@ -39,3 +39,28 @@
     margin-right: 10px;
 }
 
+.ad img {
+    width: auto;
+    height: 300px;
+}
+
+.appbutton {
+    margin: 200px auto 0;
+    width: 300px;
+}
+
+.appbutton a {
+    font-size: 30px;
+    color: snow;
+}
+
+.appbutton li {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.redbutton {
+    background: #E54944;
+    height: 100px;
+}
