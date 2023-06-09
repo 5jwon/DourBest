@@ -1,7 +1,9 @@
 .header-container{
     flex-direction: column;
+    margin-bottom: 10px;
 }
 
+/* 헤더 상단 */
 .header-top{
     flex-direction: row;
     justify-content: space-between;
@@ -9,7 +11,7 @@
     margin-top: 10px;
 }
 
-.header-menu ul li a{
+.header-menu ul li a, .header-bottom ul li a{
     display: block;
 	padding: 1em;
 	font-size: 1.2rem;
@@ -18,16 +20,66 @@
     transition: 0.5s;
 }
 
-.header-menu ul li a:hover{
+.header-menu ul li a:hover, .header-bottom ul li a:hover{
     color: #E54945;
 }
 
-.search-form > form{
-    
+/* 헤더 하단 */
+.menu-container{
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-container div{
+    flex-shrink: 0;
 }
 
+.header-bottom ul{
+    position: relative;
+}
+
+.header-bottom ul li{
+    flex-shrink: 0;
+}
+
+.header-bottom ul .indicator{
+    position: absolute;
+    /* width: 100%; */
+    left: 0px;
+    height: 2px;
+    bottom: 0px;
+    background-color: #E54945;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+
+/* 검색 */
+.search-form{
+    padding-right: 1em;
+}
+
+.search-form > form{
+    border: #E54945 1px solid;
+}
+
+.search-form > form input[type=search]{
+    padding: 0.8em;
+    border-radius: 10px;
+    outline: 0;
+}
+
+.search-form form button{
+    padding-right: 10px;
+}
+
+/* 로고 */
 .logo {
     width: 200px;
     height: 91px;
 }
+
+
+
+
+
 
