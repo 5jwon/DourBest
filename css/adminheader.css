@@ -1,0 +1,27 @@
+.header-container{
+    display: flex;
+    justify-content: center;
+    height: 120px;
+}
+.sidemenu{
+    background-color: #E83D3D;
+    width : 300px;
+    height: 900px;
+}
+.lookuplist{
+    background-color : #C09C9C;
+    width : auto;
+    height: 900px;
+}
+.mainmenu{
+    background-color: whitesmoke;
+    width: 100px;
+    height: 100px;
+}
+.sidemenubutton{
+    background-color: mediumspringgreen;
+
+    width: 230px;
+    height: 60px;
+
+}
