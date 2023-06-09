@@ -15,7 +15,7 @@
         <!-- 헤더 -->
         <header>
             <div class="header-container flex-wrapper">
-                <!-- 상단 메뉴 -->
+                <!-- 헤더 상단 메뉴 -->
                 <div class="header-top flex-wrapper">
                     <h1>
                         <a href="javascript:void(0);">
@@ -30,19 +30,20 @@
                         </ul>
                     </div>
                 </div>
-                <!-- 상단 메인 메뉴 -->
+                <!-- 헤더 하단 메뉴 -->
                 <nav>
-                    <div class="menu-container">
-                        <div>
-                            <ul>
+                    <div class="menu-container flex-wrapper">
+                        <div class="header-bottom">
+                            <ul class="flex-wrapper">
                                 <li><a href="#">오픈펀딩</a></li>
                                 <li><a href="#">오픈예정펀딩</a></li>
                                 <li><a href="#">공지사항</a></li>
                                 <li><a href="#">고객센터</a></li>
+                                <div class="indicator"></div>
                             </ul>
                         </div>
                         <div class="search-form">
-                            <form action="GET">
+                            <form action="" class="flex-wrapper">
                                 <input type="search" placeholder="Search">
                                 <button type="submit"><i class="fa-solid fa-magnifying-glass" style="color: #e54944;"></i></button>
                             </form>
@@ -62,5 +63,6 @@
             <section></section>
         </footer>
     </div>
+    <script src="./index.js"></script>
 </body>
 </html>
