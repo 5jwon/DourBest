@@ -80,6 +80,7 @@
 
 .mainbody {
     padding: 0 20px;
+    min-width: 70%;
 }
 
 .underselect {
