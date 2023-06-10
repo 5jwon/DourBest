@@ -57,18 +57,31 @@
         <!-- 메인 -->
         <main>
             <section>
-                <div class="catenick">
-                    <div class="nickname">닉네임 님 반갑습니다.</div>
-                    <div>성공적인 펀딩을 기원합니다.</div>
-                </div>
-                <div class="select">
-                    <select>
-                        <option value="">의류</option>
-                        <option value="">음식</option>
-                        <option value="">도서</option>
-                        <option value="">온라인강의</option>
-                        <option value="">운동기구</option>
-                    </select>
+                <div class="mainbody">
+                    <div class="catenick">
+                        <div class="nickname">닉네임 님 반갑습니다.</div>
+                        <div>성공적인 펀딩을 기원합니다.</div>
+                    </div>
+                    <div class="selectbox">
+                        <select>
+                            <option value="basic" selected disabled hidden>카테고리를 선택해주세요</option>
+                            <option value="beauti">뷰티</option>
+                            <option value="product">가전/기구</option>
+                            <option value="book">도서</option>
+                            <option value="fashion">패션</option>
+                            <option value="food">식품</option>
+                            <option value="onlineclass">온라인클래스</option>
+                        </select>
+                    </div>
+                    <pre class="underselect">펀딩에 잘 맞는 카테고리를 선택해주세요.
+펀딩 신청 과정동안 편하게 바꾸실 수 있어요.</pre>
+                    <div class="button2">
+                        <button class="redbutton" id="button2">
+                            <span>
+                                시작하기
+                            </span>
+                        </button>
+                    </div>
                 </div>
             </section>
         </main>
