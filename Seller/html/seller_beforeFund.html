@@ -7,10 +7,10 @@
     <title>home</title>
     <!-- 폰트어썸 링크 -->
     <script src="https://kit.fontawesome.com/5db9941ba1.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../css/default.css">
-    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../../css/default.css">
+    <link rel="stylesheet" href="../../css/header.css">
     <link rel="stylesheet" href="../css/seller.css">
-    <link rel="stylesheet" href="../css/selectbox.css">
+    <link rel="stylesheet" href="../css/sellerbutton.css">
 </head>
 <body>
     <div class="wrapper">
@@ -21,7 +21,7 @@
                 <div class="header-top flex-wrapper">
                     <h1>
                         <a href="javascript:void(0);">
-                            <img class="logo" src="../resources/img/logo.jpeg" alt="DourBest로고">
+                            <img class="logo" src="../../resources/img/logo.jpeg" alt="DourBest로고">
                         </a>
                     </h1>
                     <div class="header-menu">
@@ -58,30 +58,35 @@
         <main>
             <section>
                 <div class="mainbody">
-                    <div class="catenick">
-                        <div class="nickname">닉네임 님 반갑습니다.</div>
-                        <div>성공적인 펀딩을 기원합니다.</div>
+                    <div class="main-container flex-wrapper mainwrap">
+                        <div class="counttext">
+                            <ul class="count flex-wrapper">
+                                <li>DourBest의</li>
+                                <li id="people">~~~~~~</li>
+                                <li>번째 펀딩이에요</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="selectbox">
-                        <select>
-                            <option value="basic" selected disabled hidden>카테고리를 선택해주세요</option>
-                            <option value="beauti">뷰티</option>
-                            <option value="product">가전/기구</option>
-                            <option value="book">도서</option>
-                            <option value="fashion">패션</option>
-                            <option value="food">식품</option>
-                            <option value="onlineclass">온라인클래스</option>
-                        </select>
+                    <div class="ad mainwrap">
+                        <h3>현재 실시간 인기 펀딩</h3>
+                        <div>
+                            <ul>
+                                <li><a href="/"><img src="../../resources/img/toothless.jpg"></a></li>
+                                <li><a href="/"><img src="../../resources/img/toothless.jpg"></a></li>
+                                <li><a href="/"><img src="../../resources/img/toothless.jpg"></a></li>
+                                <li><a href="/"><img src="../../resources/img/toothless.jpg"></a></li>
+                                <li><a href="/"><img src="../../resources/img/toothless.jpg"></a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <pre class="underselect">펀딩에 잘 맞는 카테고리를 선택해주세요.
-펀딩 신청 과정동안 편하게 바꾸실 수 있어요.</pre>
-                    <div class="button2">
-                        <button class="redbutton" id="button2">
+                    <div class="sellerbutton">
+                        <button class="redbutton">
                             <span>
-                                시작하기
+                                펀딩 신청하기
                             </span>
                         </button>
                     </div>
+                    <div class="bottomtext">DourBest에서 건강한 습관을 만들어봐요</div>
                 </div>
             </section>
         </main>
@@ -91,6 +96,6 @@
             <section></section>
         </footer>
     </div>
-    <script src="../index.js"></script>
+    <script src="../../index.js"></script>
 </body>
 </html>
