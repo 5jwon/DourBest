@@ -1,0 +1,145 @@
+.stepper .step .circle1 {
+    background-color: #ffd2c4;
+}
+
+.bodywrap {
+    margin-top: 80px;
+}
+
+.headtext {
+    margin-top: 100px;
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+.stepper .step:hover .circle1 {
+    background-color: #ffeeeb;
+}
+
+.subtext {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.basicfare {
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+    background-color: rgb(255, 255, 255);
+    height: 320px;
+    border-radius: 20px;
+    box-shadow: 0 0 3px rgb(228, 228, 228);
+
+}
+
+.fare {
+    text-align: center;
+    background-color: #ffd2c4;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 140px;
+}
+
+.fare h1 {
+    font-size: 2.5em;
+    margin-top: 35px;
+}
+
+.fare p {
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.fee {
+    margin-top: 30px;
+}
+
+.fee span {
+    font-weight: 400;
+}
+
+.fee strong {
+    font-size: 2em;
+}
+
+.fare-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.intro {
+    background-color: white;
+    width: 410px;
+    padding: 20px;
+}
+
+.selectbtn {
+    width: 150px;
+    justify-content: center;
+}
+
+.selectbtn button {
+    width: 145px;
+    height: 50px;
+    margin-top: 20px;
+    background-color: rgb(255, 255, 255);
+    border: 1.5px solid #f35f4c;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #f35f4c;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.selectbtn button:hover {
+    background-color:#ffd2c4;
+    transition: all 1s ease;
+}
+
+.intro p {
+    font-size: 1.2em;
+    margin-bottom: 70px;
+}
+
+.intro li {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.intro li::before {
+    content: '✓';
+}
+
+.vipfare {
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+    background-color: rgb(255, 255, 255);
+    height: 320px;
+    border-radius: 20px;
+    box-shadow: 0 0 3px rgb(228, 228, 228);
+    margin-top: 50px;
+}
+
+.vfare {
+    text-align: center;
+    background-color: #f35f4c;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 140px;
+}
+
+.vfare h1 {
+    font-size: 2.5em;
+    margin-top: 35px;
+}
+
+.vfare p {
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.button4 {
+    margin-top: 100px;
+}
