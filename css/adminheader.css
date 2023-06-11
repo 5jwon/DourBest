@@ -52,5 +52,56 @@
     height: 50px;
     font-weight: bolder;
     text-align: center;
+    margin-top : 40px;
 }
+#mainMenuButton1{
+    margin-left : 75px
+}
+#mainMenuButton2{
+    margin-left : 40px
+}
+#mainMenuButton3{
+    margin-left : 40px
+}
+
+
+.memberIDSearchContainer{
+    display:flex;
+    height: 35px;
+    margin-top: 60px;
+    background-color: #C09C9C;
+}
+
+.memberIDButton{
+    background-color: white;
+    border: 2px solid black;
+}
+#memberID{
+    width : 120px;
+    margin-left: 410px;
+    margin-right: 50px;
+    text-align: center;
+}
+#inputID{
+    width:600px;
+    margin-right: 20px;
+    text-align: center;
+}
+#searchButton{
+    width: 90px;
+    margin-right: 50px;
+    text-align: center;
+}
+
+.listPage{
+    background-color: white;
+    width: 1200px;
+    height: 500px;
+    margin: auto 80px;
+    margin-top: 20px;
+}
+
+
+
+
 
