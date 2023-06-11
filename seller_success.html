@@ -9,10 +9,15 @@
     <script src="https://kit.fontawesome.com/5db9941ba1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/default.css">
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/SellerApplication.css">
-   
-    
-
+    <style>
+        img {
+            height: 200px;
+            width: 200px;
+            position: relative;
+            left: 50%;
+            top: 50%;
+        }
+    </style>
 </head>
 <body>
     <div class="wrapper">
@@ -59,6 +64,8 @@
         <!-- 메인 -->
         <main>
             <section>
+                <img src="/resources/img/check.png" >
+                <h1>판매자 신청이 완료되었습니다.</h1>
             </section>
         </main>
         <!-- 푸터 -->
@@ -67,50 +74,7 @@
             <section></section>
         </footer>
     </div>
-
-    <!-- 판매자 신청 -->
-    
-    <div class="container">
-    <div class="block1">
-        <div class="inner">판매자 신청</div>
-    
-    </div>
-    <div class="block2">
-    <form action=""> 아이디 :
-        <input type="text" placeholder="아이디를 입력해주세요."> 
-    </form>
-
-    <form action=""> 이메일 :
-        <input type="text" placeholder="이메일를 입력해주세요."> 
-    </form>
-        
-
-    <form action=""> 전화번호 :
-        <input type="text" placeholder="전화번호를 입력해주세요."> 
-    </form>
-        
-
-    <form action=""> 판매 제품 :
-        <input type="text" placeholder="판매 제품을 입력해주세요."> 
-    </form>
-
-    <form action=""> 
-        <input type="text"> 
-        <label for="file">
-            <div class="btn-upload">사업자 등록증</div>
-        
-        <input type="file" name="file" id="file">
-        </label>
-    </form>
-    </div>
-</div>
-
-        
-        
-    
-
-
-
+    <script src="./index.js"></script>
 
 </body>
 </html>
