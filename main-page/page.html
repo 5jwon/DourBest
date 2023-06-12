@@ -12,7 +12,6 @@
 <style>
     .funding {
         position: relative;
-        /* height: 300px; */
     }
 
     .swiper {
@@ -22,9 +21,24 @@
 
     .swiper-slide {
         text-align: center;
-        font-size: 18px;
-        background: #fff;
+        /* font-size: 18px; */
     }
+    .item{
+        display: flex;
+        flex-direction: column;
+        color: #444;
+        position: relative;
+        top: 0;
+    }
+
+    .item article {
+    padding: 10px;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
 
 .swiper-button-next, .swiper-button-prev{
     background-color: #fff;
@@ -33,6 +47,8 @@
     color: #f35f4c;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 4px, rgba(0, 0, 0, 0.1) 0px 4px 5px;
 }
+
+
 .swiper-button-prev:after,
 .swiper-button-next:after {
     font-size: 1.1rem;
@@ -55,8 +71,8 @@
     <div class="swiper swiper2">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <div class="item">
-                    <a href="" class="">
+                <div class="item-wrapper">
+                    <a href="" class="item">
                         <div class="item-thumb"></div>
                         <article>
                             <h1>item5</h1>
@@ -67,8 +83,8 @@
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="item">
-                    <a href="" class="">
+                <div class="item-wrapper">
+                    <a href="" class="item">
                         <div class="item-thumb"></div>
                         <article>
                             <h1>item5</h1>
@@ -79,8 +95,8 @@
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="item">
-                    <a href="" class="">
+                <div class="item-wrapper">
+                    <a href="" class="item">
                         <div class="item-thumb"></div>
                         <article>
                             <h1>item5</h1>
@@ -91,8 +107,8 @@
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="item">
-                    <a href="" class="">
+                <div class="item-wrapper">
+                    <a href="" class="item">
                         <div class="item-thumb"></div>
                         <article>
                             <h1>item5</h1>
@@ -103,8 +119,8 @@
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="item">
-                    <a href="" class="">
+                <div class="item-wrapper">
+                    <a href="" class="item">
                         <div class="item-thumb"></div>
                         <article>
                             <h1>item5</h1>
@@ -115,8 +131,8 @@
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="item">
-                    <a href="" class="">
+                <div class="item-wrapper">
+                    <a href="" class="item">
                         <div class="item-thumb"></div>
                         <article>
                             <h1>item5</h1>
@@ -127,8 +143,8 @@
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="item">
-                    <a href="" class="">
+                <div class="item-wrapper">
+                    <a href="" class="item">
                         <div class="item-thumb"></div>
                         <article>
                             <h1>item5</h1>
@@ -139,8 +155,8 @@
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="item">
-                    <a href="" class="">
+                <div class="item-wrapper">
+                    <a href="" class="item">
                         <div class="item-thumb"></div>
                         <article>
                             <h1>item5</h1>
@@ -151,8 +167,8 @@
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="item">
-                    <a href="" class="">
+                <div class="item-wrapper">
+                    <a href="" class="item">
                         <div class="item-thumb"></div>
                         <article>
                             <h1>item5</h1>
@@ -186,21 +202,17 @@
             loadPrevNext : true // 이전, 다음 이미지는 미리 로딩
         },
         breakpoints: {
-            "@0.25": {
-                slidesPerView: 1,
-                spaceBetween: 10,
-            },
-            "@0.50": {
+            400: {
                 slidesPerView: 2,
                 spaceBetween: 20,
             },
-            "@0.80": {
-                slidesPerView: 3,
-                spaceBetween: 30,
-            },
-            "@1.12": {
+            800: {
                 slidesPerView: 4,
                 spaceBetween: 40,
+            },
+            1024: {
+                slidesPerView: 5,
+                spaceBetween: 50,
             },
         },
     });

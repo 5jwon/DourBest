@@ -1,5 +1,5 @@
 section{
-    margin-bottom: 10px;
+    margin-bottom: 50px;
 }
 .main-slider{
     position: relative;
@@ -9,6 +9,7 @@ section{
 .swiper {
     width: 100%;
     height: 100%;
+    position: static;
 }
 
 .swiper-slide > a {
@@ -47,7 +48,7 @@ section{
 /* 메인 리스트  */
 .list-container{
     width: 100%;
-    padding: 40px 80px;
+    padding: 0px 80px;
 }
 
 .list-wrpper, .top-list, .grid-item{
@@ -58,7 +59,7 @@ section{
     text-align: center;
     font-size: 30px;
     font-weight: bold;
-    padding: 30px;
+    padding: 0px 0px 40px;
 }
 
 .item-cards {
@@ -187,8 +188,44 @@ h1 {
 /* 펀딩 리스트 */
 .funding{
     position: relative;
+    padding: 0px 80px;
 }
 
+.item-thumb{
+    background-image: url("/resources/img/pexels-jane-doan-1099680.jpg");
+    padding-bottom: 70%;
+    background-size: cover;
+    background-position: center center;
+}
+.swiper-button-next, .swiper-button-prev{
+    background-color: #fff;
+    padding: 15px 5px;
+    border-radius: 20px;
+    color: #f35f4c;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 4px, rgba(0, 0, 0, 0.1) 0px 4px 5px;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    color: #444;
+    position: relative;
+    top: 0;
+}
+
+.item article {
+    padding: 10px;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    flex-direction: column;
+}
 
 
 

@@ -8,9 +8,31 @@ new Swiper(".mySwiper", {
 });
 
 
-new Swiper('.swiper2', {
-	// loop : true, // 무한 루프 슬라이드, 반복이 되며 슬라이드가 끝이 없다.
-	pagination : {
-		el : '.swiper-pagination',
+new Swiper(".swiper2", {
+	slidesPerView: 1,
+	spaceBetween: 10,
+	loopAdditionalSlides : 1,
+	// Navigation arrows
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
 	},
+	lazy : {
+		loadPrevNext : true // 이전, 다음 이미지는 미리 로딩
+	},
+	breakpoints: {
+		400: {
+			slidesPerView: 2,
+			spaceBetween: 20,
+		},
+		800: {
+			slidesPerView: 4,
+			spaceBetween: 40,
+		},
+		1024: {
+			slidesPerView: 5,
+			spaceBetween: 50,
+		},
+	},
+	
 });
