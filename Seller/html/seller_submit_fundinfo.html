@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../../css/header.css">
     <link rel="stylesheet" href="../css/seller_submitPage.css">
     <link rel="stylesheet" href="../css/seller_submit_fundinfo.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -139,12 +140,28 @@
                         대표 이미지
                     </div>
                     <div class="subtext1">
-                        기본 정보를 입력해주세요.
+                        대표 이미지를 업로드 해주세요.
                         <div class="sublist">
                             <li>메인으로 걸릴 사진이에요. 신중히 선택해주세요.</li>
                             <li>1200x675 픽셀 이상으로 넣어주세요.</li>
                             <li>판매하실 물건이 가운데에 온 사진으로 넣어주세요.</li>
                         </div>
+                    </div>
+                    <div class="upload">
+                        <div class="imgedit">
+                            <input type="file" id="imageUpload" accept=".png, .jpg, .jpeg">
+                            <label for="imageUpload"></label>
+                        </div>
+                        <div class="img-preview">
+                            <div id="imagePreview" style="background-image: url(../../resources/img/toothless.jpg);">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fundtitle">
+                        펀딩 종료일
+                    </div>
+                    <div class="fundtitle">
+                        검색용 태그(#)
                     </div>
                 </div>
             </section>
@@ -156,5 +173,6 @@
         </footer>
     </div>
     <script src="../../index.js"></script>
+    <script src="../js/imgupload.js"></script>
 </body>
 </html>
