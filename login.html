@@ -9,6 +9,7 @@
     <script src="https://kit.fontawesome.com/5db9941ba1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/default.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
     <div class="wrapper">
@@ -55,16 +56,46 @@
         <!-- 메인 -->
         <main>
             <section>
-                <div class="rapper">
+                <div class="login">
+                    <div class="loginMain">로그인</div>
+                    <form>
                     <input type="hidden" value="사이트를 통한 로그인">
-                    <label for="">아이디
-                        <input type="text" id="userId" placeholder="아이디를 입력해주세요." autofocus>
-                    </label><br>
-                    <label for="">비밀번호
-                        <input type="password" id="password" placeholder="비밀번호를 입력해주세요">
-                    </label><br>
-                    <input type="submit" value="로그인">
+                    
+                    <div class="inputMargin">
+
+                        <div>
+                            <input data-testid="input-box" type="text" class="userId" placeholder="아이디를 입력해주세요." autofocus value>
+                        </div>
+                        <div class="boxMargin2">
+                            <input type="password" class="password" placeholder="비밀번호를 입력해주세요" autocomplete="off" value>
+                        </div>
+                    </div>
+                        <input type="checkbox" id="RequiredTermsCondition">
+                    <span>아이디 저장하기</span><br>
+                    <div class="finding">
+                        <div>
+                            <a href="">아이디찾기</a>
+                        </div>
+                        <div>
+                            <a href="">비밀번호찾기</a>
+                        </div>
+                    </div>
+
+                    <div class="buttons">
+                        <div>
+
+                            <button class="loginButton" type="submit">
+                                <span class="longinName">로그인</span>
+                            </button>
+                        </div>
+                        <div>
+                            <button class="signupButton" type="button">
+                                <span class="signupName">회원가입</span>
+                            </button>
+                        </div>
+                    </div>
                 </div>
+            </form>
             </section>
         </main>
         <!-- 푸터 -->

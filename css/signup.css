@@ -1,0 +1,21 @@
+.rapper {
+
+    width: 600px;
+    margin: 20px auto;
+}
+.rapper h1 {
+    text-align: center;
+    font-size: 150%;
+    color: black;
+    font-weight: bold;
+}
+.rapper ul{
+
+    list-style: none;
+}
+
+.rapper li{
+    border: 1px  solid #222;
+    padding: 20px,40px;
+    margin: 5px;
+}
