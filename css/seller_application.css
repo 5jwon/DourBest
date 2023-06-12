@@ -21,15 +21,14 @@
 }
 
 .seller-container h1 {
-   
+
     text-align: center;
     padding: 30px;
-   
+
 }
 
 .seller-form {
     flex-direction: column;
-   
 }
 
 .seller-form input[type=text] {
@@ -42,11 +41,8 @@
 }
 
 .outline{
+    
     width: auto;
-}
-
-.wrapper {
-    width: min-content; /* 해당 텍스트의 너비에 맞추는거 */
 }
 
 .check-box{
