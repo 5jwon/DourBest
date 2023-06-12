@@ -1,6 +1,38 @@
+.stepper .step .circle3 {
+    background-color: #ffd2c4;
+}
+
+.stepper .step:hover .circle3 {
+    background-color: #ffeeeb;
+}
+
+.headtext {
+    margin-top: 100px;
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+.subtext {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.fundtitle {
+    font-size: 1.4em;
+    font-weight: 600;
+    margin-top: 120px;
+    padding-left: 5px;
+}
+
+.fundtitle::after {
+    content: '*';
+    color: red;
+}
+
 .group {
     position: relative;
-    margin-top: 100px;
+    margin-top: 30px;
 }
 
 .group input {
@@ -94,35 +126,17 @@ to 	{ width:0; background:transparent; }
 to 	{ width:300px; background:transparent; }
 }
 
-.subtext {
-    font-size: 1.2em
+.subtext1 {
+    padding: 5px;
+    color: #b4b4b4;
 }
 
-.moneytext {
-    color: #b4b4b4;
+.sublist {
     margin-top: 10px;
 }
 
-.headtext {
-    margin-top: 100px;
-    font-size: 2.5em;
-    font-weight: 600;
-}
-
-.subtext {
-    margin-top: 20px;
-    font-size: 1.2em;
-    font-weight: 500;
-}
-
-.stepper .step .circle2 {
-    background-color: #ffd2c4;
-}
-
-.stepper .step:hover .circle2 {
-    background-color: #ffeeeb;
-}
-
-.button5 {
-    margin-top: 100px;
+.sublist li {
+    font-size: 12px;
+    margin-bottom: 6px;
+    list-style: disc;
 }
