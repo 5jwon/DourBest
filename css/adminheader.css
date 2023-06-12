@@ -1,107 +1,179 @@
 .header-container{
     display: flex;
-    justify-content: center;
+    justify-content: left;
     height: 120px;
+    margin-left: 150px;
 }
+
+#userName{
+text-align: right;
+width: 200px;
+height: 100px;
+}
+
 .menu{
     display: flex;
 }
 
 #sideMenuBar{
-    background-color: #E83D3D;
-    width : 330px;
-    height: 800px;
-    margin-top: 50px;
-    margin-left: 100px;
+    background-color: white;
+    width : 300px;
+    height: 730px;
+    margin-top: 100px;
+    margin-left:100px;
     position: relative;
+    border-right: 2px solid #FFD2C4;
 }
 
 #sideMenuContainer{  /* 상위 클래스 (sidemenubutton) */
-    background-color: E83D3D; 
+    background-color: white; 
     font-weight: bold; 
     font-size: larger; 
     text-align: center; 
     line-height: 2cm; 
     position: absolute;
-    margin: 100px 60px;
-    
+
 }
-.sideMenuButton{ /* 하위 클래스 (sidebutton)*/
+.sideMenuButton{ 
     background-color: white;
-    border: 2px solid black;
-    width: 200px;
-    margin-bottom: 30px;
+    width: 250px;
+    height: 50px;
+    /* margin: 11px auto; */
+    margin-left: 50px;
+    margin-top: 50px;
+    cursor: pointer;
+    line-height: 50px;
+    text-align: center;
+} 
+.sideMenuButton:hover{ 
+    box-sizing: border-box;
+    background-color: #E54945;
+    border-radius: 5px;
 }
 
 
 #backgroundpage{
-    background-color : #C09C9C;
+    background-color : white;
     width : 1400px;
     height: 750px;
     margin-top: 100px;
+
 }
 
 #mainMenuContainer{
     display: flex;
-    background-color: #C09C9C;
+    background-color: white;
 }
 .mainMenuButton{
     background-color: white;
-    border: 2px solid black;
+    /* border: 1px solid black; */
     width: 200px;
     height: 50px;
     font-weight: bolder;
     text-align: center;
     margin-top : 40px;
+    line-height: 50px;
+    
+}
+
+.mainMenuButton:hover{
+    background-color: #E54945;
+    transition: 0.5s;
+    border-radius: 5px;
 }
 #mainMenuButton1{
-    margin-left : 75px
+    margin-left : 105px;
+    border : 1px solid #E54945;
+    border-radius: 5px;
 }
 #mainMenuButton2{
-    margin-left : 40px
+    margin-left : 20px;
+    border : 1px solid #E54945;
+    border-radius: 5px;
 }
 #mainMenuButton3{
-    margin-left : 40px
+    margin-left : 20px;
+    border : 1px solid #E54945;
+    border-radius: 5px;
 }
 
 
 .memberIDSearchContainer{
     display:flex;
     height: 35px;
-    margin-top: 60px;
-    background-color: #C09C9C;
+    margin-top: 20px;
+    background-color: white;
 }
 
 .memberIDButton{
     background-color: white;
-    border: 2px solid black;
+    border: 1px solid black;
 }
 #memberID{
-    width : 120px;
-    margin-left: 410px;
-    margin-right: 50px;
+    width : 100px;
+    margin-left: 485px;
+    margin-right: 30px;
+    line-height:30px;
+    border-radius: 3px;
     text-align: center;
 }
 #inputID{
     width:600px;
-    margin-right: 20px;
     text-align: center;
+    border-radius: 3px;
+    line-height:30px;    
 }
 #searchButton{
+    background-color:black;
+    color:white;
     width: 90px;
-    margin-right: 50px;
     text-align: center;
+    cursor: pointer;
+    border-radius: 3px;
+    font-weight: bold;
+    line-height: 30px;
+}
+#searchButton:hover{
+    background-color: #E54945;
+    cursor: pointer;
 }
 
 .listPage{
     background-color: white;
+    border: 1px solid black;
     width: 1200px;
-    height: 500px;
-    margin: auto 80px;
+    height: 550px;
+    /* margin: auto 80px; */
     margin-top: 20px;
+    margin-left: 110px;
 }
 
+.SortationContainer{
+    margin-top: 15px;
+    display: flex;
+}
 
+#Sortation1{
+
+}
+#Sortation2{
+    
+}
+#Sortation3{
+    
+}
+#Sortation4{
+    
+}
+#Sortation5{
+    
+}
+#Sortation6{
+    
+}
+#Sortation7{
+    
+}
 
 
 
