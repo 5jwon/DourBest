@@ -9,13 +9,14 @@
     <script src="https://kit.fontawesome.com/5db9941ba1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/default.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/seller.success.css">
     <style>
-        img {
+        .img-check{
             height: 200px;
             width: 200px;
             position: relative;
-            left: 50%;
             top: 50%;
+            margin-top: 50%;
         }
     </style>
 </head>
@@ -64,8 +65,17 @@
         <!-- 메인 -->
         <main>
             <section>
-                <img src="/resources/img/check.png" >
-                <h1>판매자 신청이 완료되었습니다.</h1>
+                
+        <div class='content'>
+            <div>
+                <img class="img-check" src="/resources/img/check.png" alt="">
+            </div>
+            <div class='title'>감사합니다</div>
+            <div class='text'>승인까지 2~3일정도 소요됩니다.</div>
+        </div>
+        <div>
+            <button class="button-panel">메인페이지로 이동</button>
+        </div>
             </section>
         </main>
         <!-- 푸터 -->
