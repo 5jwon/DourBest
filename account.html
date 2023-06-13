@@ -8,6 +8,7 @@
     <!-- 폰트어썸 링크 -->
     <script src="https://kit.fontawesome.com/5db9941ba1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/adminheader.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 </head>
 <body>
 
@@ -54,7 +55,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- 메인 메뉴 -->
                 <section>
                 <div id="backgroundpage">
@@ -70,6 +70,7 @@
                             관리자 계정 관리
                         </div>
                     </div>
+
                     <!-- 아이디 검색 버튼 -->
                     <div class="memberIDSearchContainer">
                         <div id="memberID" class="memberIDButton">
@@ -107,10 +108,68 @@
                                 판매자등록여부
                             </div>
                         </div>
+                        <div class="listPageLine">
+                            <div id="listPageLine1" class="listPageLine">
+
+                            </div>
+                            <div id="listPageLine2" class="listPageLine">
+
+                            </div>
+                            <div id="listPageLine3" class="listPageLine">
+
+                            </div>
+                            <div id="listPageLine4" class="listPageLine">
+
+                            </div>
+                            <div id="listPageLine5" class="listPageLine">
+
+                            </div>
+                            <div id="listPageLine6" class="listPageLine">
+
+                            </div>
+                            <div id="listPageLine7" class="listPageLine">
+
+                            </div>
+                            <div id="listPageLine8" class="listPageLine">
+                                
+                            </div>
+                        </div>
                     </div>
                     </section>
                 </div>
                 </section>
+                <script>
+
+                    $('.mainMenuButton').click(function() {
+                        $('.mainMenuButton').removeClass('active');
+                        $(this).addClass('active');
+                    });
+
+
+                    $('.sideMenuButton').click(function() {
+                        $('.sideMenuButton').removeClass('active');
+                        $(this).addClass('active');
+                    });
+
+                    $('.sideMenuButton').click(function() {
+                        var buttonId = $(this).attr('id'); // 클릭한 버튼의 id를 가져옵니다.
+                        
+                        if (buttonId === 'sidebutton1') {
+                            window.location.href = 'account.html'; // 계정 관리 페이지로 이동합니다.
+                        } else if (buttonId === 'sidebutton2') {
+                            window.location.href = 'funding.html'; // 펀딩 목록 관리 페이지로 이동합니다.
+                        } else if (buttonId === 'sidebutton3') {
+                            window.location.href = 'statistics.html'; // 결제 통계 확인 페이지로 이동합니다.
+                        } else if (buttonId === 'sidebutton4') {
+                            window.location.href = 'notice.html'; // 공지사항 페이지로 이동합니다.
+                        } else if (buttonId === 'sidebutton5') {
+                            window.location.href = 'report.html'; // 신고 관리 페이지로 이동합니다.
+                        } else if (buttonId === 'sidebutton6') {
+                            window.location.href = 'coupon.html'; // 쿠폰 관리 페이지로 이동합니다.
+                        }
+                    });
+
+                </script>
             </div>
         </main>
         <!-- 푸터 -->
