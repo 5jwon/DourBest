@@ -13,6 +13,8 @@ $("#imageUpload").change(function() {
     readURL(this);
 });
 
+
+
 $(function() {
     $('.datepicker').datepicker();
 })
@@ -28,10 +30,14 @@ $.datepicker.setDefaults({
     dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
     showMonthAfterYear: true,
     yearSuffix: '년',
-    minDate: +1
+    minDate: +6
 });
 
 $(function () {
     $('.datepicker').datepicker();
 });
 
+$('#comment').keyup(function (e){
+    var content = $(this).val();
+    $('#count').html(30 - content.length);
+})

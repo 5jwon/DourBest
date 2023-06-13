@@ -11,10 +11,8 @@
     <link rel="stylesheet" href="../../css/header.css">
     <link rel="stylesheet" href="../css/seller_submitPage.css">
     <link rel="stylesheet" href="../css/seller_submit_fundinfo.css">
-    <link rel="stylesheet" href="../css/sellerbutton.css">
+    <link rel="stylesheet" href="../css/seller_submit_moreinfo.css">
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-    <script src="../../resources/jquery-ui-1.13.2.custom/jquery-ui.min.js"></script>
-    <script src="../../resources/jquery-ui-1.13.2.custom/jquery-ui.min.css"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -121,74 +119,41 @@
                         </div>
                     </div>
                     <div class="headtext">
-                        펀딩 기본 정보
+                        펀딩 상세 정보
                     </div>
                     <div class="subtext">
-                        기본 정보를 입력해주세요.
+                        펀딩에 대한 구체적인 설명을 입력해주세요.
                     </div>
                     <div class="fundtitle">
-                        펀딩 제목
+                        펀딩 소개 영상 · 사진
                     </div>
-                    <div class="group">
-                        <input type="text" maxlength="29" required id="comment">
-                        <span class="highlight"></span>
-                        <span class="bar"></span>
-                        <label>펀딩 제목을 입력해주세요.</label>
+                    <div class="remaintext1">
+                        <small>펀딩페이지 상단에 올라올 영상 · 사진이에요.</small>
                     </div>
-                    <div class="remaintext">
-                        <span style="padding-left: 5px; margin-top: 2px; font-weight: 700;" id="count">30</span> <!-- 자바 스크립트로 한글자 쓸 때마다 숫자 1 줄이기 -->
-                        <small>자 남았습니다.</small>
+                    <div class="radiobox">
+                        <label>
+                            <input type="radio" name="media" value="picture" checked />
+                            <span>사진</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="media" value="video" />
+                            <span>영상</span>
+                        </label>
                     </div>
-                    <div class="fundtitle">
-                        대표 이미지
-                    </div>
-                    <div class="subtext1">
-                        대표 이미지를 업로드 해주세요.
-                        <div class="sublist">
-                            <li>메인으로 걸릴 사진이에요. 신중히 선택해주세요.</li>
-                            <li>1200x675 픽셀 이상으로 넣어주세요.</li>
-                            <li>판매하실 물건이 가운데에 온 사진으로 넣어주세요.</li>
+                    <div class="photobox box">
+                        <div class="imgedit1">
+                            <input type="file" id="imageUpload1" accept=".png, .jpg, .jpeg">
+                            <label for="imageUpload1"></label>
                         </div>
-                    </div>
-                    <div class="upload">
-                        <div class="imgedit">
-                            <input type="file" id="imageUpload" accept=".png, .jpg, .jpeg">
-                            <label for="imageUpload"></label>
-                        </div>
-                        <div class="img-preview">
-                            <div id="imagePreview" style="background-image: url(../../resources/img/logo.jpeg);">
+                        <div class="img-preview1">
+                            <div id="imagePreview1" style="background-image: url(../../resources/img/logo.jpeg);">
                             </div>
                         </div>
                     </div>
-                    <div class="fundtitle">
-                        검색용 태그(#)
-                    </div>
-                    <div class="group">
-                        <input type="text" required>
-                        <span class="highlight"></span>
-                        <span class="bar"></span>
-                        <label>검색용 태그를 입력해주세요.</label>
-                    </div>
-                    <div class="remaintext1">
-                        <small>최대 10개까지 가능합니다.</small>
-                    </div>
-                    <div class="fundtitle">
-                        펀딩 종료일
-                    </div>
-                    <div class="datepick group">
-                        <input type="text" class="datepicker">
-                        <span class="highlight"></span>
-                        <span class="bar"></span>
-                    </div>
-                    <div class="remaintext1">
-                        <small>펀딩 승인까지 최대 5일 걸립니다. 최소 5일 뒤로 선택해주세요.</small>
-                    </div>
-                    <div class="button6">
-                        <button class="redbutton" id="button6">
-                            <span>
-                                저장 및 다음단계
-                            </span>
-                        </button>
+                    <div class="videobox box">
+                        <div>
+                            dkdldn
+                        </div>
                     </div>
                 </div>
             </section>
@@ -200,6 +165,6 @@
         </footer>
     </div>
     <script src="../../index.js"></script>
-    <script src="../js/imgupload.js"></script>
+    <script src="../js/imgupload1.js"></script>
 </body>
 </html>

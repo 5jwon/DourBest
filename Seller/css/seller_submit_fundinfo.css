@@ -203,20 +203,11 @@ to 	{ width:300px; background:transparent; }
 .img-preview div {
     width: 100%;
     height: 100%;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.datepicker {
-    border: 1.5px solid rgb(68, 68, 68);
-    margin-top: 15px;
-    width: 500px;
-    height: 50px;
-    font-size: 1.4em;
-    padding-left: 10px;
-    border-radius: 10px;
-}
 
 .datepick {
     padding-left: 5px;
@@ -296,3 +287,16 @@ html .ui-button.ui-state-disabled:active { border: 0px solid #c5c5c5; background
 
 .inp:focus { outline: none; background-color: #eee; } 
 
+.remaintext1 {
+    padding-left: 5px;
+    margin-top: 3px;
+    color: #757575;
+}
+
+.remaintext small {
+    color: #757575;
+}
+
+.button6 {
+    margin-top: 100px;
+}
