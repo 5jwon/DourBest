@@ -147,3 +147,11 @@
     border: 0.8px solid #eaeaea;
     border-radius: 5px 5px 5px 5px / 5px 5px 5px 5px;
 }
+
+.stepper .step .circle4 {
+    background-color: #ffd2c4;
+}
+
+.stepper .step:hover .circle4 {
+    background-color: #ffeeeb;
+}

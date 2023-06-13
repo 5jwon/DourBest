@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="../../css/default.css">
     <link rel="stylesheet" href="../../css/header.css">
     <link rel="stylesheet" href="../css/seller_submitPage.css">
-    <link rel="stylesheet" href="../css/seller_submit_fundinfo.css">
     <link rel="stylesheet" href="../css/seller_submit_moreinfo.css">
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 </head>
@@ -132,17 +131,17 @@
                     </div>
                     <div class="radiobox">
                         <label>
-                            <input type="radio" name="media" value="picture" checked />
+                            <input type="radio" name="media" value="photo"/>
                             <span>사진</span>
                         </label>
                         <label>
-                            <input type="radio" name="media" value="video" />
+                            <input type="radio" name="media" value="video"/>
                             <span>영상</span>
                         </label>
                     </div>
-                    <div class="photobox box">
+                    <div class="photo box">
                         <div class="imgedit1">
-                            <input type="file" id="imageUpload1" accept=".png, .jpg, .jpeg">
+                            <input type="file" id="imageUpload1" accept=".png, .jpg, .jpeg, .gif" multiple>
                             <label for="imageUpload1"></label>
                         </div>
                         <div class="img-preview1">
@@ -150,11 +149,25 @@
                             </div>
                         </div>
                     </div>
-                    <div class="videobox box">
-                        <div>
-                            dkdldn
+                    <div class="video box">
+                        <div class="group">
+                            <input type="text" required class="videoURL">
+                            <span class="highlight"></span>
+                            <span class="bar"></span>
+                            <label>동영상 URL을 입력해주세요.</label>
                         </div>
                     </div>
+                    <div class="fundtitle">
+                        펀딩 요약
+                    </div>
+                    <div class="remaintext1">
+                        <small>상단의 영상 · 사진과 함께 배치될 설명이에요.</small>
+                    </div>
+                    <div class="fundsummary">
+                        <textarea name="summary" id="summary" cols="30" rows="10" placeholder="내용을 입력해주세요." onKeyPress="javascript: if (event.keyCode==13) return false;" onKeyUp="javascript: limit(this, 100);"></textarea>
+                    </div>
+                    <span style="padding-left: 5px; margin-top: 2px; font-weight: 700;" id="count">100</span> <!-- 자바 스크립트로 한글자 쓸 때마다 숫자 1 줄이기 -->
+                    <small>/100</small>
                 </div>
             </section>
         </main>

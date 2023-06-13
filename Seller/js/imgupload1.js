@@ -21,3 +21,13 @@ $(document).ready(function(){
         $(targetBox).show();
     });
 });
+
+$('#summary').keyup(function (e){
+    var content = $(this).val();
+    $('#count').html(100 - content.length);
+})
+
+function limit(obj,cnt) {
+    if (obj.value.length>cnt) obj.value = obj.value.substring(0, cnt);
+    document.getElementById('memoLength').innerHTML = cnt-obj.value.length;
+};
