@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home</title>
+    <title>상세정보</title>
     <!-- 폰트어썸 링크 -->
     <script src="https://kit.fontawesome.com/5db9941ba1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../../css/default.css">
     <link rel="stylesheet" href="../../css/header.css">
     <link rel="stylesheet" href="../css/seller_submitPage.css">
     <link rel="stylesheet" href="../css/seller_submit_moreinfo.css">
+    <link rel="stylesheet" href="../css/sellerbutton.css">
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="../js/summernote/summernote-lite.js"></script>
+    <script src="../js/summernote/lang/summernote-ko-KR.js"></script>
+    <link rel="stylesheet" href="../css/summernote/summernote-lite.css">
 </head>
 <body>
     <div class="wrapper">
@@ -168,6 +172,22 @@
                     </div>
                     <span style="padding-left: 5px; margin-top: 2px; font-weight: 700;" id="count">100</span> <!-- 자바 스크립트로 한글자 쓸 때마다 숫자 1 줄이기 -->
                     <small>/100</small>
+                    <div class="fundtitle">
+                        펀딩 본문
+                    </div>
+                    <div class="remaintext1">
+                        <small>펀딩페이지 메인에 올라갈 본문이에요.</small>
+                    </div>
+                    <form method="post" class="editor">
+                        <textarea name="editordata" id="summernote"></textarea>
+                    </form>
+                    <div class="button7">
+                        <button class="redbutton" id="button7">
+                            <span>
+                                저장 및 다음단계
+                            </span>
+                        </button>
+                    </div>
                 </div>
             </section>
         </main>
