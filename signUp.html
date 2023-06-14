@@ -58,34 +58,82 @@
             <section>
                 <title>sign up</title>
                 <div class="signup">
-                    <div class="signupName">회원가입</div>
+                    <div class="signup Name">
+                        <h1>회원가입</h1></div>
+                    <div class="signtop">
+                        <div>
+                            <span>*</span>
+                            <span>필수입력사항</span>
+                        </div>
+                    </div>
                     <form action="" method="get">
-                        <ul>
-                            <li>
-                                <label for="userId">아이디(6자 이상)</label>
-                                <input type="text" id="userId" size="10" placeholder="아이디를 입력해주세요" required><br>
-                            </li>
-                            <li>
-                                <label for="password">비밀번호</label>
-                                <input type="password" id="password" placeholder="비밀번호를 입력해주세요" required><br>
-                            </li>
-                            <li>
-                                <label for="passwordConfirm">비밀번호 확인</label>
-                                <input type="password" id="passwordConfirm" placeholder="비밀번호를 한번 더 입력해주세요" required><br>
-                            </li>
-                            <li>
-                                <label for="userName">이름</label>
-                                <input type="text" id="userName" placeholder="이름을 입력해주세요." required><br>
-                            </li>
-                            <li>
-                                <label for="email">이메일</label>
-                                <input type="email" id="email" placeholder="예 : Dourbest@naver.com" required><br>
-                            </li>
-                            <li>
-                                <label for="phone">휴대폰</label>
-                                <input type="tel" id="phone" placeholder="휴대폰 번호를 입력해주세요" required><br>
-                            </li>
-                        </ul>
+                        <div class="new memberInfo">
+                            <div class="newid-info"> 
+                                <div class="new1 id-label">
+                                    <label for="userId">아이디</label>
+                                </div>
+                                <div class="new2 id-input">
+                                    <input type="text" id="userId" size="30" placeholder="아이디를 입력해주세요" required><br>
+                                </div>
+                                <div>
+                                    <button class="new cfid" type="button">
+                                        중복확인
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="new password-info">
+                                <div class="new1 password-label">
+                                    <label for="password">비밀번호</label>
+                                </div>
+                                <div class="new2 password-input">
+                                    <input type="password" id="password" placeholder="비밀번호를 입력해주세요" required><br>
+                                </div>
+                            </div>
+                            <div class="new password-cf">
+                                <div class="new1 password-cf-label">
+                                    <label for="passwordConfirm">비밀번호 확인</label>
+                                </div>
+                                <div class="new2 password-cf-input">
+                                    <input type="password" id="passwordConfirm" placeholder="비밀번호를 한번 더 입력해주세요" required><br>
+                                </div>
+                            </div>
+                            <div class="new name-info">
+                                <div class="new1 name-label">
+                                    <label for="userName">이름</label>
+                                </div>
+                                <div class="new2 name-input">
+                                    <input type="text" id="userName" placeholder="이름을 입력해주세요." required><br>
+                                </div>
+                            </div>
+                            <div class="new email-info">
+                                <div class="new1 email-label">
+                                    <label for="email">이메일</label>
+                                </div>
+                                <div class="new2 email-input">
+                                    <input type="email" id="email" placeholder="예 : Dourbest@naver.com" required><br>
+                                </div>
+                                <div>
+                                    <button class="new emailcf" type="button">중복확인</button>
+                                </div>
+                            </div>
+                            <div class="new phone-info">
+                                <div class="new1 phone-label">
+                                    <label for="phone">휴대폰</label>
+                                </div>
+                                <div class="new2 phone-input">
+                                    <input type="tel" id="phone" placeholder="휴대폰 번호를 입력해주세요" required><br>
+                                </div>
+                                <div class="new adress-info">
+                                    <button class="new1 adress-input"  type="button">
+                                        <span>
+                                            <img src="돋보기 이미지 주소" alt class="searchimg"> <!--돋보기 이미지 넣기-->
+                                            주소검색
+                                        </span>
+                                    </button>
+                                    <span class="newadressadd">배송지에 따라 상품 정보가 달라질 수 있습니다.</span>
+                                </div>
+                            </div>
+                    </div>
                         
                         <br><br><br>
                         <fieldset>

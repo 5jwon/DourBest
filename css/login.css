@@ -1,21 +1,15 @@
-* {
-    margin: 0 auto;
-    padding: 0;    
-    box-sizing: border-box;
-    border: 0;
-    font-size: 14px;
+
+.loginMain {
+    padding-top: 80px;
+    font-size: 150%
+}
+
+.login div {
+
     padding-bottom: 13px;
 }
 
-.loginMain {
-
-    font-size: 150%;
-
-}
-
-
 .login{
-
     width: 400px;
     margin: 0px auto;
     letter-spacing: -0.6px;
