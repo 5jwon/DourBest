@@ -1,6 +1,8 @@
+header{
+    margin-bottom: 10px;
+}
 .header-container{
     flex-direction: column;
-    margin-bottom: 10px;
 }
 
 /* 헤더 상단 */
@@ -51,7 +53,6 @@
     transition: 0.5s;
     border-radius: 5px;
 }
-
 
 /* 검색 */
 .search-form{
