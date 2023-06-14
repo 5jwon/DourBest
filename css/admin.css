@@ -35,13 +35,17 @@ height: 100px;
 .sideMenuButton{ 
     width: 250px;
     height: 50px;
-    /* margin: 11px auto; */
+    /* margin: 11px auto; */ 
     margin-left: 50px;
     margin-top: 30px;
     cursor: pointer;
     line-height: 50px;
     text-align: center;
 } 
+#sidebuttonMain{
+    background-color: #E54945;
+    border-radius: 5px;
+}
 .sideMenuButton:hover{ 
     background-color: #E54945;
     border-radius: 5px;
