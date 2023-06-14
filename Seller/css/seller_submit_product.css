@@ -1,0 +1,7 @@
+.stepper .step .circle5 {
+    background-color: #ffd2c4;
+}
+
+.stepper .step:hover .circle5 {
+    background-color: #ffeeeb;
+}

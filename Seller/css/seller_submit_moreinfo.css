@@ -1,0 +1,266 @@
+.radiobox label {
+    font-size: 20px;
+    line-height: 2rem;
+    padding: 0.2em 0.4em;
+}
+
+.radiobox span {
+    vertical-align: middle;
+    font-size: 15px;
+}
+
+.radiobox [type="radio"] {
+    vertical-align: middle;
+    appearance: none;
+    border: max(2px, 0.1em) solid gray;
+    border-radius: 50%;
+    width: 1.5em;
+    height: 1.5em;
+    transition: border 0.2s ease-in-out;
+}
+
+.radiobox [type="radio"]:checked {
+    border: 0.4em solid #f35f4c;
+}
+
+.radiobox [type="radio"]:focus-visible {
+    outline-offset: max(2px, 0.1em);
+    outline: max(2px, 0.1em) dotted #f35f4c;
+}
+
+.radiobox [type="radio"]:hover {
+    box-shadow: 0 0 0 max(4px, 0.2em) lightgray;
+    cursor: pointer;
+}
+
+.radiobox {
+    margin-top: 40px;
+}
+
+.photobox {
+    position: relative;
+    max-width: 30%;
+    margin: 50px 0;
+}
+
+.imgedit1 {
+    position: relative;
+    left: 260px;
+    z-index: 1;
+    top: 30px;
+}
+
+.imgedit1 input {
+    display: none;
+}
+
+.imgedit1 label {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 0;
+    border-radius: 50%;
+    border: 1px solid #757575;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    font-weight: normal;
+    transition: all 0.2s ease-in-out;
+    background-color: white;
+}
+
+.imgedit1 label:hover {
+    background: #f1f1f1;
+}
+
+.imgedit1 label::after {
+    content: "Upload";
+    position: relative;
+    top: 26px;
+    left: 9px;
+    right: 0;
+    text-align: center;
+    margin: auto;
+    font-size: large;
+    font-weight: 900;
+}
+
+.imgedit1 label:hover::after {
+    color: #f35f4c;
+}
+
+.img-preview1 {
+    width: 300px;
+    height: 240px;
+    position: relative;
+    border: 6px solid #f0eeee;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+    margin-top: -20px;
+}
+
+.img-preview1 div {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.headtext {
+    margin-top: 100px;
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+.subtext {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.fundtitle {
+    font-size: 1.4em;
+    font-weight: 600;
+    margin-top: 80px;
+    padding-left: 5px;
+}
+
+.fundtitle::after {
+    content: '*';
+    color: red;
+}
+
+.remaintext1 small {
+    padding-left: 5px;
+}
+
+.box {
+    display: none ;
+}
+
+.group {
+    position: relative;
+    margin-top: 30px;
+}
+
+.group input {
+    font-size: 1.5em;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 700px;
+    border: none;
+    border-bottom: 1px solid #b4b4b4;
+}
+
+.group input:focus {
+    outline: none;
+}
+
+.group label {
+    color: #b4b4b4;
+    font-size: 1.5em;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: .5s ease all;
+    -moz-transition: .5s ease all;
+    -webkit-transition: .5s ease all;
+}
+
+.group input:focus ~ label, .group input:valid ~ label {
+    top: -20px;
+    font-size: 14px;
+    color: #b4b4b4;
+}
+
+.bar {
+    position: relative;
+    display: block;
+    width: 700px;
+}
+
+.bar::before, .bar::after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #b4b4b4;
+    transition: .5s ease all;
+    -moz-transition: .5s ease all;
+    -webkit-transition: .5s ease all;
+}
+
+.bar:before {
+    left: 50%;
+}
+
+.bar:after {
+    right: 50%;
+}
+
+.group input:focus ~ .bar::before, .group input:focus ~ .bar:after {
+    width: 50%;
+}
+
+.highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.group input:focus ~ .highlight {
+    -webkit-animation:inputHighlighter 0.5s ease;
+    -moz-animation:inputHighlighter 0.5s ease;
+    animation:inputHighlighter 0.5s ease;
+}
+
+@-webkit-keyframes inputHighlighter {
+	from { background:#f35f4c; }
+to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+	from { background:#f35f4c; }
+to 	{ width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+	from { background:#f35f4c; }
+to 	{ width:300px; background:transparent; }
+}
+
+textarea {
+    width: 500px;
+    height: 100px;
+    resize: vertical;
+    margin-top: 30px;
+    box-shadow: 0px 2px 4px 0px rgb(202, 202, 202);
+    border: #c9c9c9 0.2px solid;
+    border-radius: 10px;
+    font-size: 1.2em;
+    padding: 10px;
+}
+
+textarea:focus {
+    outline: 1px solid #f35f4c;
+}
+
+.editor {
+    margin-top: 30px;
+}
+
+.button7 {
+    margin-top: 80px;
+}
+
+.stepper .step .circle4 {
+    background-color: #ffd2c4;
+}
+
+.stepper .step:hover .circle4 {
+    background-color: #ffeeeb;
+}

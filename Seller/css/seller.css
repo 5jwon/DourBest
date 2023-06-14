@@ -1,0 +1,106 @@
+.main-container {
+    justify-content: center;
+}
+
+.counttext {
+    margin: 100px auto;
+}
+
+.content div{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.value {
+    color: #f35f4c;
+}
+
+.ad {
+    background-color: #f35f4c;
+    color: snow;
+    height: 370px;
+    box-shadow: 0px 2px 4px 0px rgb(168, 168, 168);
+    border-radius: 10px;
+}
+
+.ad h3 {
+    text-align: center;
+    font-size: 20px;
+    margin: 25px auto;
+    padding-top: 10px;
+}
+
+.ad ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ad li {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.ad img {
+    width: auto;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.mainwrap {
+    min-width: 1100px;
+}
+
+.bottomtext {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 5 00;
+    margin: 100px auto 0;
+}
+
+.catenick {
+    margin: 50px auto 0;
+}
+
+.catenick * {
+    font-size: 18px;
+    margin: 5px auto;
+}
+
+.search-form > form {
+    border: #E54944 1px solid;
+}
+
+#redbox {
+    border: #E54944 2px solid;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px auto 0 0;
+    width: 300px;
+    height: 70px;
+}
+
+.mainbody {
+    padding: 0 20px;
+    min-width: 70%;
+}
+
+.underselect {
+    font-size: 1.1em;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.button2 {
+    margin-top: 80px;
+}
+
+#button2 {
+    width: 450px;
+    height: 70px;
+}
+
+.content {
+    display: flex;
+}

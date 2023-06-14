@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기본정보</title>
+    <!-- 폰트어썸 링크 -->
+    <script src="https://kit.fontawesome.com/5db9941ba1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../css/default.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../css/seller_submitPage.css">
+    <link rel="stylesheet" href="../css/seller_submit_fundinfo.css">
+    <link rel="stylesheet" href="../css/sellerbutton.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="../../resources/jquery-ui-1.13.2.custom/jquery-ui.min.js"></script>
+    <script src="../../resources/jquery-ui-1.13.2.custom/jquery-ui.min.css"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- 헤더 -->
+        <header>
+            <div class="header-container flex-wrapper">
+                <!-- 헤더 상단 메뉴 -->
+                <div class="header-top flex-wrapper">
+                    <h1>
+                        <a href="javascript:void(0);">
+                            <img class="logo" src="../../resources/img/logo.jpeg" alt="DourBest로고">
+                        </a>
+                    </h1>
+                    <div class="header-menu">
+                        <ul class="flex-wrapper">
+                            <li><a href="/">펀딩오픈</a></li>
+                            <li><a href="/">로그인</a></li>
+                            <li><a href="/">회원가입</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 헤더 하단 메뉴 -->
+                <nav>
+                    <div class="menu-container flex-wrapper">
+                        <div class="header-bottom">
+                            <ul class="flex-wrapper">
+                                <li><a href="#">오픈펀딩</a></li>
+                                <li><a href="#">오픈예정펀딩</a></li>
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">고객센터</a></li>
+                                <div class="indicator"></div>
+                            </ul>
+                        </div>
+                        <div class="search-form">
+                            <form action="" class="flex-wrapper">
+                                <input type="search" placeholder="Search">
+                                <button type="submit"><i class="fa-solid fa-magnifying-glass" style="color: #e54944;"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- 메인 -->
+        <main>
+            <section>
+                <div class="submitpage">
+                    <div class="stepper">
+                        <div class="step first active done">
+                            <div class="circle circle1">
+                                <span>1</span>
+                            </div>
+                            <div class="title">요금제</div>
+                            <div class="left-bar"></div>
+                            <div class="right-bar"></div>
+                        </div>
+                        <div class="step second active editing">
+                            <div class="circle circle2">
+                                <span>2</span>
+                            </div>
+                            <div class="title">목표금액</div>
+                            <div class="left-bar"></div>
+                            <div class="right-bar"></div>
+                        </div>
+                        <div class="step third active">
+                            <div class="circle circle3">
+                                <span>3</span>
+                            </div>
+                            <div class="title">펀딩정보</div>
+                            <div class="left-bar"></div>
+                            <div class="right-bar"></div>
+                        </div>
+                        <div class="step forth active">
+                            <div class="circle circle4">
+                                <span>4</span>
+                            </div>
+                            <div class="title">상세정보</div>
+                            <div class="left-bar"></div>
+                            <div class="right-bar"></div>
+                        </div>
+                        <div class="step fifth active">
+                            <div class="circle circle5">
+                                <span>5</span>
+                            </div>
+                            <div class="title">물품옵션</div>
+                            <div class="left-bar"></div>
+                            <div class="right-bar"></div>
+                        </div>
+                        <div class="step sixth active">
+                            <div class="circle circle6">
+                                <span>6</span>
+                            </div>
+                            <div class="title">판매자 정보</div>
+                            <div class="left-bar"></div>
+                            <div class="right-bar"></div>
+                        </div>
+                        <div class="step seventh active">
+                            <div class="circle circle7">
+                                <span>7</span>
+                            </div>
+                            <div class="title">환불규정</div>
+                            <div class="left-bar"></div>
+                            <div class="right-bar"></div>
+                        </div>
+                    </div>
+                    <div class="headtext">
+                        펀딩 기본 정보
+                    </div>
+                    <div class="subtext">
+                        기본 정보를 입력해주세요.
+                    </div>
+                    <div class="fundtitle">
+                        펀딩 제목
+                    </div>
+                    <div class="group">
+                        <input type="text" maxlength="29" required id="comment">
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>펀딩 제목을 입력해주세요.</label>
+                    </div>
+                    <div class="remaintext">
+                        <span style="padding-left: 5px; margin-top: 2px; font-weight: 700;" id="count">30</span> <!-- 자바 스크립트로 한글자 쓸 때마다 숫자 1 줄이기 -->
+                        <small>자 남았습니다.</small>
+                    </div>
+                    <div class="fundtitle">
+                        대표 이미지
+                    </div>
+                    <div class="subtext1">
+                        대표 이미지를 업로드 해주세요.
+                        <div class="sublist">
+                            <li>메인으로 걸릴 사진이에요. 신중히 선택해주세요.</li>
+                            <li>1200x675 픽셀 이상으로 넣어주세요.</li>
+                            <li>판매하실 물건이 가운데에 온 사진으로 넣어주세요.</li>
+                        </div>
+                    </div>
+                    <div class="upload">
+                        <div class="imgedit">
+                            <input type="file" id="imageUpload" accept=".png, .jpg, .jpeg">
+                            <label for="imageUpload"></label>
+                        </div>
+                        <div class="img-preview">
+                            <div id="imagePreview" style="background-image: url(../../resources/img/logo.jpeg);">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fundtitle">
+                        검색용 태그(#)
+                    </div>
+                    <div class="group">
+                        <input type="text" required>
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>검색용 태그를 입력해주세요.</label>
+                    </div>
+                    <div class="remaintext1">
+                        <small>최대 10개까지 가능합니다.</small>
+                    </div>
+                    <div class="fundtitle">
+                        펀딩 종료일
+                    </div>
+                    <div class="datepick group">
+                        <input type="text" class="datepicker">
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                    </div>
+                    <div class="remaintext1">
+                        <small>펀딩 승인까지 최대 5일 걸립니다. 최소 5일 뒤로 선택해주세요.</small>
+                    </div>
+                    <div class="button6">
+                        <button class="redbutton" id="button6">
+                            <span>
+                                저장 및 다음단계
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- 푸터 -->
+        <footer>
+            <section></section>
+            <section></section>
+        </footer>
+    </div>
+    <script src="../../index.js"></script>
+    <script src="../js/imgupload.js"></script>
+</body>
+</html>
