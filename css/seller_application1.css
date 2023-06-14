@@ -49,9 +49,10 @@ form {
   height: 50px;
   transition: border-color 0.3s;
   width: 100%;
+  margin-bottom: 10px;
 }
 .personal-info {
-  background: #fafafa;
+  /* background: #fafafa; */
   border: none;
   border-bottom: 2px solid #e9e9e9;
   color: #666;
@@ -60,7 +61,8 @@ form {
   height: 50px;
   transition: border-color 0.3s;
   width: 100%;
- 
+
+
 }
 
 .form-item input:focus {
@@ -85,7 +87,12 @@ form {
   text-align: center;
   text-transform: uppercase;
   transition: background 0.3s ease-in-out;
-  width: 100%;
+  width: inherit;
+  box-shadow: 0px 2px 4px 0px rgb(200, 200, 200);
+  margin-bottom: 10%;
+  display: inline-block;
+  text-align: center;
+  padding: 15px 0;
   
 }
 
@@ -120,18 +127,40 @@ form {
 
 #outline-text {
   margin-top: 40%;
+
+  margin-bottom: 5%;
 }
 
-.parsonal-container{
-  background-color: black;
-  height: 100px;
-  width: 100px;
+.personal-container{
+
+
   
+  width: 40%;
+  position: relative;
+  left: 34%;
+  margin-top: 0%;
+  box-shadow: 0px 0px 4px 0px rgb(200, 200, 200);
+
 }
 
 .title{
   margin-top: 20%;
 }
+
+.check-box-container{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 3%;
+
+}
+
+.bold-type {
+  font-weight: bolder;
+}
+
+
+
+
+
 
 
 
