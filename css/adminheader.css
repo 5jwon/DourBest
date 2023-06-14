@@ -25,7 +25,7 @@ height: 100px;
     border-right: 2px solid #FFD2C4;
 }
 
-#sideMenuContainer{  /* 상위 클래스 (sidemenubutton) */
+#sideMenuContainer{  /* 상위 클래스 (sidemenubutton) */           
     background-color: white; 
     font-weight: bold; 
     font-size: larger; 
@@ -75,10 +75,28 @@ height: 100px;
     margin-top : 40px;
     line-height: 50px;
     cursor: pointer;
-    
+}
+
+.FundingMenuButton{
+    background-color: white;
+    /* border: 1px solid black; */
+    width: 200px;
+    height: 50px;
+    font-weight: bolder;
+    text-align: center;
+    margin-top : 40px;
+    line-height: 50px;
+    cursor: pointer;
+    font-size: 12px;
 }
 
 .mainMenuButton:hover{
+    background-color: #E54945;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+.FundingMenuButton:hover{
     background-color: #E54945;
     transition: 0.5s;
     border-radius: 5px;
@@ -183,7 +201,7 @@ height: 100px;
 
 .listPageLine{
     margin-bottom: 60px;
-    border-bottom: 1px solid rgba(255, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.5);
     
 }
 #listPageLine1{
@@ -193,5 +211,10 @@ height: 100px;
 .mainMenuButton.active {
     background-color: #E54945; /* 적절한 배경색으로 변경하세요 */
 }
-
+.FundingMenuButton.active {
+    background-color: #E54945; /* 적절한 배경색으로 변경하세요 */
+}
+.logo{
+    cursor: pointer;
+}
 
