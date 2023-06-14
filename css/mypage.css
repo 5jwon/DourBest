@@ -1,0 +1,147 @@
+.profile-wrap{
+    background-color: #f35f4c;
+    min-width: 600px;
+    margin-bottom: 60px;
+    box-shadow: 0px 2px 4px 0px rgb(182, 182, 182);
+    border-radius: 15px;
+    margin: 0em 1em;
+}
+
+.profile{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 0px;
+    color: #fff;
+}
+
+.profile-img{
+    align-items: center;
+}
+
+.img{
+    background-image: url(/resources/img/user.jpg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat ;
+    background-size: cover;
+    border-radius: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.profile-info{
+    padding: 30px;
+}
+
+.profile-info strong{
+    font-size: 1.3em;
+}
+
+.profile-info p, .profile-info span {
+    font-size: 1.1em;
+}
+
+.profile-round{
+    position: relative;
+    border: 1px solid #b4b4b4;
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    margin-right: 20px;
+}
+
+.profile-round button{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    bottom: 5px;
+    right: 4px;
+    border-radius: 100%;
+}
+
+.profile-round button > svg{
+    position: absolute;
+    bottom: 8px;
+    right: 7px;
+}
+
+.profile-detail{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 45px;
+    align-items: center;
+    color: #fff;
+    
+}
+
+.profile-detail h3{
+    border-bottom: 1px solid #fff;
+}
+
+.profile-detail h3, .profile-detail p{
+    padding: 10px 0px;
+    font-size: 1.3rem;
+}
+
+.sidebar-wrapper{
+    width: 20%;
+    min-width: 250px;
+}
+
+.sidebar{
+    padding: 30px;
+}
+
+.sidebar a{
+    display: block;
+}
+
+.side-inner{
+    flex-direction: column;
+    background-color: #ffeeeb;
+    border-radius: 5px;
+}
+
+.side-detail{
+    margin-bottom: 10px;
+}
+
+.side-detail:nth-child(3){
+    margin-bottom: 20px;
+}
+
+.side-detail a{
+    font-size: 1.2em;
+    padding: 5px;
+}
+
+.side-detail h2{
+    font-size: 1.4em;
+    padding: 10px;
+}
+
+.side-detail div a{
+    padding: 0px 0px 5px 10px;
+}
+
+.sidebar-logout{
+    padding: 5px;
+}
+
+.sidebar-logout a{
+    background-color: #ffd2c4;
+    color: #000;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.sidebar-logout a:hover{
+    background-color: #f35f4c;
+    
+}
+

@@ -1,6 +1,8 @@
+header{
+    margin-bottom: 10px;
+}
 .header-container{
     flex-direction: column;
-    margin-bottom: 10px;
 }
 
 /* 헤더 상단 */
