@@ -125,6 +125,107 @@
                     <div class="subtext">
                         펀딩 물품의 대한 옵션을 추가해주세요.
                     </div>
+                    <div class="submitwrap">
+                        <div class="option-wrapper">
+                            <div class="option-title">
+                                옵션명
+                            </div>
+                            <div class="option-sub">
+                                예시) 초경량 땀 흡수복
+                            </div>
+                            <div class="group">
+                                <input type="text" id="optionName" placeholder="옵션명을 입력해주세요." onKeyUp="javascript: limit(this, 50);">
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                            </div>
+                            <span id="count">50</span>
+                            <small>/50</small>
+                            <div class="option-title">
+                                옵션 설명
+                            </div>
+                            <div class="fundsummary">
+                                <textarea name="option-Info" id="option-Info" cols="30" rows="10" placeholder="내용을 입력해주세요." onKeyPress="javascript: if (event.keyCode==13) return false;" onKeyUp="javascript: limit(this, 300);"></textarea>
+                            </div>
+                            <span style="padding-left: 5px; margin-top: 2px; font-weight: 700;" id="count1">300</span> <!-- 자바 스크립트로 한글자 쓸 때마다 숫자 1 줄이기 -->
+                            <small>/300</small>
+                            <div class="option-title">
+                                금액
+                            </div>
+                            <div class="group">
+                                <input type="text" id="optionMoney" placeholder="금액을 입력해주세요.">
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                            </div>
+                            <div class="option-title">
+                                사이즈 ◦ 색상
+                            </div>
+                            <div class="option-sub">
+                                사이즈와 색상을 입력해주세요.
+                            </div>
+                            <div class="group">
+                                <input type="text" id="optionSize" placeholder="사이즈를 입력해주세요.">
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                            </div>
+                            <div class="option-sub">
+                                예시) S, M, L
+                            </div>
+                            <div class="group">
+                                <input type="text" id="optionColor" placeholder="색상을 입력해주세요.">
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                            </div>
+                            <div class="option-sub">
+                                예시) 블랙, 네이비, 레드
+                            </div>
+                            <div class="option-title">
+                                제한 수량
+                            </div>
+                            <div class="group">
+                                <input type="text" id="optionSize" placeholder="상품별 제한수량을 입력해주세요.">
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                            </div>
+                            <div class="option-title">
+                                배송비
+                            </div>
+                            <div class="option-sub">
+                                배송이 없는 경우는 0으로 적어주세요.
+                            </div>
+                            <div class="group">
+                                <input type="text" id="optionSize" placeholder="배송비를 입력해주세요.">
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                            </div>
+                            <div class="option-title">
+                                배송 시작 일자
+                            </div>
+                            <div class="datepick group">
+                                <input type="text" class="datepicker" placeholder="배송 시작 일자를 입력해주세요.">
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                            </div>
+                            <div class="buttons">
+                                <div class="button8">
+                                    <button class="redbutton" id="button8">
+                                        <span>
+                                            추가하기
+                                        </span>
+                                    </button>
+                                </div>
+                                <div class="button9">
+                                    <button class="redbutton1" id="button9">
+                                        <span>
+                                            저장 및 다음단계
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="options">
+                            왜 안돼
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>
@@ -135,5 +236,6 @@
         </footer>
     </div>
     <script src="../../resources/js/index.js"></script>
+    <script src="../js/option.js"></script>
 </body>
 </html>
