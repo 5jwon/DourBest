@@ -4,7 +4,7 @@
     margin-bottom: 60px;
     box-shadow: 0px 2px 4px 0px rgb(182, 182, 182);
     border-radius: 15px;
-    margin: 0em 1em;
+    margin: 0em 1em 2em 1em;
 }
 
 .profile{
@@ -100,11 +100,12 @@
 .side-inner{
     flex-direction: column;
     background-color: #ffeeeb;
-    border-radius: 5px;
+    border-radius: 15px;
+    box-shadow: 0px 2px 4px 0px rgb(182, 182, 182);
 }
 
 .side-detail{
-    margin-bottom: 10px;
+    margin: 10px 0px;
 }
 
 .side-detail:nth-child(3){
@@ -130,18 +131,173 @@
 }
 
 .sidebar-logout a{
+    position: relative;
     background-color: #ffd2c4;
     color: #000;
     text-align: center;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 10px;
     font-size: 1.2em;
     font-weight: bold;
+    margin-bottom: 5px;
     transition: 0.5s;
+    top: 0px;
 }
 
 .sidebar-logout a:hover{
     background-color: #f35f4c;
-    
+    color: #fff;
+    top:-2px;
+    box-shadow: 0px 2px 4px 0px rgb(182, 182, 182);
 }
 
+.mypage-info section{
+    padding: 30px 20px 0px 10px;
+    flex-grow: 1;
+}
+
+.mypage-title h1{
+    font-size: 1.5em;
+}
+
+.mypage-detail{
+    margin-bottom: 20px;
+}
+
+.mypage-detail h2{
+    font-size: 18pt;
+    border-bottom: #b4b4b4 1px solid;
+    padding-bottom: 10px;
+}
+
+
+.mypage-list a{
+    padding: 30px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mypage-list li{
+    position: relative;
+    flex: 1;
+}
+
+.mypage-list p{
+    font-size: 1.155em;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.mypage-list a span{
+    display: block;
+    padding-bottom: 10px;
+    font-size: 30px;
+
+}
+
+.mypage-list :hover{
+    color: #f35f4c;
+}
+
+.mypage-list li:not(:last-child)::after{
+    position: absolute;
+    top: 25%;
+    content: "";
+    display: inline-block;
+    background-color: #e5e5e5;
+    width: 1px;
+    height: 50px;
+    right: 0;
+    vertical-align: middle;
+}
+
+/* 쿠폰 */
+.coupon-container{
+    font-size: 1.2em;
+}
+
+.coupon-regi{
+    border: 1px solid #b4b4b4;
+    border-radius: 7px;
+    padding: 20px;
+    box-shadow: 0px 2px 4px 0px rgb(182, 182, 182);
+    margin-bottom: 30px;
+}
+
+.coupon-regi button{
+    position: relative;
+    display: block;
+    top: 0;
+    transition: all .1s ease-in;
+    background-color: #e5e5e5;
+    padding: 15px;
+    border-radius: 15px;
+    font-size: 1.125em;
+    font-weight: bold;
+    margin-right: 20px;
+    transition: 0.5s;
+    box-shadow: 0px 2px 4px 0px rgb(182, 182, 182);
+}
+
+.coupon-regi button:hover{
+    top: -2px;
+    background-color: #f35f4c;
+    color: #fff;
+}
+
+.coupon-regi input[type=text]{
+    padding: 20px;
+    outline: none;
+    font-size: 1.125em;
+    flex: 1;
+    border-bottom: #b4b4b4 1px solid;
+    transition: 0.5s;
+    top: 0px;
+    position: relative;
+}
+
+.coupon-regi input[type=text]:focus{
+    border-bottom: #f35f4c 1px solid;
+    top: -2px;
+}
+
+.grid-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.coupon-item-wrapper{
+    border: 1px solid #f35f4c;
+    border-radius: 15px;
+    flex: 1;
+    box-shadow: 0px 2px 4px 0px rgb(182, 182, 182);
+    margin-bottom: 8px
+}
+
+.coupon-item{
+    padding: 20px;
+}
+
+.discount{
+    font-size: 1.7em;
+    font-weight: bold;
+    color: #f35f4c;
+    margin-bottom: 10px;
+}
+
+.discount-text{
+    font-size: 1.1em;
+    color: #797474;
+    margin-bottom: 10px;
+}
+
+.coupon-table table{
+    color: #797474;
+    font-size: 12pt;
+}
+
+.coupon-table table th{
+    display: block;
+    margin-right: 12px;
+}
