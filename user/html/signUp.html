@@ -10,6 +10,8 @@
         <link rel="stylesheet" href="/css/default.css">
         <link rel="stylesheet" href="/css/header.css">
         <link rel="stylesheet" href="/user/css/signUp.css">
+        <script src="/user/js/signup.js"></script>
+        <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -57,7 +59,7 @@
         <main>
             <section class = "signupPage">
                 <title>sign up</title>
-                <div class="signup">
+                <div class="signup">  <!--전체 감싸는 div-->
                     <div class="signup Name">
                         <h1>회원가입</h1></div>
                     <div class="signtop">
@@ -74,6 +76,7 @@
                                 </div>
                                 <div class="new2 id-input">
                                     <input type="text" id="userId" size="30" placeholder="아이디를 입력해주세요" required><br>
+                                    <div id="idError" class="error"></div>
                                 </div>
                                 <div>
                                     <button class="new cfid" type="button">
@@ -87,6 +90,7 @@
                                 </div>
                                 <div class="new2 password-input">
                                     <input type="password" id="password" placeholder="비밀번호를 입력해주세요" required><br>
+                                    <div id="pwdError" class="error"></div>
                                 </div>
                             </div>
                             <div class="new password-cf">
@@ -95,6 +99,7 @@
                                 </div>
                                 <div class="new2 password-cf-input">
                                     <input type="password" id="passwordConfirm" placeholder="비밀번호를 한번 더 입력해주세요" required><br>
+                                    <div id="pwdcError" class="error"></div>
                                 </div>
                             </div>
                             <div class="new name-info">
@@ -103,6 +108,7 @@
                                 </div>
                                 <div class="new2 name-input">
                                     <input type="text" id="userName" placeholder="이름을 입력해주세요." required><br>
+                                    <div id="nameError" class="error"></div>
                                 </div>
                             </div>
                             <div class="new email-info">
@@ -111,6 +117,7 @@
                                 </div>
                                 <div class="new2 email-input">
                                     <input type="email" id="email" placeholder="예 : Dourbest@naver.com" required><br>
+                                    <div id="emailError" class="error"></div>
                                 </div>
                                 <div>
                                     <button class="new emailcf" type="button">중복확인</button>
@@ -122,24 +129,41 @@
                                 </div>
                                 <div class="new2 phone-input">
                                     <input type="tel" id="phone" placeholder="휴대폰 번호를 입력해주세요" required><br>
+                                    <div id="phoneError" class="error"></div>
                                 </div>
                             </div>
                                 <div class="new adress-info">
-                                    <div>
-                                        <label for="adess-input">주소</label>
-                                    </div>
-                                    <div class="new2 aress-input">
-                                        <input type="text" name="adress" id="adress" placeholder="배송지입력" value="" required />
-                                    </div>
-                                    <div>
-                                        <button type="button">
-                                            <span>
-                                                <img src="../../resources/img/search.png" alt class="searchimg" sizes="20px"> <!--돋보기 이미지 넣기-->
-                                                주소검색
-                                            </span>
-                                        </button>
-                                    </div>    
+                                            <div>
+                                                <label for="adess-input">주소</label>
+                                            </div>
+                                                    <div class="new2 aress-input">
+                                                        <input type="text" name="adress" id="postcode" placeholder="우편번호" value="" required />
+                                                    </div>
+                                                    <div>
+                                                        <button type="button" onclick="sample6_execDaumPostcode()" value="우편번호 찾기">
+                                                            <span>
+                                                                <i class="fa-solid fa-magnifying-glass" style="color: #e54944;"></i> <!--돋보기 이미지 넣기-->
+                                                                주소검색
+                                                            </span>
+                                                        </button>
+                                                    </div>
                                 </div>
+                                        <div class="new adress-info">
+                                            <div>
+                                                <label for="adess-input">  </label>
+                                            </div>
+                                                    <div class="new2 aress-input">
+                                                        <input type="text" name="adress" id="adress" placeholder="주소" value="" required />
+                                                    </div>
+                                        </div>
+                                    <div class="new adress-info">
+                                            <div>
+                                                <label for="adess-input">   </label>
+                                            </div>
+                                        <div class="new2 aress-input2">
+                                            <input type="text" name="adress2" id="ditailadress" placeholder="상세주소" value="" required />
+                                        </div>
+                                    </div>
                                 <div class="personalterms">
                                     <fieldset>
                                         <legend>이용약관동의</legend>
@@ -176,23 +200,18 @@
                         
                                     <input type="checkbox" id="RequiredSignupAge">
                                     <span>본인은 만 14세 이상입니다.(필수)</span>
-
-                            </ul>
                             </div>
-
-
+                        </fieldset>
+                        <div>
+                            <input class="signSubmit" type="submit" value="가입하기" onclick="subm">
+                    </div>           
                         </div>
-                        
-                        <br><br><br>
+                    </form>
+
                         
                     
-                </fieldset>
-                    <div>
-                        <input class="signSubmit" type="submit" value="가입하기" onclick="subm">
-                    </div>           
                     
                 
-            </form>
         </div>
         
     </section>
