@@ -1,0 +1,39 @@
+.page-wrapper{
+    padding: 0px 1em;
+}
+
+.page-title h1{
+    font-size: 25pt;
+    padding-bottom: 15px;
+}
+
+.page-content{
+    padding-top: 24px;
+}
+
+.filter-wrapper ul{
+    display: flex;
+}
+
+.filter-wrapper ul li{
+    padding-right: 10px;
+}
+
+.filter-wrapper ul li button{
+    position: relative;
+    top: 0px;
+    background-color: #ffd2c4;
+    padding: 12px;
+    color: #676767;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: all .1s ease-in;
+}
+
+.filter-wrapper ul li button:hover{
+    top: -2px;
+    box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+    background-color: #f35f4c;
+    color: #fff;
+}

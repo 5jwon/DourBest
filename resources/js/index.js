@@ -11,3 +11,6 @@ list.forEach((item) => {
         changeIndicator(event.target)
     });
 });
+
+// const likebt = document.querySelector('.like svg');
+// console.log(likebt);

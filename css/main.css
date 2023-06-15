@@ -12,6 +12,10 @@ section{
     position: static;
 }
 
+.swiper-wrapper{
+    padding: 10px 0px;
+}
+
 .swiper-slide > a {
     position: relative;
     /* 임시 */
@@ -62,68 +66,7 @@ section{
     padding: 0px 0px 40px;
 }
 
-.item-cards {
-    display: grid;
-    grid-template-rows: auto;
-    grid-gap: 30px;
-}
 
-.card {
-    min-height: 100%;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    display: flex;
-    flex-direction: column;
-    color: #444;
-    position: relative;
-    top: 0;
-    transition: all .1s ease-in;
-}
-
-.card:hover {
-    top: -2px;
-    box-shadow: 0 4px 5px rgba(0,0,0,0.2);
-}
-
-.card article {
-    padding: 10px;
-    display: flex;
-    flex: 1;
-    justify-content: space-between;
-    flex-direction: column;
-}
-
-.thumb{
-    background-image: url("/resources/img/pexels-jane-doan-1099680.jpg");
-}
-
-.card .thumb {
-    padding-bottom: 70%;
-    background-size: cover;
-    background-position: center center;
-}
-
-.card p { 
-    flex: 1; 
-    line-height: 1.4;
-    font-size: 12px;
-    color: #999;
-    letter-spacing: .05em;
-}
-
-h1 {
-    font-size: 20px;
-    margin: 0;
-    color: #333;
-}
-
-.card span {
-    font-size: 12px;
-    font-weight: bold;
-    color: #999;
-    text-transform: uppercase;
-    letter-spacing: .05em;
-    margin: 2em 0 0 0;
-}
 
 /* 배너 */
 
@@ -193,9 +136,11 @@ h1 {
 
 .item-thumb{
     background-image: url("/resources/img/pexels-jane-doan-1099680.jpg");
-    padding-bottom: 70%;
     background-size: cover;
-    background-position: center center;
+    padding-bottom: 70%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
 }
 .swiper-button-next, .swiper-button-prev{
     background-color: #fff;
@@ -211,7 +156,7 @@ h1 {
     font-weight: 600;
 }
 
-.item{
+.item-wrapper{
     display: flex;
     flex-direction: column;
     color: #444;
@@ -226,26 +171,3 @@ h1 {
     justify-content: space-between;
     flex-direction: column;
 }
-
-
-
-/* 반응형 */
-@media only screen and (min-width: 500px) {
-    .item-cards {
-        grid-template-columns: 1fr 1fr;
-    }  
-    .item-1 {
-        grid-column: 1/ span 2;
-        grid-row: 1/ span 2;
-    }
-    .item-1 h1 {
-        font-size: 15px;
-    }
-}
-
-@media only screen and (min-width: 850px) {
-    .item-cards {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-}
-

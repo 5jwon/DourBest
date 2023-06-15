@@ -61,3 +61,7 @@ img {
     overflow: hidden;
     visibility: hidden;
 } 
+
+.none{
+    display: none;
+}
