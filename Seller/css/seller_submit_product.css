@@ -338,3 +338,89 @@ html .ui-button.ui-state-disabled:active { border: 0px solid #c5c5c5; background
     display: flex;
 
 }
+
+.options {
+    padding-left: 150px;
+    width: 100%;
+}
+
+.option {
+    padding: 22px;
+    border: 1px solid rgb(185, 185, 185);
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0px 1px 2px 0px rgb(196, 196, 196);
+}
+
+.opt-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.opt-title {
+    font-size: 1.6em;
+    font-weight: 900;
+}
+
+.opt-amount {
+    background-color: #ffd2c4;
+    font-size: 12px;
+    color: #f35f4c;
+    font-weight: 700;
+    padding: 3px 5px;
+    border-radius: 3px;
+}
+
+.line {
+    margin-top: 20px;
+    border-bottom: 1px solid rgb(255, 221, 221);
+}
+
+.opt-mid {
+    margin-top: 20px;
+}
+
+.opt-name {
+    overflow-wrap: break-word;
+    max-width: 335px;
+    color: rgb(82, 82, 82);
+    font-size: 1.1em;
+    font-weight: 550;
+}
+
+.opt-info {
+    margin-top: 15px;
+    font-weight: 500;
+    color: gray;
+}
+
+.opt-bot1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.del-price1, .del-date1 {
+    color: gray;
+}
+
+.opt-bot2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.opt-bottom {
+    margin-top: 30px;
+    text-align: right;
+}
+
+.opt-bottom button {
+    box-shadow: 0px 1px 2px 0px rgb(182, 182, 182);
+    border-radius: 5px;
+    padding: 3px;
+    background-color: #ffd2c4;
+    border: 1px solid #ebc1b4;
+    color: #f35f4c;
+}
