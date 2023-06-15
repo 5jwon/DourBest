@@ -15,14 +15,20 @@
     <div class="wrapper">
         <!-- 헤더 -->
         <header>
-            <div class="header-container flex-wrapper">
+            <div class="header-container">
                 <!-- 헤더 상단 메뉴 -->
-                <div class="header-top flex-wrapper">
-                    <h1>
-                        <div href="javascript:void(0);">
+                <div class="header-top">
+                        <div>
                             <img class="logo" src="../../resources/img/logo.jpeg" alt="DourBest로고">
                         </div>
-                    </h1>
+                        <div>
+                            <div>
+                                <img class="adminlogo" src="../../resources/img/adminlogo.png" alt="admin로고">
+                            </div>
+                            <div class="adminName">
+                                관리자 ~~~님 환영합니다!
+                            </div>
+                        </div>
                 </div>
             </div>
         </header>
@@ -38,7 +44,7 @@
                         <div id="sidebutton1" class="sideMenuButton">
                             계정 관리
                         </div>
-                        <div id="sidebutton2" class="sideMenuButton">
+                        <div id="sidebuttonMain" class="sideMenuButton">
                             펀딩 목록 관리
                         </div>
                         <div id="sidebutton3" class="sideMenuButton">
@@ -50,7 +56,7 @@
                         <div id="sidebutton5" class="sideMenuButton">
                             신고 관리
                         </div>
-                        <div id="sidebuttonMain" class="sideMenuButton">
+                        <div id="sidebutton6" class="sideMenuButton">
                             쿠폰 관리
                         </div>
                     </div>
@@ -60,14 +66,29 @@
                 <div id="backgroundpage">
                     <!-- 메인 메뉴 항목-->
                     <div id="mainMenuContainer">
-                        <div id="mainMenuButton1" class="mainMenuButton" >
-                            쿠폰 발급
+                        <div id="mainMenuButton1" class="FundingMenuButton" >
+                            오픈 예정 펀딩 목록
                         </div>
-                        <div id="mainMenuButton2" class="mainMenuButton">
-                            쿠폰 발급 내역 조회
+                        <div id="mainMenuContainernotfirst" class="FundingMenuButton">
+                            진행중인 펀딩 목록
                         </div>
-                        <div id="mainMenuButton3" class="mainMenuButton">
-                            쿠폰 사용 내역 조회
+                        <div id="mainMenuButton3" class="FundingMenuButton">
+                            완료된 펀딩 목록
+                        </div>
+                        <div id="mainMenuButton4" class="FundingMenuButton">
+                            승인된 펀딩 목록
+                        </div>
+                        <div id="mainMenuButton5" class="FundingMenuButton">
+                            신청한 펀딩 목록
+                        </div>
+                        <div id="mainMenuButton6" class="FundingMenuButton">
+                            판매자 등록 신청 목록
+                        </div>
+                        <div id="mainMenuButton7" class="FundingMenuButton">
+                            반려된 펀딩 목록
+                        </div>
+                        <div id="mainMenuButton8" class="FundingMenuButton">
+                            중단된 펀딩 목록
                         </div>
                     </div>
 
@@ -137,14 +158,25 @@
                     </div>
                     </section>
                 </div>
+                <ul class="pagination">
+                    <li class="page-prev">
+                      <a class="prev" href="#"><svg t="1580195949197" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4493" width="20" height="20"><path d="M906.78272 588.78976c-0.02048 8.4992-6.88128 15.36-15.38048 15.37024l-443.6992-0.01024 75.70432 191.68256c2.51904 6.42048 0.48128 13.76256-5.03808 17.90976-5.51936 4.16768-13.13792 4.1472-18.61632-0.09216l-376.5248-289.47456c-3.77856-2.89792-6.00064-7.41376-6.00064-12.16512 0-4.78208 2.22208-9.27744 6.00064-12.1856l376.5248-289.47456c2.7648-2.11968 6.06208-3.19488 9.37984-3.19488 3.23584 0 6.5024 1.03424 9.23648 3.10272 5.51936 4.1472 7.5776 11.48928 5.03808 17.90976L447.68256 419.84l443.71968-0.01024c8.4992 0.01024 15.36 6.88128 15.36 15.36L906.78272 588.78976z" p-id="4494" fill="#777777"></path></svg></a>
+                    </li>
+                    <li class="page-number active"><a href="#">1</a></li>
+                    <li class="page-number"><a href="#">2</a></li>
+                    <li class="page-number"><a href="#">3</a></li>
+                    <li class="page-number"><a href="#">4</a></li>
+                    <li class="page-number"><a href="#">5</a></li>
+                    <li class="page-number"><a href="#">6</a></li>
+                    <li class="page-next">
+                      <a class="next" href="#"><svg t="1580195920917" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4995" width="20" height="20"><path d="M906.77248 512c0 4.77184-2.21184 9.2672-5.9904 12.17536l-376.5248 289.4848c-2.7648 2.11968-6.06208 3.18464-9.3696 3.18464-3.25632 0-6.5024-1.03424-9.24672-3.09248-5.50912-4.15744-7.5776-11.48928-5.03808-17.90976l75.71456-191.67232L132.58752 604.17024c-8.48896 0-15.36-6.88128-15.36-15.36l0-153.6c0-8.48896 6.87104-15.36 15.36-15.36l443.72992 0-75.71456-191.68256c-2.53952-6.42048-0.47104-13.75232 5.04832-17.90976 5.50912-4.15744 13.12768-4.13696 18.60608 0.09216l376.5248 289.4848C904.56064 502.7328 906.77248 507.22816 906.77248 512z" p-id="4996" fill="#777777"></path></svg></a>
+                    </li>
+                  </ul>
                 </section>
+                
                 <script>
 
 
-                    $('.mainMenuButton').click(function() {
-                        $('.mainMenuButton').removeClass('active');
-                        $(this).addClass('active');
-                    });
 
                     $('.FundingMenuButton').click(function() {
                         $('.FundingMenuButton').removeClass('active');
@@ -169,6 +201,26 @@
                             window.location.href = '../report/report.html'; // 신고 관리 페이지로 이동합니다.
                         } else if (buttonId === 'sidebutton6') {
                             window.location.href = '../coupon/coupon.html'; // 쿠폰 관리 페이지로 이동합니다.
+                        }
+                    });
+                    $('.FundingMenuButton').click(function() {
+                        var buttonId = $(this).attr('id'); // 클릭한 버튼의 id를 가져옵니다.
+                        
+
+                        if (buttonId === 'mainMenuButton1') {
+                            window.location.href = '../funding/willopenfunding.html'; // 오픈 예정 펀딩 목록
+                        } else if (buttonId === 'mainMenuButton3') {
+                            window.location.href = '../funding/Finishedfunding.html'; // 진행중인 펀딩 목록
+                        } else if (buttonId === 'mainMenuButton4') {
+                            window.location.href = '../funding/ApprovedFunding.html'; // 완료된 펀딩 목록
+                        } else if (buttonId === 'mainMenuButton5') {
+                            window.location.href = '../funding/FUNDINGAPPLIED.html'; // 승인된 펀딩 목록
+                        } else if (buttonId === 'mainMenuButton6') {
+                            window.location.href = '../funding/SellerRegistration.html'; // 신청한 펀딩 목록
+                        } else if (buttonId === 'mainMenuButton7') {
+                            window.location.href = '../funding/rejectedfunding.html'; // 판매자 등록 목록
+                        } else if (buttonId === 'mainMenuButton8') {
+                            window.location.href = '../funding/Suspendedfunding.html'; // 반려된 펀딩 목록
                         }
                         
                     });

@@ -7,7 +7,7 @@
     <title>home</title>
     <!-- 폰트어썸 링크 -->
     <script src="https://kit.fontawesome.com/5db9941ba1.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="../../css/admin.css">
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 </head>
 <body>
@@ -20,7 +20,7 @@
                 <div class="header-top flex-wrapper">
                     <h1>
                         <div href="javascript:void(0);">
-                            <img class="logo" src="../resources/img/logo.jpeg" alt="DourBest로고">
+                            <img class="logo" src="../../resources/img/logo.jpeg" alt="DourBest로고">
                         </div>
                     </h1>
                 </div>
@@ -140,7 +140,7 @@
                 </section>
                 <script>
 
-$('.mainMenuButton').click(function() {
+                    $('.mainMenuButton').click(function() {
                         $('.mainMenuButton').removeClass('active');
                         $(this).addClass('active');
                     });
@@ -159,7 +159,7 @@ $('.mainMenuButton').click(function() {
                         if (buttonId === 'sidebutton1') {
                             window.location.href = '../account/account.html'; // 계정 관리 페이지로 이동합니다.
                         } else if (buttonId === 'sidebutton2') {
-                            window.location.href = '../funding/funding.html'; // 펀딩 목록 관리 페이지로 이동합니다.
+                            window.location.href = '../funding/willopenfunding.html'; // 펀딩 목록 관리 페이지로 이동합니다.
                         } else if (buttonId === 'sidebutton3') {
                             window.location.href = '../statistics/statistics.html'; // 결제 통계 확인 페이지로 이동합니다.
                         } else if (buttonId === 'sidebutton4') {
@@ -172,7 +172,7 @@ $('.mainMenuButton').click(function() {
                         
                     });
                     $(".logo").click(function(){
-                        window.location.href = 'index.html';
+                        window.location.href = '../../index.html';
                     })
                 </script>
             </div>
