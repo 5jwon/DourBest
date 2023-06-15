@@ -1,0 +1,66 @@
+/* Fonts */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400);
+
+/* fontawesome */
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+[class*="fontawesome-"]:before {
+font-family: 'FontAwesome', sans-serif;
+}
+
+.content {
+    font-family: 'Helvetica Neue';
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.title {
+    font-weight: bold;
+    color: #5c5c5c;
+    margin-top: 5%;
+}
+
+.symbol {
+    -webkit-text-stroke: 13px white;
+    font-size: 150px;
+    color: #37b20a;
+}
+
+.text {
+    margin-top: 15px;
+    font-size: 25px;
+    color: #5c5c5c;
+    text-align: center;
+    font-family: 'avenir';
+    font-weight: bold;
+    border: 2px;
+}
+
+.button-panel {
+    margin: 2em 0 0;
+    width: 100%;
+}
+
+.button-panel {
+    background: #f16272;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    height: 50px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    letter-spacing: 0.05em;
+    text-align: center;
+    text-transform: uppercase;
+    transition: background 0.3s ease-in-out;
+    width: 40%;
+    position: relative;
+    left: 30%;
+    margin-top: 13%;
+}
+
+.button:hover {
+    background: #ee3e52;
+}
