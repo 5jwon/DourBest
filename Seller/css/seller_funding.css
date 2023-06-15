@@ -1,0 +1,61 @@
+.fundingpage {
+    padding: 15px 0px;
+    min-width: 1000px;
+}
+
+.top-nav {
+    border-top: 1px solid rgb(216, 216, 216);
+    border-bottom: 1px solid rgb(216, 216, 216);
+    padding: 15px;
+    width: 100%;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: center;
+}
+
+.top-nav div {
+    padding: 8px;
+    margin: 0 70px;
+    cursor: pointer;
+    background-color: #ffd2c4;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px 0px #e7bfb2;
+}
+
+.fundmain {
+    display: flex;
+    padding-top: 60px;
+}
+
+.photo {
+    background-image: url(../../resources/img/background.jpg);
+    width: 800px;
+    height: 530px;
+    background-size: cover;
+    border-radius: 30px;
+    box-shadow: 0px 1px 2px 0px rgb(179, 179, 179);
+}
+
+.red {
+    color: #f35f4c;
+    font-weight: 600;
+}
+
+.underphoto div{
+    font-size: 1.8em;
+    
+}
+
+.underphoto {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.line {
+    border-right: 1px solid rgb(211, 211, 211);
+    margin-right: 30px;
+    padding-right: 40px;
+}
