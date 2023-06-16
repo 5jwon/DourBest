@@ -230,13 +230,39 @@ height: 100px;
     margin-left: 20px;
 }
 
+#fundSortation1{
+    margin-left:80px;
+    margin-right: 50px;
+}
+#fundSortation2{
+    margin: auto 100px;
+}
+#fundSortation3{
+    margin: auto 180px;
+}
+#fundSortation4{
+    margin: auto 15px;
+}
+#fundSortation5{
+    margin : auto 38px;
+}
+#fundSortation6{
+    margin-left : 20px;
+}
+
+
 
 
 
 .fundlistPageLine{
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     border-bottom: 1px solid rgba(128, 128, 128, 0.5);
     
+
+}
+#fundlistPageLine1{
+    border-bottom: 2px solid #E54945;
+    box-shadow: 4px 0px 0px 0px  rgb(200, 200, 200);
 }
 
 .listPageLine{
@@ -423,3 +449,26 @@ height: 100px;
     border-radius: 5px;
 }
 
+#fundApplied{
+    width: 100px;
+    height: 45px;
+    margin-left: 302px;
+    margin-top: -40px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: bold;
+}
+#fundApplied:hover{ 
+    background-color: #E54945;
+    color: #FFD2C4;
+    border: #E54945;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.fundcheckbox{
+    margin-bottom: 25px;
+}
