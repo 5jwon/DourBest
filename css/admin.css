@@ -211,27 +211,32 @@ height: 100px;
 }
 
 #Sortation1{
-    margin-left:50px;
-    margin-right:20px;
+    margin : auto 60px;
 
 }
 #Sortation2{
-    margin: auto 40px;
+    margin: auto 50px;
 }
 #Sortation3{
-    margin: auto 30px;
+    margin: auto 180px;
 }
 #Sortation4{
-    margin: auto 30px;
+    margin: auto 40px;
 }
 #Sortation5{
-    margin: auto 200px;
+    margin: auto 70px;
 }
 #Sortation6{
-    margin: auto 55px;
+    margin-left: 20px;
 }
-#Sortation7{
-    margin: auto 10px;
+
+
+
+
+.fundlistPageLine{
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+    
 }
 
 .listPageLine{
@@ -417,3 +422,4 @@ height: 100px;
     font-weight: bold;
     border-radius: 5px;
 }
+
