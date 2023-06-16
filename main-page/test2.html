@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Count Textarea Remaining Characters </title>
+
+<style>
+
+textarea{
+width:100%;
+Height:80px;
+}
+textarea:focus{
+outline:none;
+}
+.textarea-container h3{
+ color:blue;
+ margin-top:50px;
+}
+.textarea-container{
+ padding-left:20%;
+ width:50%;
+}
+</style>
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+</head>
+<body>
+
+<div class="textarea-container">
+  <textarea onkeydown="remainingChars(50, this)" placeholder="Enter Characters.."></textarea>
+<div><span id="remainingChars"> </span></div>
+</div>
+
+<script type="text/javascript">
+  var remainingChars= function(maxChars, input){
+    var totalChars= input.value.length;
+    var remaining= (maxChars - totalChars);
+    var displayChars=document.getElementById('remainingChars');
+
+    if(remaining>0){
+    displayChars.innerHTML="Remaining characters: "+remaining;
+    displayChars.style.color="green";
+    input.style.borderColor = "green";
+    }else{
+    displayChars.innerHTML="Remaining character: 0";
+    displayChars.style.color="red";
+    input.style.borderColor = "red";
+    }
+}
+</script>
+</body>
+</html>
