@@ -68,14 +68,14 @@
                             <span>필수입력사항</span>
                         </div>
                     </div>
-                    <form action="" method="get">
+                    <form action="" method="POST">
                         <div class="new memberInfo">
                             <div class="new id-info"> 
                                 <div class="new1 id-label">
                                     <label for="userId">아이디</label>
                                 </div>
                                 <div class="new2 id-input">
-                                    <input type="text" id="userId" size="30" placeholder="아이디를 입력해주세요" required><br>
+                                    <input type="text" id="userId" size="30" placeholder="아이디를 입력해주세요" required minlength="6"><br>
                                     <div id="idError" class="error"></div>
                                 </div>
                                 <div>
@@ -89,7 +89,7 @@
                                     <label for="password">비밀번호</label>
                                 </div>
                                 <div class="new2 password-input">
-                                    <input type="password" id="password" placeholder="비밀번호를 입력해주세요" required><br>
+                                    <input type="password" id="password" placeholder="비밀번호를 입력해주세요" required minlength="10"><br>
                                     <div id="pwdError" class="error"></div>
                                 </div>
                             </div>
@@ -98,7 +98,7 @@
                                     <label for="passwordConfirm">비밀번호 확인</label>
                                 </div>
                                 <div class="new2 password-cf-input">
-                                    <input type="password" id="passwordConfirm" placeholder="비밀번호를 한번 더 입력해주세요" required><br>
+                                    <input type="password" id="passwordConfirm" placeholder="비밀번호를 한번 더 입력해주세요" required minlength="10"><br>
                                     <div id="pwdcError" class="error"></div>
                                 </div>
                             </div>
@@ -166,13 +166,15 @@
                                     </div>
                                 <div class="personalterms">
                                     <fieldset>
-                                        <legend>이용약관동의</legend>
                                         <label for="TremsArryAll">
+                                            <div id="termstitle">
+                                                <legend>이용약관동의</legend>
+                                            </div>
+                                        </label>
                                             <ul>
                                                 <span>전체 동의합니다.</span>
                                                 <input type="checkbox" id="TremsArryAll">
-                                                <p>선택항목에 동의하지 않은 경우도 회원가입 및 일반적인 서비스를 이용할수 있습니다.</p>
-                                            </label>
+                                                <p class="c">선택항목에 동의하지 않은 경우도 회원가입 및 일반적인 서비스를 이용할수 있습니다.</p>
                                     <div>
                                         <input type="checkbox" id="RequiredTerms1 Condition">
                                         <label for="">
@@ -184,7 +186,6 @@
                                             </div>
                                     </div>
                                     <div>
-
                                         <input type="checkbox" id="RequiredTerms1 Privacy">
                                         <label for="">
                                             <span>개인정보 수집 이용동의(필수)</span>
@@ -194,26 +195,20 @@
                                                 <p>개인정보 이용약관 내용</p>
                                             </div>
                                         </div>
+                                        <input type="checkbox" id="SignupEventAll">
+                                        <span>무료배송 할인쿠폰 등 혜택/정보 수신동의(선택)</span><br>
+                                        
+                                        <input type="checkbox" id="RequiredSignupAge">
+                                        <span>본인은 만 14세 이상입니다.(필수)</span>
+                                    </div>
+                                    <div>
+                                        <input class="signSubmit" type="submit" value="가입하기" onclick="subm">
+                                    </div>           
                                 </div>
-                                    <input type="checkbox" id="SignupEventAll">
-                                    <span>무료배송 할인쿠폰 등 혜택/정보 수신동의(선택)</span><br>
-                        
-                                    <input type="checkbox" id="RequiredSignupAge">
-                                    <span>본인은 만 14세 이상입니다.(필수)</span>
                             </div>
-                        </fieldset>
-                        <div>
-                            <input class="signSubmit" type="submit" value="가입하기" onclick="subm">
-                    </div>           
-                        </div>
-                    </form>
 
-                        
-                    
-                    
-                
-        </div>
-        
+                    </form>
+                </div> 
     </section>
 </main>
         <!-- 푸터 -->
