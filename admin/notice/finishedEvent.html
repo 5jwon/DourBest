@@ -70,8 +70,11 @@
                         <div id="mainMenuButton1" class="mainMenuButton" >
                             공지사항
                         </div>
-                        <div id="mainMenuContainernotfirst" class="mainMenuButton">
+                        <div id="mainMenuButton2" class="mainMenuButton">
                             진행중인 이벤트
+                        </div>
+                        <div id="mainMenuContainernotfirst" class="mainMenuButton">
+                            종료된 이벤트
                         </div>
                     </div>
 
@@ -105,36 +108,32 @@
 
 
                         
+
                         <div class="listPageLine">
-                            <div id="fundlistPageLine1" class="fundlistPageLine">
+                            <div id="listPageLine1" class="listPageLine">
+
+                            </div>
+                            <div id="listPageLine2" class="listPageLine">
+
+                            </div>
+                            <div id="listPageLine3" class="listPageLine">
+
+                            </div>
+                            <div id="listPageLine4" class="listPageLine">
+
+                            </div>
+                            <div id="listPageLine5" class="listPageLine">
+
+                            </div>
+                            <div id="listPageLine6" class="listPageLine">
+
+                            </div>
+                            <div id="listPageLine7" class="listPageLine">
+
+                            </div>
+                            <div id="listPageLine8" class="listPageLine">
                                 
                             </div>
-                            <input type="checkbox" class="fundcheckbox" name="my_checkbox" value="1">
-                            <div id="fundlistPageLine2" class="fundlistPageLine">
-                                
-                            </div>
-                            <input type="checkbox" class="fundcheckbox" name="my_checkbox" value="1">
-                            <div id="fundlistPageLine3" class="fundlistPageLine">
-
-                            </div>
-                            <input type="checkbox" class="fundcheckbox" name="my_checkbox" value="1">
-                            <div id="fundlistPageLine4" class="fundlistPageLine">
-
-                            </div>
-                            <input type="checkbox" class="fundcheckbox" name="my_checkbox" value="1">
-                            <div id="fundlistPageLine5" class="fundlistPageLine">
-
-                            </div>
-                            <input type="checkbox" class="fundcheckbox" name="my_checkbox" value="1">
-                            <div id="fundlistPageLine6" class="fundlistPageLine">
-
-                            </div>
-                            <input type="checkbox" class="fundcheckbox" name="my_checkbox" value="1">
-                            <div id="fundlistPageLine7" class="fundlistPageLine">
-
-                            </div>
-                            <input type="checkbox" class="fundcheckbox" name="my_checkbox" value="1">
-
                         </div>
 
 
@@ -156,8 +155,6 @@
                     <li class="page-next">
                       <a class="next" href="#"><svg t="1580195920917" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4995" width="20" height="20"><path d="M906.77248 512c0 4.77184-2.21184 9.2672-5.9904 12.17536l-376.5248 289.4848c-2.7648 2.11968-6.06208 3.18464-9.3696 3.18464-3.25632 0-6.5024-1.03424-9.24672-3.09248-5.50912-4.15744-7.5776-11.48928-5.03808-17.90976l75.71456-191.67232L132.58752 604.17024c-8.48896 0-15.36-6.88128-15.36-15.36l0-153.6c0-8.48896 6.87104-15.36 15.36-15.36l443.72992 0-75.71456-191.68256c-2.53952-6.42048-0.47104-13.75232 5.04832-17.90976 5.50912-4.15744 13.12768-4.13696 18.60608 0.09216l376.5248 289.4848C904.56064 502.7328 906.77248 507.22816 906.77248 512z" p-id="4996" fill="#777777"></path></svg></a>
                     </li>
-                    <button type="button" id="createadminAccount">등록</button>
-                    <button type="button" id="Withdrawal">삭제</button>  
                 </ul>
 
                 </section>
@@ -194,10 +191,12 @@
                         }
                         
                     });
-                    $('#mainMenuButton1').click(function() {
+                    $('.mainMenuButton').click(function() {
                         var buttonId = $(this).attr('id'); // 클릭한 버튼의 id를 가져옵니다.
                         if (buttonId === 'mainMenuButton1') {
                             window.location.href = '../notice/notice.html'; // 오픈 예정 펀딩 목록
+                        } else if (buttonId === 'mainMenuButton2') {
+                            window.location.href = '../notice/ongoingEvent.html'; // 종료된 이벤트
                         }
                     });
                     $(".logo").click(function(){
