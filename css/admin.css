@@ -510,3 +510,15 @@ height: 100px;
 #couponSortation5{
     margin: auto 70px;
 }
+
+.CServicelogo{
+    margin-top: 15px;
+    width: 230px;
+    height: 100px;
+}
+
+.headerlogo{
+    font-size: 30px;
+    font-weight: bolder;
+    line-height: 3.5cm; 
+}
