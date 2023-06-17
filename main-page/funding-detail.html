@@ -15,43 +15,6 @@
     <link rel="stylesheet" href="/css/page.css">
 <style>
 
-        /* 모달 창 스타일 */
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.4);
-}
-    
-    .modal-content {
-    position: relative;
-    background-color: #fefefe;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    }
-    .close {
-    color: #aaaaaa;
-    position: absolute;
-    font-size: 28px;
-    font-weight: bold;
-    top: 0px;
-    right: 10px;
-    transition: all .1s ease-in;
-}
-
-.close:hover,
-.close:focus {
-    color: #f35f4c;
-    text-decoration: none;
-    cursor: pointer;
-}
 </style>
 </head>
 <body>
@@ -103,15 +66,21 @@
                     <div class="page-title">
                         <h1>펀딩 세부 내역</h1>
                     </div>
-                    <div class="funding-container">
-                        <div class="status"></div>
-                        <div class="funding-image">
-                            <a href=""></a>
+                    <div class="funding-container flex-wrapper">
+                        <div class="funding-content flex-wrapper">
+                            <div class="status">
+                                <span>펀딩완료</span>
+                            </div>
+                            <div class="funding-image">
+                                <a href=""></a>
+                            </div>
                         </div>
                         <div class="funding-detail">
-                            <p>펀딩제목</p>
-                            <p>구매옵션이에요요요ㅛㅇㅇ요요ㅛ요요용용</p>
-                            <p>수량 3게</p>
+                            <p class="detail-title">펀딩제목펀딩제목펀딩제목펀딩제목펀딩제목펀딩제목펀딩제목펀딩제목펀딩제목펀딩제목</p>
+                            <p class="detail-sub">구매옵션이에요요요ㅛㅇㅇ요요ㅛ요요용용</p>
+                            <p class="detail-count">펀딩 종료날짜</p>
+                            <p class="detail-count">수량 3게</p>
+                            <p class="detail-count">수량 3게</p>
                         </div>
                     </div>
                     <div class="finding-credit">
@@ -158,34 +127,6 @@
         </footer>
     </div>
     <script src="/resources/js/index.js"></script>
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script>
-        const modal = document.querySelector(".modal");
-        const btn = document.querySelector(".myBtn");
-        const $span = document.querySelector(".close");
-        
-        window.addEventListener('click', (event)=>{
-            if (event.target === modal) {
-                closeModal();
-            }
-        })
 
-        btn.addEventListener('click', openModal);
-        $span.addEventListener('click', closeModal);
-
-        function openModal() {
-            modal.style.display = "block";
-            modal.animate([{opacity: 0}, {opacity: 1}], {duration: 300, fill: "forwards"});
-        }
-    
-        function closeModal() {
-            modal.animate([{opacity: 1}, {opacity: 0}], {duration: 300, fill: "forwards"}).onfinish = function() {
-                modal.style.display = "none";
-            };
-        }
-        </script>
-    <!-- Initialize Swiper -->
-    <script src="/resources/js/swiper.js"></script>
 </body>
 </html>
