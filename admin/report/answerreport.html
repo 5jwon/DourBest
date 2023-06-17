@@ -69,11 +69,8 @@
                         <div id="mainMenuButton1" class="mainMenuButton" >
                             신고 내역
                         </div>
-                        <div id="mainMenuButton2" class="mainMenuButton">
-                            신고 처리 내역
-                        </div>
                         <div id="mainMenuContainernotfirst" class="mainMenuButton">
-                            답변한 신고 내역
+                            신고 처리 내역
                         </div>
                     </div> 
 
@@ -185,9 +182,6 @@
                         var buttonId = $(this).attr('id'); // 클릭한 버튼의 id를 가져옵니다.
                         if (buttonId === 'mainMenuButton1') {
                             window.location.href = '../report/Report Resolution.html'; // 오픈 예정 펀딩 목록
-                        }
-                        if (buttonId === 'mainMenuButton2') {
-                            window.location.href = '../report/reportdetails.html'; // 오픈 예정 펀딩 목록
                         }
                     });
                     $(".logo").click(function(){
