@@ -86,14 +86,14 @@
                         </div>
                     </div>
 
-                    <!-- 아이디 검색 버튼 -->
+                    <!-- 펀딩 제목 검색 버튼 -->
                     <div class="memberIDSearchContainer">
                         <div id="memberID" class="memberIDButton">
-                            아이디
+                            제목
                         </div>
-                        <div id="inputID" class="memberIDButton">
-                            검색하실 회원의 아이디를 입력해주세요
-                        </div>
+                        <input type="text" placeholder="검색하실 펀딩의 제목을 입력해주세요" id="inputID" class="memberIDButton">
+                            
+                        </input>
                         <div id="searchButton" class="memberIDButton">
                             검색
                         </div>
@@ -182,7 +182,7 @@
                         } else if (buttonId === 'sidebutton2') {
                             window.location.href = '../funding/willopenfunding.html'; // 펀딩 목록 관리 페이지로 이동합니다.
                         } else if (buttonId === 'sidebutton3') {
-                            window.location.href = '../statistics/AllPirce.html'; // 결제 통계 확인 페이지로 이동합니다.
+                            window.location.href = '../statistics/AllPrice.html'; // 결제 통계 확인 페이지로 이동합니다.
                         } else if (buttonId === 'sidebutton4') {
                             window.location.href = '../notice/notice.html'; // 공지사항 페이지로 이동합니다.
                         } else if (buttonId === 'sidebutton5') {
@@ -197,7 +197,7 @@
                         var buttonId = $(this).attr('id'); // 클릭한 버튼의 id를 가져옵니다.
 
                         if (buttonId === 'mainMenuButton1') {
-                            window.location.href = '../statistics/AllPrice.html'; // 오픈 예정 펀딩 목록
+                            window.location.href = '../statistics/AllPirce.html'; // 오픈 예정 펀딩 목록
                         } else if (buttonId === 'mainMenuButton2') {
                             window.location.href = '../statistics/AllInquiry.html'; // 진행중인 펀딩 목록
                         } else if (buttonId === 'mainMenuButton4') {
