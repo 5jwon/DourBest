@@ -75,14 +75,14 @@
                         <div id="mainMenuButton3" class="mainMenuButton">
                             총 통계 좋아요 순 목록
                         </div>
-                        <div id="mainMenuButton3" class="mainMenuButton">
+                        <div id="mainMenuButton4" class="mainMenuButton">
                             월 통계 금액 순 목록
                         </div>
-                        <div id="mainMenuButton3" class="mainMenuButton">
-                            월 통계 좋아요 순 목록
-                        </div>
-                        <div id="mainMenuButton3" class="mainMenuButton">
+                        <div id="mainMenuContainernotfirst" class="mainMenuButton">
                             월 통계 조회수 순 목록
+                        </div>
+                        <div id="mainMenuButton6" class="mainMenuButton">
+                            월 통계 좋아요 순 목록
                         </div>
                     </div>
 
@@ -100,26 +100,32 @@
                     </div>
                     <!-- 조회 결과 페이지 -->   
                     <div class="listPage">
+
+
+
                         <div class="SortationContainer">
                             <div id="Sortation1" class="SortationList">
                                 아이디
                             </div>
-                            <div id="Sortation2" class="SortationList">
-                                이름
-                            </div>
-                            <div id="Sortation3" class="SortationList">
+                            <div id="statSortation2" class="SortationList">
                                 이메일
                             </div>
+                            <div id="statSortation3" class="SortationList">
+                                펀딩 제목
+                            </div>
                             <div id="Sortation4" class="SortationList">
-                                등급
+                                조회수
                             </div>
                             <div id="Sortation5" class="SortationList">
-                                가입일자
+                                등급
                             </div>
                             <div id="Sortation6" class="SortationList">
-                                판매자 등록 여부
+                                펀딩 종료 날짜
                             </div>
                         </div>
+
+
+
                         <div class="listPageLine">
                             <div id="listPageLine1" class="listPageLine">
 
@@ -188,6 +194,27 @@
                         }
                         
                     });
+
+                    
+                    $('.mainMenuButton').click(function() {
+                        var buttonId = $(this).attr('id'); // 클릭한 버튼의 id를 가져옵니다.
+
+                        if (buttonId === 'mainMenuButton1') {
+                            window.location.href = '../statistics/AllPrice.html'; // 오픈 예정 펀딩 목록
+                        } else if (buttonId === 'mainMenuButton2') {
+                            window.location.href = '../statistics/AllInquiry.html'; // 진행중인 펀딩 목록
+                        } else if (buttonId === 'mainMenuButton3') {
+                            window.location.href = '../statistics/AllGood.html'; // 완료된 펀딩 목록
+                        } else if (buttonId === 'mainMenuButton4') {
+                            window.location.href = '../statistics/MonthPrice.html'; // 승인된 펀딩 목록
+                        } else if (buttonId === 'mainMenuButton6') {
+                            window.location.href = '../statistics/MonthGood.html'; // 신청한 펀딩 목록
+                        } 
+                        
+                    });
+
+
+                    
                     $(".logo").click(function(){
                         window.location.href = '../../index.html';
                     })

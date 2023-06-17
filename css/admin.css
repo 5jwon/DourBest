@@ -472,3 +472,20 @@ height: 100px;
 .fundcheckbox{
     margin-bottom: 25px;
 }
+
+#statSortation2{
+    margin-left: 70px;
+}
+#statSortation3{
+    margin: auto 185px;
+}
+
+#noticeSortation1{
+    margin: auto 80px;
+}
+#noticeSortation2{
+    margin : auto 400px;
+}
+#noticeSortation3{
+    margin-left: 20px;
+}
