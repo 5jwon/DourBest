@@ -6,32 +6,32 @@
     <title>Document</title>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <style>
-    #myform fieldset{
+    #contact fieldset{
         display: inline-block;
         direction: rtl;
         border:0;
     }
-    #myform fieldset legend{
+    #contact fieldset legend{
         text-align: right;
     }
-    #myform input[type=radio]{
+    #contact input[type=radio]{
         display: none;
     }
-    #myform fieldset label{
+    #contact fieldset label{
         font-size: 3em;
         color: transparent;
         text-shadow: 0 0 0 #f0f0f0;
     }
-    #myform fieldset label:hover{
+    #contact fieldset label:hover{
         text-shadow: 0 0 0 rgba(250, 208, 0, 0.99);
     }
-    #myform fieldset label:hover ~ label{
+    #contact fieldset label:hover ~ label{
         text-shadow: 0 0 0 rgba(250, 208, 0, 0.99);
     }
-    #myform fieldset input[type=radio]:checked ~ label{
+    #contact fieldset input[type=radio]:checked ~ label{
         text-shadow: 0 0 0 rgba(250, 208, 0, 0.99);
     }
-    .reviewContents {
+    .contactContents {
         width: 100%;
         height: 150px;
         padding: 10px;
@@ -59,11 +59,11 @@
     cursor: pointer;
 }
 
-    .modal-title{
+    .contactmodal-title{
   font-weight: bold;
   font-size: 28px;
 }
-.modal-content {
+.contactmodal-content {
   position: relative;
   background-color: #fefefe;
   padding: 40px;
@@ -71,14 +71,14 @@
   border: 1px solid #888;
   border-radius: 16px;
 }
-.modal-container{
+.contactmodal-container{
   display: flex;
   justify-content: center;
   height: 100%;
   align-items: center;
 }
 
-.modal {
+.contactmodal {
     display: none;
     position: fixed;
     z-index: 1;
@@ -90,7 +90,7 @@
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-.modal-title{
+.contactmodal-title{
     margin-top: 0px;
 }
 
@@ -133,7 +133,7 @@
     top:-2px;
 }
 
-.myform button[type=submit]{
+.contact button[type=submit]{
     position: relative;
     top: 0;
     display: block;
@@ -151,10 +151,10 @@
     transition: all .15s ease-in;
 }
 
-.myform button[type=submit]:hover{
+.contact button[type=submit]:hover{
     top: -2px;
 }
-.myform select{
+.contact select{
     border: solid 1.5px #b4b4b4;
     border-radius: 5px;
     padding: 5px 10px;
@@ -167,14 +167,13 @@
 </style>
 </head>
 <body>
-    <button class="myBtn">모달 테스트</button>
-
-    <div class="modal">
-        <div class="modal-container">
-            <div class="modal-content">
+    <button class="contactBtn">모달 테스트</button>
+    <div class="contactmodal">
+        <div class="contactmodal-container">
+            <div class="contactmodal-content">
                 <span class="close">&times;</span>
-                <h2 class="modal-title">1:1 문의</h2>
-                <form class="mb-3 myform" name="myform" id="myform" method="post">
+                <h2 class="contactmodal-title">1:1 문의</h2>
+                <form class="mb-3 contact" name="contact" id="contact" method="post">
                     <label for=""></label>
                     <select name="contactCode" id="contactCode">
                         <option value="">회원 정보 문의</option>
@@ -184,12 +183,12 @@
                         <option value="">서비스 이용 문의</option>
                         <option value="">신고 문의</option>
                     </select>
-                    <textarea class="col-auto form-control reviewContents" type="text" id="" placeholder="최소10이상 작성해주세요!!" maxlength="3000"></textarea>
+                    <textarea class="col-auto form-control contactContents" type="text" id="" placeholder="최소10이상 작성해주세요!!" maxlength="3000"></textarea>
                     <div class="file-container">
-                        <label for="imgInput">
+                        <label for="contact-imgInput">
                             <span><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#f35f4c}</style><path d="M149.1 64.8L138.7 96H64C28.7 96 0 124.7 0 160V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V160c0-35.3-28.7-64-64-64H373.3L362.9 64.8C356.4 45.2 338.1 32 317.4 32H194.6c-20.7 0-39 13.2-45.5 32.8zM256 192a96 96 0 1 1 0 192 96 96 0 1 1 0-192z"/></svg>문의 이미지</span>
                         </label>
-                        <input type="file" id="imgInput" onchange="readURL(this)">
+                        <input type="file" id="contact-imgInput" onchange="contactreadURL(this)">
                         <div class="contact-imgdiv"></div>
                     </div>
                     <button class="" type="submit">제출</button>
@@ -198,22 +197,22 @@
         </div>
     </div>
     <script>
-        const modal = document.querySelector(".modal");
-        const btn = document.querySelector(".myBtn");
+        const contactmodal = document.querySelector(".contactmodal");
+        const btn = document.querySelector(".contactBtn");
         const $span = document.querySelector(".close");
         
     
-        btn.addEventListener('click', openModal);
-        $span.addEventListener('click', closeModal);
+        btn.addEventListener('click', openContactModal);
+        $span.addEventListener('click', closeContactModal);
     
-        function openModal() {
-            modal.style.display = "block";
-            modal.animate([{opacity: 0}, {opacity: 1}], {duration: 300, fill: "forwards"});
+        function openContactModal() {
+            contactmodal.style.display = "block";
+            contactmodal.animate([{opacity: 0}, {opacity: 1}], {duration: 300, fill: "forwards"});
         }
     
-        function closeModal() {
-            modal.animate([{opacity: 1}, {opacity: 0}], {duration: 300, fill: "forwards"}).onfinish = function() {
-                modal.style.display = "none";
+        function closeContactModal() {
+            contactmodal.animate([{opacity: 1}, {opacity: 0}], {duration: 300, fill: "forwards"}).onfinish = function() {
+                contactmodal.style.display = "none";
                 const $img = document.querySelector(".contact-imgdiv");
                 if($img.hasChildNodes()){
                     $img.replaceChildren();
@@ -222,7 +221,7 @@
         }
         </script>
         <script>
-            function readURL(obj) {
+            function contactreadURL(obj) {
                 
                 let reader = new FileReader();
                 if(!obj.files.length) {

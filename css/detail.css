@@ -26,3 +26,124 @@
     justify-content: space-between;
 }
 
+.funding-container{
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    border: 1px solid #b4b4b4;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+.funding-container > div{
+    flex-basis: 50%;
+}
+
+.funding-container > div:nth-child(1){
+    justify-content: center;
+}
+
+.funding-content{
+    flex-direction: column;
+    padding: 20px;
+}
+
+.status{
+    margin-bottom: 10px;
+}
+
+.status span{
+    background-color: #f35f4c;
+    color: #fff;
+    padding: 6px;
+    border-radius: 5px;
+    letter-spacing: 0.1em;
+
+}
+
+.funding-image a {
+    display: block;
+    border-radius: 15px;
+} 
+
+.funding-image img{
+    width: 300px;
+    border-radius: 15px;
+}
+
+.funding-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.funding-detail p{
+    display: flex;
+    justify-content: space-between;
+}
+
+.funding-detail p span{
+    font-size: 17px;
+    padding: 10px 0px;
+}
+
+.funding-detail p span:nth-child(1){
+    font-weight: bold;
+}
+.funding-detail p span:nth-child(2){
+    padding-right: 30px;
+}
+
+.detail-title{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.funding-info > div{
+    flex-basis: 50%;
+}
+
+
+.info-title{
+    background-color: #b4b4b4;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px; 
+    letter-spacing: 0.05em;
+}
+
+.funding-info{
+    border: 1px solid #b4b4b4;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.funding-info ul{
+    padding: 20px;
+}
+
+.funding-info ul li{
+    display: flex;
+    justify-content: space-between;
+}
+
+.funding-info > div:nth-child(1){
+    border-right: 1px solid #b4b4b4;
+}
+
+.finding-credit ul li p, .delivery-info ul li p{
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+
+.finding-credit li p:nth-child(1), .delivery-info li p:nth-child(1){    
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 750px) {
+    .funding-container{
+        flex-direction: column;
+    }
+}
