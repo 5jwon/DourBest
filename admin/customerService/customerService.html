@@ -7,7 +7,7 @@
     <title>home</title>
     <!-- 폰트어썸 링크 -->
     <script src="https://kit.fontawesome.com/5db9941ba1.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../../css/admin.css">
+    <link rel="stylesheet" href="../../css/CustomerService.css">
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 </head>
 <body>
@@ -17,11 +17,22 @@
         <div class="header-container">
             <!-- 헤더 상단 메뉴 -->
             <div class="header-top">
-                <div class="headerlogo">
+
+                <div id="headerlogo">
                     DourBest 고객센터
                 </div>
+
+                <div id="inquiryGo">
+                    문의 등록
+                </div>
+
+                <div id="mainGo">
+                    메인페이지
+                </div>
+
             </div>
         </div>
+
     </header>
 
     <!-- 헤더 상단 메뉴-->
@@ -109,17 +120,57 @@
 
 
     <!-- 자주 찾는 도움말 -->
-    <div class="FrequentlyHelp">
-        자주 찾는 도움말
+    <div class="FrequentlyHelpContainor">
+        <div class="FrequentlyHelp">
+            자주 찾는 도움말
+        </div>
+        <br>
+
+        <div  class="QuestionsListContainer">
+            <div class="QuestionsList">
+                <div class="QuestionsHead">
+                    회원 정보 변경은 어떻게 하나요?
+                </div>
+                <div class="QuestionsBody">
+                    기본 정보 설정에서 닉네임, 이메일, 연락처를 변경할수 있어요. 연락처 변경 시, 새로운 연락처로 인증번호가 발송되며<br>
+                    이메일 변경 시에도 벼경을 원하는 이메일로 인증번호를 받으실수 있습니다.
+                    
+                </div>
+            </div>
+            <div class="QuestionsList">
+                <div class="QuestionsHead">
+                    포인트는 어떻게 사용하나요?
+                </div>
+                <div class="QuestionsBody">
+                    다워베스트포인트는 펀딩하기 혹은 프리오더 구매시 사용할 수 있어요 펀딩포인트는 1포인트가 1원의 가치와 동일하며 <br>
+                    100포인트 이상의 단위로 사용할수 있어요.
+                </div>
+            </div>
+            <div class="QuestionsList">
+                <div class="QuestionsHead">
+                    회원 정보 변경은 어떻게 하나요?
+                </div>
+                <div class="QuestionsBody">
+                    기본 정보 설정에서 닉네임, 이메일, 연락처를 변경할수 있어요. 연락처 변경 시, 새로운 연락처로 인증번호가 발송되며<br>
+                    이메일 변경 시에도 벼경을 원하는 이메일로 인증번호를 받으실수 있습니다.
+                </div>
+            </div>
+            <div class="QuestionsList">
+                <div class="QuestionsHead">
+                    포인트는 어떻게 사용하나요?
+                </div>
+                <div class="QuestionsBody">
+                    다워베스트포인트는 펀딩하기 혹은 프리오더 구매시 사용할 수 있어요 펀딩포인트는 1포인트가 1원의 가치와 동일하며 <br>
+                    100포인트 이상의 단위로 사용할수 있어요.
+                </div>
+            </div>
+        </div>
+
+
     </div>
-    
-    
-    
-    
-    
-    
+    </div>
     <script>
-    $(".logo").click(function(){
+    $("#mainGo").click(function(){
         window.location.href = '../../index.html';
     })
     </script>

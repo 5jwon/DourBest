@@ -86,7 +86,7 @@
                         </div>
                     </div>
 
-                    <!-- 아이디 검색 버튼 -->
+                    <!-- 펀딩 제목 검색 버튼 -->
                     <div class="memberIDSearchContainer">
                         <div id="memberID" class="memberIDButton">
                             제목
@@ -97,9 +97,10 @@
                         <div id="searchButton" class="memberIDButton">
                             검색
                         </div>
+                    </div>
                     <!-- 조회 결과 페이지 -->   
                     <div class="listPage">
-
+                        
 
                         <div class="SortationContainer">
                             <div id="Sortation1" class="SortationList">
@@ -121,7 +122,6 @@
                                 펀딩 종료 날짜
                             </div>
                         </div>
-
 
 
                         <div class="listPageLine">
@@ -192,6 +192,7 @@
                         }
                         
                     });
+
                     $('.mainMenuButton').click(function() {
                         var buttonId = $(this).attr('id'); // 클릭한 버튼의 id를 가져옵니다.
 
@@ -208,8 +209,6 @@
                         } 
                         
                     });
-                    
-                    
                     $(".logo").click(function(){
                         window.location.href = '../../index.html';
                     })

@@ -86,7 +86,7 @@
                         </div>
                     </div>
 
-                    <!-- 아이디 검색 버튼 -->
+                    <!-- 펀딩 제목 검색 버튼 -->
                     <div class="memberIDSearchContainer">
                         <div id="memberID" class="memberIDButton">
                             제목
@@ -97,9 +97,10 @@
                         <div id="searchButton" class="memberIDButton">
                             검색
                         </div>
+                    </div>
                     <!-- 조회 결과 페이지 -->   
                     <div class="listPage">
-
+                        
 
                         <div class="SortationContainer">
                             <div id="Sortation1" class="SortationList">
@@ -112,7 +113,7 @@
                                 펀딩 제목
                             </div>
                             <div id="Sortation4" class="SortationList">
-                                조회수
+                                좋아요
                             </div>
                             <div id="Sortation5" class="SortationList">
                                 등급
@@ -196,7 +197,7 @@
                         var buttonId = $(this).attr('id'); // 클릭한 버튼의 id를 가져옵니다.
 
                         if (buttonId === 'mainMenuButton1') {
-                            window.location.href = '../statistics/AllPirce.html'; // 오픈 예정 펀딩 목록
+                            window.location.href = '../statistics/AllPrice.html'; // 오픈 예정 펀딩 목록
                         } else if (buttonId === 'mainMenuButton3') {
                             window.location.href = '../statistics/AllGood.html'; // 진행중인 펀딩 목록
                         } else if (buttonId === 'mainMenuButton4') {

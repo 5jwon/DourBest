@@ -1,0 +1,146 @@
+.header-top{
+    display: flex;
+}
+
+
+
+#inquiryGo{
+    text-align: center;
+    border-radius: 5px;
+    width: 85px;
+    height: 35px;
+    margin-left: 590px;
+    font-size: 15px;
+    line-height: 35px;
+    border: 1px solid #E54945;
+    font-weight: bold;
+    margin-top: 23px;
+    cursor: pointer;
+    color: #E54945;
+}
+#mainGo{
+    width: 100px;
+    text-align: center;
+    border-radius: 5px;
+    height: 35px;
+    margin-left: 30px;
+    font-size: 15px;
+    line-height: 35px;
+    border: 1px solid #E54945;
+    font-weight: bold;
+    margin-top: 23px;
+    cursor: pointer;
+    color: #E54945;;
+
+}
+
+.CServicelogo{
+    margin-top: 15px;
+    width: 230px;
+    height: 100px;
+}
+
+#headerlogo{
+    margin-top: -15px;
+    margin-left: 420px;
+    font-size: 25px;
+    font-weight: bolder;
+    line-height: 3.5cm; 
+}
+
+ 
+.helpmain{
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(to right,  rgb(205, 217, 229) 60%, rgba(164, 185, 204, 0.9));
+    position: relative;
+} 
+
+
+.helpImage{
+    width: auto;
+    margin: auto 700px;
+    margin-bottom: -4px;
+}
+
+.helpmaininfo{
+    position: absolute;
+    top: 21%;
+	left: 17.5%;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+}
+.searchButtonService{
+    position: absolute;
+    top: 63%;
+    left:17.5%;
+    width:570px;
+    height: 45px;
+    background-color: rgb(205, 217, 229);
+    border-radius: 7px;
+    border: 1px solid white;
+}
+.InquiryContainer{
+    margin-top: 50px;
+}
+.Inquiry{
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    /* border: 1px solid black; */
+}
+.firstLine{
+    display: flex;
+    margin-top: 70px;
+}
+.secondLine{
+    display: flex;
+    margin-top: px;
+
+}
+
+#Inquir1{
+    margin-left: 340px;
+    flex-direction:column;
+}
+#Inquir5{
+    margin-left: 340px;
+}
+
+.icon{
+    width: 60px;
+    height: 60px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.FrequentlyHelpContainor{
+    display: flex;
+    margin-top: 00px;
+}
+
+.FrequentlyHelp{
+    margin-left:420px;
+    margin-bottom : 20px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.QuestionsListContainer{
+    margin-left:200px;
+}
+
+.QuestionsHead{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.QuestionsBody{
+    font-size: 15px;
+    margin-bottom: 30px;
+}

@@ -86,7 +86,7 @@
                         </div>
                     </div>
 
-                    <!-- 아이디 검색 버튼 -->
+                    <!-- 펀딩 제목 검색 버튼 -->
                     <div class="memberIDSearchContainer">
                         <div id="memberID" class="memberIDButton">
                             제목
@@ -97,8 +97,11 @@
                         <div id="searchButton" class="memberIDButton">
                             검색
                         </div>
+                    </div>
                     <!-- 조회 결과 페이지 -->   
                     <div class="listPage">
+                        
+
                         <div class="SortationContainer">
                             <div id="Sortation1" class="SortationList">
                                 아이디
@@ -110,7 +113,7 @@
                                 펀딩 제목
                             </div>
                             <div id="Sortation4" class="SortationList">
-                                금액
+                                좋아요
                             </div>
                             <div id="Sortation5" class="SortationList">
                                 등급
@@ -119,6 +122,8 @@
                                 펀딩 종료 날짜
                             </div>
                         </div>
+
+
                         <div class="listPageLine">
                             <div id="listPageLine1" class="listPageLine">
 
@@ -177,7 +182,7 @@
                         } else if (buttonId === 'sidebutton2') {
                             window.location.href = '../funding/willopenfunding.html'; // 펀딩 목록 관리 페이지로 이동합니다.
                         } else if (buttonId === 'sidebutton3') {
-                            window.location.href = '../statistics/AllPirce.html'; // 결제 통계 확인 페이지로 이동합니다.
+                            window.location.href = '../statistics/AllPrice.html'; // 결제 통계 확인 페이지로 이동합니다.
                         } else if (buttonId === 'sidebutton4') {
                             window.location.href = '../notice/notice.html'; // 공지사항 페이지로 이동합니다.
                         } else if (buttonId === 'sidebutton5') {
@@ -187,7 +192,6 @@
                         }
                         
                     });
-
 
                     $('.mainMenuButton').click(function() {
                         var buttonId = $(this).attr('id'); // 클릭한 버튼의 id를 가져옵니다.
@@ -205,8 +209,6 @@
                         } 
                         
                     });
-
-
                     $(".logo").click(function(){
                         window.location.href = '../../index.html';
                     })
