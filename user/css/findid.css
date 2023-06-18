@@ -4,21 +4,39 @@
     margin: 0px auto;
     letter-spacing: -0.6px;
     background-color: rgb(255, 255, 255);
+    
 }
 
 /* 타이틀 */
 .pagetitle {
-    padding: 50px 0px 30px;
+    padding: 50px 0px 1px;
     text-align: center;
+    left: 18.94%;
+    right: 18.94%;
+    top: 32.97%;
+    bottom: 67.03%;
+    border-bottom: 2px solid rgb(51, 51, 51);
     
+}
+
+.pagetitle h1 {
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 25px;
+        line-height: 98px;
+        color: rgb(51, 51, 51);
+
+
 }
 
 /* 입력박스 */
 .inputboxs {
-
-    margin-top: 23px;
+    
     position: relative;
     height: 51px;
+    padding-top: 30px;
 
 }
 
@@ -40,9 +58,20 @@
 
 /* 박스 간격 */
 .inputboxs div {
-
     padding-bottom: 13px;
 }
+
+.inputboxs div label{
+
+    float: left;
+    display: inline-block;
+    margin-bottom: 13px;
+    font-weight: 700;
+    color: rgb(51, 51, 51);
+}
+
+
+
 .loginMain{
 
     font-weight: 800;
@@ -88,4 +117,15 @@
 
     text-align: right;
 
+}
+
+.emailsend{
+
+    display: contents;    
+}
+
+.findIdresult h1 {
+
+    position: fixed;
+    font-size: 40px;
 }

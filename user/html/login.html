@@ -57,27 +57,29 @@
         <main>
             <section>
                 <div class="login">
-                    <div class="loginMain">
-                        로그인
+                    <div class="pagetitle">
+                        <h1>로그인</h1>
                     </div>
                 <form>
                     <input type="hidden" value="사이트를 통한 로그인">
-                    <div class="inputMargin">
-                        <div>
-                            <input data-testid="input-box" type="text" class="userId" placeholder="아이디를 입력해주세요." autofocus value>
-                        </div>
-                        <div class="boxMargin2">
-                            <input type="password" class="password" placeholder="비밀번호를 입력해주세요" autocomplete="off" value>
-                        </div>
-                    </div>
-                        <input type="checkbox" id="RequiredTermsCondition">
-                    <span>아이디 저장하기</span><br>
-                    <div class="finding">
-                            <a href="">아이디찾기</a>
-                            <span class="line">│</span>
-                            <a href="">비밀번호찾기</a>
-                    </div>
+                    <div class="inputboxs">
 
+                        <div class="inputMargin">
+                            <div>
+                                <input data-testid="input-box" type="text" class="userId" placeholder="아이디를 입력해주세요." autofocus value>
+                            </div>
+                            <div class="boxMargin2">
+                                <input type="password" class="password" placeholder="비밀번호를 입력해주세요" autocomplete="off" value>
+                            </div>
+                        </div>
+                        <input type="checkbox" id="RequiredTermsCondition">
+                        <span>아이디 저장하기</span><br>
+                        <div class="finding">
+                            <a href="/user/html/findId.html">아이디찾기</a>
+                            <span class="line">│</span>
+                            <a href="/user/html/findpw.html">비밀번호찾기</a>
+                        </div>
+                    </div>
                     <div class="buttons">
                         <div>
                             <button class="loginButton" type="submit">
