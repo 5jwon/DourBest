@@ -32,3 +32,25 @@
 .cate-img{
     margin-bottom: 5px;
 }
+
+.cate-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.cate-main span{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.order li a{
+    /* padding: 20px; */
+    padding: 0px 10px;
+    font-size: 16px;
+}
+
+.order li:not(:nth-child(3)){
+    border-right: 1px solid #b4b4b4;
+}
