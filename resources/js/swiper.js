@@ -36,3 +36,11 @@ new Swiper(".swiper2", {
 	},
 	
 });
+
+
+new Swiper(".review", {
+    pagination: {
+		el: ".swiper-pagination",
+		draggable: true,
+	},
+});

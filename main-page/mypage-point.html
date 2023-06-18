@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/css/default.css">
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/mypage.css">
+    <link rel="stylesheet" href="/css/point.css">
 </head>
 <body>
     <div class="wrapper">
@@ -136,15 +137,41 @@
                         </div>
                         <div class="point-container">
                             <div class="mypoint">
-                                <p>현재 나의 포인트 <strong>0</strong>p</p>
+                                <p>현재 나의 포인트 <strong>200</strong>p</p>
                             </div>
-                            <div>
+                            <div class="mypoint-wrapper">
                                 <h2>적립금 이용내역</h2>
-                                <div>
-                                    <table>
-                                        <thead></thead>
-                                        <tbody></tbody>
-                                    </table>
+                                <div id="mypoint-list">
+                                    <div class="point-table">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>날짜</th>
+                                                    <th>내용</th>
+                                                    <th>금액</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>2022.06.30</td>
+                                                    <td>포인트 적립</td>
+                                                    <td>+ 300</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2022.06.30</td>
+                                                    <td>포인트 사용</td>
+                                                    <td>- 100</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div class="pagination">
+                                            <a href="#">prev</a>
+                                            <a href="#" class="active">1</a>
+                                            <a href="#">2</a>
+                                            <a href="#">3</a>
+                                            <a href="#">next</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

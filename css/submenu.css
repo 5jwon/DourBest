@@ -1,0 +1,34 @@
+.submenu-container ul{
+    justify-content: center;
+}
+
+.submenu-container ul li{
+    flex-basis: 100px;
+    padding: 10px;
+}
+
+.submenu-container ul li a{
+    position: relative;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    border: 1px solid #b4b4b4;
+    padding: 10px 0px;
+    transition: ease-out 0.2s;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.submenu-container ul li a:hover{
+    top: -2px;
+    background-color: #e5e5e5;
+    color: #f35f4c;
+}
+
+.cate-img{
+    margin-bottom: 5px;
+}
