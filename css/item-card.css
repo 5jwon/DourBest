@@ -2,6 +2,7 @@
     display: grid;
     grid-template-rows: auto;
     grid-gap: 30px;
+    margin-bottom: 40px;
 }
 
 .item-cards div{
