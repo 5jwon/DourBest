@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,43 +12,127 @@
     <link rel="stylesheet" href="/DourBest/css/header.css">
     <link rel="stylesheet" href="/DourBest/giwon-seller/css/payment-page.css">
 </head>
+
 <body>
     <div class="wrapper">
         <!-- 헤더 -->
         <header>
             <div class="header-container flex-wrapper">
                 <!-- 헤더 상단 메뉴 -->
-                
+
                 <div class="header-top flex-wrapper">
                     <h1>
                         <a href="javascript:void(0);">
                             <img class="logo" src="/DourBest/resources/img/logo.jpeg" alt="DourBest로고">
                         </a>
-                    </div>
-                
-                    </h1>
-                    <div class="header-text">
-                        <p class="main-text">주문 결제하기</p>
-                    </div>
+                </div>
 
                 
+
+
 
             </div>
         </header>
         <!-- 메인 -->
         <main>
+
+            
             <section>
+                
+            <div class="main-container0">
+                <div class="header-text">
+                    <p class="main-text">주문 결제하기</p>
+                </div>
+                <div class="main-container5">
+                    <div class="final-payment text1">최종 결제금액</div>
+                    <ul>
+                        <li class="text2 final-detaile">상품가격</li>
+                        <li class="text2 final-detaile">쿠폰할인</li>
+                        <li class="text2 final-detaile">포인트사용</li>
+                        <li class="text2 final-detaile">배송비</li>
+                    </ul>
+                </div>
+
+                
+
                 <div class="main-container">
                     <div class="payment-text">
-                        <div class="payment-tetails">주문 상품 정보 </div>
+                        <div class="payment-tetails text1">주문 상품 정보 </div>
                         <div class="product-img"><img src="/DourBest/resources/img/adminlogo.png" alt=""></div>
                     </div>
-                    <div class="product-name">플레이스테이션 5</div>
+                    <div class="product-name text2">플레이스테이션 5</div>
                 </div>
-                
+
+                <div class="main-container6">
+                    <div class="payment-method text1">결제 방법</div>
+                    <div class="checkbox-payment">
+                            <input id="box1" type="checkbox" />
+                            <label for="box1">신용카드</label>
+                            <input id="box2" type="checkbox" />
+                            <label for="box2">법인카드</label>
+                        </div>
+
+
+                    </input>
+
+
+                        </form>
+                    <div class="card-choice1 form-select">
+                        <select >
+                            <option disabled="disabled" selected="select-box">카드를 선택해주세요</option>
+                            <option>국민</option>
+                            <option >비씨</option>
+                            <option >신한</option>
+                            <option >현대</option>
+                            <option >삼성</option>
+                            <option >롯데</option>
+                            <option >외환</option>
+                            <option >NH</option>
+                            <option >하나</option>
+                            <option >우리</option>
+                            <option >광주</option>
+                            <option >수협</option>
+                            <option >씨티</option>
+                            <option >전북</option>
+                            <option >제주</option>
+                            <option >카카오뱅크</option>
+                            <option >케이뱅크</option>
+                        </select>
+                    </div>
+                    <div class="card-choice2 form-select">
+                        <select>
+                            <option>일시불</option>
+                            <option>2개월</option>
+                            <option>3개월</option>
+                            <option>4개월</option>
+                            <option>5개월</option>
+                            <option>6개월</option>
+                            <option>7개월</option>
+                            <option>8개월</option>
+                            <option>9개월</option>
+                            <option>10개월</option>
+                            <option>11개월</option>
+                            <option>12개월</option>
+                        </select>
+                    </div>
+                    
+                </div>
+
+                <div class="main-container7">
+                    <div class="consent"></div>
+                    <input type="checkbox" class="consent">
+                    <label for="box3">전체 동의</label>
+                    <input type="checkbox" class="consent">
+                    <label for="box4">구매조건 확인 및 결제진행에 동의</label>
+                    <div class="button-panel">
+                        <button class="button-payment">결제하기</button>
+                    </div>
+                </div>
+
+
                 <div class="main-container2">
-                    <div class="payment-tetails">주문자 정보</div>
-                    <ul class="information">
+                    <div class="payment-tetails text1">주문자 정보</div>
+                    <ul class="information text2">
                         <li>홍길동</li>
                         <li>010-12345-5678</li>
                         <li>이메일@naver.com</li>
@@ -55,13 +140,45 @@
                 </div>
 
                 <div class="main-container3">
-                    <div class="address">배송지 정보</div>
-                    <div class="address-text"></div>
-                    <div class="address-text"></div>
-                    <div class="address-text"></div>
-                    <div class="address-text"></div>
-
+                    <div class="address text1">배송지 정보</div>
+                    <div class="address-text text2">이름 들어갈곳</div>
+                    <div class="address-text text2">상세주소</div>
+                    <div class="address text1">배송메모 <br>
+                        <div class="message-select form-select">
+                            <select name="" id="">
+                                <option value="" disabled="disabled" selected="select-box">요청사항을 선택해주세요</option>
+                                <option>배송 전에 미리 연락 바랍니다.</option>
+                                <option>부재시 경비실에 맡겨 주세요.</option>
+                                <option>부재시 전화 주시거나 문자 남겨 주세요.</option>
+                                <option>문앞에 놔주세요.</option>
+                            </select>
+                        </div>
+                    </div>
                 </div>
+                <div class="main-container4">
+                    <div class="coupon-point text1">쿠폰/포인트</div>
+                    <div>
+                        <div class="coupon-text text3">쿠폰</div>
+                        <div class="coupon-application">적용된 쿠폰이 얼마인지 뜨는곳</div>
+                        <div class="button-interval">
+                        <div class="button-panel">
+                            <button class="button">쿠폰 적용</button>
+                        </div>
+                        <div class="point text3">포인트</div>
+                        <div class="button-panel">
+                            <button class="button">전액사용</button>
+                        </div>
+                        </div>
+                        <div class="hold-point text3">보유 포인트 :</div>
+                        <div class="point-application">포인트 얼마인지 뜨는곳</div>
+                        <div class="hold-point2">5,000 포인트 이상 보유 및 10,000원 이상 구매시 사용 가능</div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
             </section>
         </main>
         <!-- 푸터 -->
@@ -72,4 +189,5 @@
     </div>
     <script src="./index.js"></script>
 </body>
+
 </html>
