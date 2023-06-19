@@ -142,6 +142,12 @@
     font-weight: bold;
 }
 
+.delivery-status{
+    font-weight: bold;
+    color: #f35f4c;
+}
+
+
 @media only screen and (max-width: 750px) {
     .funding-container{
         flex-direction: column;
