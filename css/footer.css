@@ -1,0 +1,67 @@
+@import url('https://webfontworld.github.io/gmarket/GmarketSans.css');
+        
+.gmarket {
+    font-family: 'GmarketSans';
+}
+
+address {
+    font-style: normal;
+}
+.ir_so {
+    overflow: hidden;
+    position: absolute;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    text-indent: -9999px;
+}
+
+/* common */
+.container {
+    padding: 0 20px;
+}
+
+.section > h2 {
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    line-height: 1;
+    text-align: center;
+}
+.section > p {
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 70px;
+    line-height: 1.5;
+    color: #777;
+    text-align: center;
+}
+
+/* footerType */
+footer{
+    padding: 30px 0px;
+    border-top: 1px solid #ccc;
+}
+
+.footer__menu {
+    display: flex;
+    justify-content: space-between;
+}
+.footer__menu > div {
+    width: 20%;
+    text-align: left;
+}
+.footer__menu > div h3 {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.footer__menu > div li a {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #777;
+    font-weight: 300;
+}
+.footer__right {
+    text-align: center;
+}
