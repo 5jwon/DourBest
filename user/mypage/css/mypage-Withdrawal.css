@@ -78,20 +78,30 @@ option {
 
 .focusment {
     font-size: 25px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     color:#3c3c3c;
 }
 
 .focusment2 {
-    font-size: 25px;
-    margin-bottom: 20px;
+    font-size: 20px;
+    margin-bottom: 40px;
+    color:#3c3c3c;
+}
+
+.focusment3 {
+    font-size: 20px;
+    margin-bottom: 10px;
     color:#3c3c3c;
 }
 
 .focus {
-    margin: 40px auto;
+    margin: 24px auto;
     border-bottom: 1px solid rgb(51, 51, 51);
 
+}
+
+.focus2 {
+    margin: 3px auto;
 }
 
 .reason p {
@@ -119,4 +129,21 @@ option {
     display: block;
     text-align: right;
 
+}
+
+.checkButton:hover {
+
+    background-color: #f14933;
+    color: white;
+    transition: .4s;
+
+}
+
+.catenick2 {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 27px;
+    padding: auto;
+    display:flex;
+   
 }
