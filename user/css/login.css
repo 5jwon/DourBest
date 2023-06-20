@@ -109,3 +109,11 @@
     text-align: right;
 
 }
+
+.inputMargin input:focus{
+
+
+    border: 2px solid #f35f4c;
+    cursor: pointer;
+
+}

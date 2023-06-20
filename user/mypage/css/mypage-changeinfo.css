@@ -1,13 +1,15 @@
 
-.signupPage{height: 1053px;
+.changeinfo-container{
+    
+    width: 650px;
+    height: 1053px;
     padding-top:55px;
     padding-bottom:75px;
-}
-.new memberInfo{
-    margin: 0 auto;
-    width : 700px;
-    padding-right: 7rem;
-    padding-left: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
 }
 
 
@@ -22,11 +24,6 @@ color: rgb(51, 51, 51);
 
 }
 
-.memberInfo {
-
-margin:auto;
-
-}
 
 .new2 input {
 
@@ -42,32 +39,29 @@ line-height: 1.5;
 color: black;
 outline: none;
 box-sizing: border-box;
+margin-bottom: 20px;
 
 }
+
+
+
 
 .new label {
 
-padding-top: 12px;
-width: 110px;
-font-weight: 1000;
-color: rgb(51, 51, 51);
-line-height: 20px;
-
+    display: inline-flex;
+    padding: 10px 5px;
+    float: left;
+    width: 110px;
+    font-weight: 1000;
 }
 
-.new > div {
+.new2 > div {
 
-display: inline-flex;
-padding: 10px 5px;
+    display: inline-flex;
+    padding: 10px 5px;
+    
+    }
 
-}
-
-.newid-info{
-
-
-padding: 10px 20px;
-
-}
 .new ::placeholder {
 
 width: 100%;
@@ -76,54 +70,16 @@ text-align: left;
 }
 
 
-.signupPage {
+.new adress-info button {
 
-width: 700px;
-margin: 0px auto;
-letter-spacing: -0.6px;
-background-color: rgb(255, 255, 255);
+    display: inline-flex;
 }
 
 
-.signtop {
-
-padding-bottom: 10px;
-border-bottom: 2px solid rgb(51, 51, 51);
-font-size: 12px;
-color: rgb(102, 102, 102);
-line-height: 17px;
-text-align: right;
-
-}
+.changeinfo-container button {
 
 
-
-.new button{
-
-
-margin: 0px auto;
-width: 155px;
 height: 46px;
-text-align: center;
-border-radius: 4px;
-border: 1px solid #f35f4c;
-font-weight: 400;
-font-size: 16px;
-line-height: 1.5;
-color: #f35f4c;
-outline: none;
-box-sizing: border-box;
-float:right;
-}
-
-
-.signSubmit {
-
-width: 500px;
-padding-top: 30px;
-margin: 0px auto;
-height: 46px;
-padding: 4px 11px 1px 15px;
 border-radius: 4px;
 border: 1px solid #f35f4c;
 font-weight: 400;
@@ -136,19 +92,20 @@ box-sizing: border-box;
 
 }
 
-.new button:hover {
+.findingButton {
 
-background-color: #f14933;
-color: white;
-transition: .4s;
-
+    justify-content: center;
+    width: 300px;
+    margin: 13px auto;
+    display: flex;
+    text-align: justify;
 }
 
-.signSubmit:hover {
+.new button:hover {
 
-background-color: #f14933;
-border-color: #f14933;
-transition: .3s;
+background-color: red;
+color: white;
+transition: .4s;
 
 }
 
@@ -161,50 +118,13 @@ font-weight: 700;
 display: none;
 }
 
-.adress-info div {
+.postcode {
 
-flex-direction: column;
-padding: 10px 8px 10px 0px;
-
+    display: flex;
 }
 
-.persnalterms {
+.postcode button {
 
-flex: auto;
-}
-
-.persnalterms p {
-
-
-text-align: right;
-}
-
-#termstitle {
-
-font-size: 30px;
-}
-
-.persnalterms .c {
-
-font-size: 12px;
-color: rgb(102, 102, 102);
-padding-top: 4px;
-padding-left: 36px;
-}
-
-.focusment2 {
-font-size: 25px;
-margin-bottom: 20px;
-color:#3c3c3c;
-}
-
-.focus {
-margin: 40px auto;
-border-bottom: 1px solid rgb(51, 51, 51);
-
-}
-
-.reason p {
-    margin-bottom: 13px;
-    font-size: 15px;
+    margin-left: 18px;
+    width: 100px;
 }

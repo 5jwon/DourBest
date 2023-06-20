@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>home</title>
-        <!-- 폰트어썸 링크 -->
-        <script src="https://kit.fontawesome.com/5db9941ba1.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="/css/default.css">
-        <link rel="stylesheet" href="/css/header.css">
-        <link rel="stylesheet" href="/user/css/signUp.css">
-        <script src="/user/js/signup.js"></script>
-        <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <!-- 폰트어썸 링크 -->
+    <script src="https://kit.fontawesome.com/5db9941ba1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/default.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/user/css/signUp.css">
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 </head>
+
 <body>
     <div class="wrapper">
         <!-- 헤더 -->
@@ -48,7 +49,8 @@
                         <div class="search-form">
                             <form action="" class="flex-wrapper">
                                 <input type="search" placeholder="Search">
-                                <button type="submit"><i class="fa-solid fa-magnifying-glass" style="color: #e54944;"></i></button>
+                                <button type="submit"><i class="fa-solid fa-magnifying-glass"
+                                        style="color: #e54944;"></i></button>
                             </form>
                         </div>
                     </div>
@@ -57,11 +59,12 @@
         </header>
         <!-- 메인 -->
         <main>
-            <section class = "signupPage">
+            <section class="signupPage">
                 <title>sign up</title>
-                <div class="signup">  <!--전체 감싸는 div-->
+                <div class="signup"> <!--전체 감싸는 div-->
                     <div class="signup Name">
-                        <h1>회원가입</h1></div>
+                        <h1>회원가입</h1>
+                    </div>
                     <div class="signtop">
                         <div>
                             <span>*</span>
@@ -70,12 +73,13 @@
                     </div>
                     <form action="" method="POST">
                         <div class="new memberInfo">
-                            <div class="new id-info"> 
+                            <div class="new id-info">
                                 <div class="new1 id-label">
                                     <label for="userId">아이디</label>
                                 </div>
                                 <div class="new2 id-input">
-                                    <input type="text" id="userId" size="30" placeholder="아이디를 입력해주세요" required minlength="6"><br>
+                                    <input type="text" id="userId" size="30" placeholder="아이디를 입력해주세요" required
+                                        minlength="6"><br>
                                     <div id="idError" class="error"></div>
                                 </div>
                                 <div>
@@ -89,7 +93,8 @@
                                     <label for="password">비밀번호</label>
                                 </div>
                                 <div class="new2 password-input">
-                                    <input type="password" id="password" placeholder="비밀번호를 입력해주세요" required minlength="10"><br>
+                                    <input type="password" id="password" placeholder="비밀번호를 입력해주세요" required
+                                        minlength="10"><br>
                                     <div id="pwdError" class="error"></div>
                                 </div>
                             </div>
@@ -98,7 +103,8 @@
                                     <label for="passwordConfirm">비밀번호 확인</label>
                                 </div>
                                 <div class="new2 password-cf-input">
-                                    <input type="password" id="passwordConfirm" placeholder="비밀번호를 한번 더 입력해주세요" required minlength="10"><br>
+                                    <input type="password" id="passwordConfirm" placeholder="비밀번호를 한번 더 입력해주세요" required
+                                        minlength="10"><br>
                                     <div id="pwdcError" class="error"></div>
                                 </div>
                             </div>
@@ -132,92 +138,154 @@
                                     <div id="phoneError" class="error"></div>
                                 </div>
                             </div>
-                                <div class="new adress-info">
-                                            <div>
-                                                <label for="adess-input">주소</label>
-                                            </div>
-                                                    <div class="new2 aress-input">
-                                                        <input type="text" name="adress" id="postcode" placeholder="우편번호" value="" required />
-                                                    </div>
-                                                    <div>
-                                                        <button type="button" onclick="sample6_execDaumPostcode()" value="우편번호 찾기">
-                                                            <span>
-                                                                <i class="fa-solid fa-magnifying-glass" style="color: #e54944;"></i> <!--돋보기 이미지 넣기-->
-                                                                주소검색
-                                                            </span>
-                                                        </button>
-                                                    </div>
+                            <div class="new adress-info">
+                                <div>
+                                    <label for="adess-input">주소</label>
                                 </div>
-                                        <div class="new adress-info">
-                                            <div>
-                                                <label for="adess-input">  </label>
-                                            </div>
-                                                    <div class="new2 aress-input">
-                                                        <input type="text" name="adress" id="adress" placeholder="주소" value="" required />
-                                                    </div>
-                                        </div>
-                                    <div class="new adress-info">
-                                            <div>
-                                                <label for="adess-input">   </label>
-                                            </div>
-                                        <div class="new2 aress-input2">
-                                            <input type="text" name="adress2" id="ditailadress" placeholder="상세주소" value="" required />
-                                        </div>
-                                    </div>
-                                <div class="personalterms">
-                                    <fieldset>
-                                        <label for="TremsArryAll">
-                                            <div id="termstitle">
-                                                <legend>이용약관동의</legend>
-                                            </div>
-                                            <div class="focus">
-                                                <h1 class="focusment2">전체 동의합니다. <input type="checkbox" id="TremsArryAll"></h1>
-                                                    <div class="reason">
-                                                        <p>선택항목에 동의하지 않은 경우도 회원가입 및 일반적인 서비스를 이용할수 있습니다.</p>
-                                                    </div>      
-                                            </div>    
-                                    <div>
-                                        <input type="checkbox" id="RequiredTerms1 Condition">
-                                        <div class="focus">
-                                            <h1 class="focusment2">이용약관 동의 (필수)<input type="checkbox" id="TremsArryAll"></h1>
-                                                <div class="reason">
-                                                    <p class="fas fa-angle-down">더보기</p>
-                                                    <p>이용약관내용</p>
-                                                </div>      
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <input type="checkbox" id="RequiredTerms1 Privacy">
-                                        <label for="">
-                                            <span>개인정보 수집 이용동의(필수)</span>
-                                            <i class="fas fa-angle-down">더보기</i>
-                                        </label>
-                                            <div>
-                                                <p>개인정보 이용약관 내용</p>
-                                            </div>
-                                        </div>
-                                        <input type="checkbox" id="SignupEventAll">
-                                        <span>무료배송 할인쿠폰 등 혜택/정보 수신동의(선택)</span><br>
-                                        
-                                        <input type="checkbox" id="RequiredSignupAge">
-                                        <span>본인은 만 14세 이상입니다.(필수)</span>
-                                    </div>
-                                    <div>
-                                        <input class="signSubmit" type="submit" value="가입하기" onclick="subm">
-                                    </div>           
+                                <div class="new2 aress-input">
+                                    <input type="text" name="adress" id="postcode" placeholder="우편번호" value=""
+                                        required />
+                                </div>
+                                <div>
+                                    <button type="button" onclick="sample6_execDaumPostcode()" value="우편번호 찾기">
+                                        <span>
+                                            <i class="fa-solid fa-magnifying-glass" style="color: #e54944;"></i>
+                                            <!--돋보기 이미지 넣기-->
+                                            주소검색
+                                        </span>
+                                    </button>
                                 </div>
                             </div>
+                            <div class="new adress-info">
+                                <div>
+                                    <label for="adess-input"> </label>
+                                </div>
+                                <div class="new2 aress-input">
+                                    <input type="text" name="adress" id="adress" placeholder="주소" value="" required />
+                                </div>
+                            </div>
+                            <div class="new adress-info">
+                                <div>
+                                    <label for="adess-input"> </label>
+                                </div>
+                                <div class="new2 aress-input2">
+                                    <input type="text" name="adress2" id="ditailadress" placeholder="상세주소" value=""
+                                        required />
+                                </div>
+                                <br>
+                                <br>
+                                <br>
+                                <div class="signtop"></div>
+                            </div>
+                            <div class="personalterms">
+                                <fieldset class="personalterms1">
+                                    <label for="TremsArryAll">
+                                        <div id="termstitle">
+                                            <legend>이용약관동의</legend>
+                                        </div>
+                                        <div class="focus">
+                                            <h1 class="focusment2">전체 동의합니다. <input type="checkbox" id="TremsArryAll">
+                                            </h1>
+                                            <div class="reason">
+                                                <p>선택항목에 동의하지 않은 경우도 회원가입 및 일반적인 서비스를 이용할수 있습니다.</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="focus">
+                                                <h1 class="focusment2">이용약관 동의 (필수)
+                                                    <input type="checkbox" id="TremsArryAll"><div class="reason"><button class="modal-buttons">더보기</button></div></h1>
+                                                <!-- 모달넣기 -->
+                                                <div class="reviewmodal">
+                                                    <div class="modal-container">
+                                                        <div class="modal-content">
+                                                            <span class="review-close">&times;</span>
+                                                            <h2 class="modal-title">이용약관 동의</h2>
+                                                            <div class="terms-boxs">
+                                                                <div class="article">
+                                                                    <p class="article-text">
+                                                                        개인정보보호법에 따라 네이버에 회원가입 신청하시는 분께 수집하는 개인정보의 항목,
+                                                                        개인정보의 수집 및 이용목적, 개인정보의 보유 및 이용기간, 동의 거부권 및 동의 거부
+                                                                        시 불이익에 관한 사항을 안내 드리오니 자세히 읽은 후 동의하여 주시기 바랍니다.
+                                                                    </p>
+                                                                </div>
+                                                                <div>
+                                                                    <h4>1. 수집하는 개인정보</h4>
+                                                                    <p>이용자는 회원가입을 하지 않아도 정보 검색, 뉴스 보기 등 대부분의 네이버 서비스를
+                                                                        회원과 동일하게 이용할 수 있습니다. 이용자가 메일, 캘린더, 카페, 블로그 등과 같이
+                                                                        개인화 혹은 회원제 서비스를 이용하기 위해 회원가입을 할 경우, 네이버는 서비스 이용을
+                                                                        위해 필요한 최소한의 개인정보를 수집합니다.</p>
+                                                                </div>
+                                                                <div>
+                                                                    <h4>회원가입 시점에 네이버가 이용자로부터 수집하는 개인정보는 아래와 같습니다.</h4>
+                                                                    <p>- 회원 가입 시 필수항목으로 아이디, 비밀번호, 이름, 생년월일, 성별,
+                                                                        휴대전화번호를, 선택항목으로 본인확인 이메일주소를 수집합니다.</p>
+                                                                    <p>실명 인증된 아이디로 가입 시, 암호화된 동일인 식별정보(CI), 중복가입
+                                                                        확인정보(DI), 내외국인 정보를 함께 수집합니다. 만14세 미만 아동의 경우,
+                                                                        법정대리인 정보(법정대리인의 이름, 생년월일, 성별, 중복가입확인정보(DI),
+                                                                        휴대전화번호)를 추가로 수집합니다.</p>
+                                                                    <p>-비밀번호 없이 회원 가입 시에는 필수항목으로 아이디, 이름, 생년월일, 휴대전화번호를,
+                                                                        선택항목으로 비밀번호를 수집합니다.</p>
+                                                                    <p>-단체 회원가입 시 필수 항목으로 단체아이디, 비밀번호, 단체이름, 이메일주소,
+                                                                        휴대전화번호를, 선택항목으로 단체 대표자명을 수집합니다.</p>
+                                                                </div>
+                                                                <div>
+                                                                    <h4>서비스 이용 과정에서 이용자로부터 수집하는 개인정보는 아래와 같습니다.</h4>
+                                                                    <p>-회원정보 또는 개별 서비스에서 프로필 정보(별명, 프로필 사진)를 설정할 수 있습니다.
+                                                                        회원정보에 별명을 입력하지 않은 경우에는 마스킹 처리된 아이디가 별명으로 자동
+                                                                        입력됩니다.</p>
+                                                                    <p>- 네이버 내의 개별 서비스 이용, 이벤트 응모 및 경품 신청 과정에서 해당 서비스의
+                                                                        이용자에 한해 추가 개인정보 수집이 발생할 수 있습니다. 추가로 개인정보를 수집할
+                                                                        경우에는 해당 개인정보 수집 시점에서 이용자에게 ‘수집하는 개인정보 항목, 개인정보의
+                                                                        수집 및 이용목적, 개인정보의 보관기간’에 대해 안내 드리고 동의를 받습니다.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="focus">
+                                            <h1 class="focusment2">개인정보 수집 이용동의(필수)<input type="checkbox"
+                                                    id="RequiredTerms1 Privacy"><div class="reason">
+                                                        <button class="modal-buttons">더보기</button>
+                                                    </div></h1>
+                                            
+                                        </div>
+                                        <br>
+                                        <input type="checkbox" id="SignupEventAll">
+                                        <span>무료배송 할인쿠폰 등 혜택/정보 수신동의(선택)</span><br>
+                                        <br>
+                                        <input type="checkbox" id="RequiredSignupAge">
+                                        <span>본인은 만 14세 이상입니다.(필수)</span>
 
-                    </form>
-                </div> 
-    </section>
-</main>
-        <!-- 푸터 -->
-        <footer>
-            <section></section>
-            <section></section>
-        </footer>
+
+                            </div>
+                            </fieldset>
+                            <div>
+                                <input class="signSubmit" type="submit" value="가입하기" onclick="">
+                            </div>
+                        </div>
+                </div>
+
+                </form>
     </div>
+    </section>
+    </main>
+    <!-- 푸터 -->
+    <footer>
+        <section></section>
+        <section></section>
+    </footer>
+    </div>
+
+
+
+
+
     <script src="./index.js"></script>
+    <script src="/user/js/signup.js"></script>
+
+    <!-- 모달넣기 -->
 </body>
+
 </html>

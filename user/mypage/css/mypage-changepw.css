@@ -146,3 +146,11 @@
     background-color: white;
     border: 1px solid #f35f4c;
 }
+
+.inputboxs input:focus{
+
+
+    border: 2px solid #f35f4c;
+    cursor: pointer;
+
+}

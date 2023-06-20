@@ -26,3 +26,89 @@ src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js";
             }
         }).open();
     }
+
+   
+        const review = document.querySelector(".reviewmodal");
+        console.log(review);
+        const btn = document.querySelector(".modal-buttons");
+        const reviewClose = document.querySelector(".review-close");
+        
+    
+        btn.addEventListener('click', openReviewModal);
+        reviewClose.addEventListener('click', closeReviewModal);
+    
+        function openReviewModal() {
+            review.style.display = "block";
+            review.animate([{opacity: 0}, {opacity: 1}], {duration: 300, fill: "forwards"});
+        }
+    
+        function closeReviewModal() {
+            review.animate([{opacity: 1}, {opacity: 0}], {duration: 300, fill: "forwards"}).onfinish = function() {
+                review.style.display = "none";
+                const $img = document.querySelector(".previewDiv");
+                if($img.hasChildNodes()){
+                    $img.replaceChildren();
+                }
+            };
+        }
+      
+            function ReviewreadURL(obj) {
+                
+                let reader = new FileReader();
+                if(!obj.files.length) {
+                    return;
+                }
+                reader.readAsDataURL(obj.files[0]);
+                reader.onload = function (e) {
+                    let $div = $('<div>');
+                    $($div).css('width','120px');
+                    $($div).css('height','120px');
+                    $($div).css('padding','10px 10px 0px 0px');
+
+                    $('.reviewDiv').append($div);
+    
+                    let img = $('<img />');                
+                    $(img).attr('src', e.target.result);
+                    $(img).css('width','100%');
+                    $(img).css('height','100%');
+                    $($div).append(img);
+                }
+            }
+    
+
+
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
