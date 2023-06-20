@@ -1,0 +1,68 @@
+@charset "UTF-8";
+/* https://fontawesome.com/search?o=r&m=free 폰트어썸 링크 참고 */
+* {
+    margin: 0;
+    padding: 0;    
+    box-sizing: border-box;
+    border: 0;
+    font-size: 14px;
+    /* font-family: ; */
+}
+body {
+    font-family: "DM Sans", sans-serif;
+    color: #000000;
+    letter-spacing: -0.01em;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+button {
+    background: transparent;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+ul,ol,li,dl,dt,dd {
+    list-style-type: none;
+    padding-left: 0;
+    /* margin-left: 0; */
+}
+
+img {
+    max-width: 100%;
+}
+
+.wrapper{
+    margin: 0 auto;
+    /* max-width: 1280px; */
+    min-width: 500px;
+}
+
+.flex-wrapper{
+    display: flex;
+}
+
+.sr-only {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    z-index: -1;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.header-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}

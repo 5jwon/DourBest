@@ -25,6 +25,14 @@
     background-color: #ffd2c4;
     border-radius: 10px;
     box-shadow: 0px 2px 4px 0px #e7bfb2;
+    width: 80px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.top-nav div:hover {
+    background-color: #f35f4c;
+    color: snow;
 }
 
 .fundmain {
@@ -345,7 +353,6 @@ bottom: 0;
     overflow: hidden;
     padding-bottom: 3rem;
     margin: 5rem auto;
-    border: 1px dashed black;
 }
 
 .intext {
@@ -363,6 +370,9 @@ bottom: 0;
     border-radius: 10px;
     cursor: pointer;
     margin: 1rem;
+    width: 765px;
+    text-align: center;
+    border: 0.5px solid #f35f4c;
 }
 
 .morebutton::before {
@@ -461,5 +471,33 @@ bottom: 0;
 .opt-bottom {
     margin-top: 30px;
     text-align: right;
+}
+
+.samecategory {
+    width: 100%;
+    background-color: #f35f4c;
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    padding: 10px 15px;
+}
+
+.catext {
+    font-size: 1.8em;
+    font-weight: 600;
+    color: #505050;
+    margin-bottom: 20px;
+}
+
+.adimg {
+    width: 240px;
+    height: 200px;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.adimg img {
+    height: 100%;
+    width: 100%;
 }
 
