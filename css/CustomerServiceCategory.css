@@ -190,6 +190,17 @@
     font-weight: bold;
 
 }
+.menusecond{
+    margin-left: 360px;
+    width: 870px;
+    height: 50px;
+    border-bottom: 0.5px solid gray;
+    font-weight: bold;
+    line-height: 45px;
+    margin-bottom: 15px;
+    background-color: white;
+    margin-top: -20px;
+}
 .menu{
     margin-left: 360px;
     width: 870px;
@@ -214,11 +225,11 @@
 
 
 .sidebar{
-    margin-top:80px;
+    margin-top:60px;
     margin-left:100px;
     width: 300px;
     border-radius: 10px;
-    height: 480px;
+    height: 540px;
     background-color:  rgb(247, 250, 252);
 }
 
@@ -238,5 +249,5 @@
     margin-top: 35px;
     font-size: 15px;
     font-weight: bold;
-
+    cursor: pointer;
 }
