@@ -11,6 +11,167 @@
     <link rel="stylesheet" href="/DourBest/css/default.css">
     <link rel="stylesheet" href="/DourBest/css/header.css">
     <link rel="stylesheet" href="/DourBest/giwon-seller/css/payment-page.css">
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+        <style>
+            #contact fieldset{
+                display: inline-block;
+                direction: rtl;
+                border:0;
+            }
+            #contact fieldset legend{
+                text-align: right;
+            }
+            #contact input[type=radio]{
+                display: none;
+            }
+            #contact fieldset label{
+                font-size: 3em;
+                color: transparent;
+                text-shadow: 0 0 0 #f0f0f0;
+            }
+            #contact fieldset label:hover{
+                text-shadow: 0 0 0 rgba(250, 208, 0, 0.99);
+            }
+            #contact fieldset label:hover ~ label{
+                text-shadow: 0 0 0 rgba(250, 208, 0, 0.99);
+            }
+            #contact fieldset input[type=radio]:checked ~ label{
+                text-shadow: 0 0 0 rgba(250, 208, 0, 0.99);
+            }
+            .contactContents {
+                width: 100%;
+                height: 150px;
+                padding: 10px;
+                box-sizing: border-box;
+                border: solid 1.5px #D3D3D3;
+                border-radius: 5px;
+                font-size: 16px;
+                resize: none;
+                margin-bottom: 5px;
+            }
+            .close {
+          color: #aaaaaa;
+          position: absolute;
+          font-size: 28px;
+          font-weight: bold;
+          top: 0px;
+          right: 10px;
+          transition: all .1s ease-in;
+        }
+        
+        .close:hover,
+        .close:focus {
+            color: #f35f4c;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        
+            .contactmodal-title{
+          font-weight: bold;
+          font-size: 28px;
+        }
+        .contactmodal-content {
+          position: relative;
+          background-color: #fefefe;
+          padding: 40px;
+          width: 500px;
+          border: 1px solid #888;
+          border-radius: 16px;
+        }
+        .contactmodal-container{
+          display: flex;
+          justify-content: center;
+          height: 100%;
+          align-items: center;
+        }
+        
+        .contactmodal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+        
+        .contactmodal-title{
+            margin-top: 0px;
+        }
+        
+        .previewDiv, .contact-imgdiv{
+            display: inline-flex;
+            position: relative;
+            height: 100%;
+            margin-bottom: 20px;
+        }
+        
+        .file-container{
+            overflow-x: auto;
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
+        
+        .file-container input[type=file]{
+            display: none;
+        }
+        
+        .file-container label{
+            font-size: 1.2em;
+            display: block;
+            cursor: pointer;
+            padding: 3px;
+        }
+        .file-container span{
+            position: relative;
+            top: 0px;
+            display: inline-block;
+            font-size: 12px;
+            border: 1px solid #f35f4c;
+            border-radius: 15px;
+            padding: 8px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 4px, rgba(0, 0, 0, 0.1) 0px 4px 5px;
+            transition: all .15s ease-in;
+        }
+        
+        .file-container span:hover{
+            top:-2px;
+        }
+        
+        .contact button[type=submit]{
+            position: relative;
+            top: 0;
+            display: block;
+            color: #fff;
+            width: 100%;
+            padding: 12px;
+            background-color: #f35f4c;
+            border: 0px;
+            border-radius: 15px;
+            letter-spacing: 0.08em;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 4px, rgba(0, 0, 0, 0.1) 0px 4px 5px;
+            transition: all .15s ease-in;
+        }
+        
+        .contact button[type=submit]:hover{
+            top: -2px;
+        }
+        .contact select{
+            border: solid 1.5px #b4b4b4;
+            border-radius: 5px;
+            padding: 5px 10px;
+            display: block;
+            width: 100%;
+            margin-bottom: 12px;
+        }
+        
+        
+        </style>
 </head>
 
 <body>
@@ -120,9 +281,9 @@
 
                 <div class="main-container7">
                     <div class="consent"></div>
-                    <input type="checkbox" class="consent">
+                    <input type="checkbox" class="consent" id="box3">
                     <label for="box3">전체 동의</label>
-                    <input type="checkbox" class="consent">
+                    <input type="checkbox" class="consent" id="box4">
                     <label for="box4">구매조건 확인 및 결제진행에 동의</label>
                     <div class="button-panel">
                         <button class="button-payment">결제하기</button>
@@ -179,6 +340,36 @@
 
 
 
+            <button class="contactBtn">모달 테스트</button>
+            <div class="contactmodal">
+                <div class="contactmodal-container">
+                    <div class="contactmodal-content">
+                        <span class="close">&times;</span>
+                        <h2 class="contactmodal-title">쿠폰 사용</h2>
+                        <form class="mb-3 contact" name="contact" id="contact" method="post">
+                            <label for=""></label>
+                            <input id="box5" type="checkbox">
+                            <label for="box5">여름 할인 쿠폰 5%</label> <br>
+                            <input id="box6" type="checkbox">
+                            <label for="box6">신규 가입 쿠폰 5000원</label> <br>
+                            <input id="box7" type="checkbox">
+                            <label for="box7">장기 고객 감사 쿠폰</label> <br>
+                            <input id="box8" type="checkbox">
+                            <label for="box8">김지수 바보 쿠폰</label>
+                            <div class="file-container">
+                                
+                                <input type="file" id="contact-imgInput" onchange="contactreadURL(this)">
+                                <div class="contact-imgdiv"></div>
+                            </div>
+                            <button class="" type="submit">제출</button>
+                        </form>
+                    </div>   
+                </div>
+            </div>
+
+
+
+
             </section>
         </main>
         <!-- 푸터 -->
@@ -187,7 +378,59 @@
             <section></section>
         </footer>
     </div>
-    <script src="./index.js"></script>
+
+    <script>
+        const contactmodal = document.querySelector(".contactmodal");
+        const btn = document.querySelector(".button");
+        const $span = document.querySelector(".close");
+        
+    
+        btn.addEventListener('click', openContactModal);
+        $span.addEventListener('click', closeContactModal);
+    
+        function openContactModal() {
+            contactmodal.style.display = "block";
+            contactmodal.animate([{opacity: 0}, {opacity: 1}], {duration: 300, fill: "forwards"});
+        }
+    
+        function closeContactModal() {
+            contactmodal.animate([{opacity: 1}, {opacity: 0}], {duration: 300, fill: "forwards"}).onfinish = function() {
+                contactmodal.style.display = "none";
+                const $img = document.querySelector(".contact-imgdiv");
+                if($img.hasChildNodes()){
+                    $img.replaceChildren();
+                }
+            };
+        }
+        </script>
+        <script>
+            function contactreadURL(obj) {
+                
+                let reader = new FileReader();
+                if(!obj.files.length) {
+                    return;
+                }
+                reader.readAsDataURL(obj.files[0]);
+                reader.onload = function (e) {
+                    let $div = $('<div>');
+                    $($div).css('width','120px');
+                    $($div).css('height','120px');
+                    $($div).css('padding','10px 10px 0px 0px');
+
+                    $('.contact-imgdiv').append($div);
+    
+                    let img = $('<img />');                
+                    $(img).attr('src', e.target.result);
+                    $(img).css('width','100%');
+                    $(img).css('height','100%');
+                    $($div).append(img);
+                }
+            }
+    </script>
+
 </body>
 
+
+</html>
+    <script src="./index.js"></script>
 </html>

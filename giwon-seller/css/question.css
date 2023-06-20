@@ -1,0 +1,160 @@
+.text1 {
+    color: black;
+    font-family: body;
+    font-size: 20px;
+
+    letter-spacing: 1px;
+    font-weight: 900;
+}
+
+.text2 {
+    color: gray;
+    font-family: body;
+    font-size: 20px;
+
+    letter-spacing: 1px;
+    font-weight: 900;
+}
+
+
+.main-container0 {
+    background-color: snow;
+    display: flex;
+    height: 100px;
+}
+
+.main-container0 > div{
+    width: 33.3333%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.box1:hover {
+    background-color: #F35F4C;
+    color: white;
+}
+
+.box2:hover  > p{
+    background-color: #F35F4C;
+    color: white;
+}
+
+.box2:hover {
+    background-color: #F35F4C;
+    color: white;
+}
+
+.box3:hover {
+    background-color: #F35F4C;
+    color: white;
+}
+
+.main-container1 {
+    
+    background-color: rgba(128, 128, 128, 0.1);
+    height: 100px;
+    margin-top: 50px;
+    display: flex;
+    border-top: 3px solid gray;
+    
+}
+
+.container1-box1 {
+    display: flex;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+.container1-box2 {
+    display: flex;
+    width: 700px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container1-box3 {
+    display: flex;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container1-box4 {
+    display: flex;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.list1{
+    height: 100px;
+    margin-top: 20px;
+    display: flex;
+    
+    border-bottom: 2px solid rgba(128, 128, 128, 0.2);
+
+}
+
+.list1-1 {
+    display: flex;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.list1-2 {
+    display: flex;
+    width: 700px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.list1-3 {
+    display: flex;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+.list1-4 {
+    display: flex;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+.answer {
+    width: 700px;
+    display: flex;
+    position: relative;
+    top: -30px;
+    
+    background-color: rgba(128, 128, 128, 0.2);;
+    width: 1282px;
+    height: 100px;
+   
+
+}
+
+.main-container2 {
+    flex-direction: column;
+
+}
+
+
+
+
+
+
+
+
+

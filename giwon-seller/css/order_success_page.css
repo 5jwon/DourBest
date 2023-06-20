@@ -1,0 +1,23 @@
+.text {
+    border-bottom: 2px solid rgba(128, 128, 128, 0.3);
+    width: 500px;
+}
+
+.main {
+    line-height: 60px;
+}
+
+.text2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
