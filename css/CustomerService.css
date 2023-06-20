@@ -2,8 +2,25 @@
     display: flex;
 }
 
+.contactBtn{
+    text-align: center;
+    border-radius: 5px;
+    width: 85px;
+    height: 35px;
+    margin-left: 590px;
+    font-size: 15px;
+    line-height: 35px;
+    border: 1px solid #E54945;
+    font-weight: bold;
+    margin-top: 35px;
+    cursor: pointer;
+    color: #E54945;
+    background-color: white;
+}
 
 
+
+/* 
 #inquiryGo{
     text-align: center;
     border-radius: 5px;
@@ -17,7 +34,7 @@
     margin-top: 35px;
     cursor: pointer;
     color: #E54945;
-}
+} */
 #mainGo{
     width: 100px;
     text-align: center;
@@ -48,7 +65,7 @@
     line-height: 3.5cm; 
 }
 
- 
+
 .helpmain{
     position: relative;
     display: inline-block;
