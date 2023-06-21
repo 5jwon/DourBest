@@ -10,7 +10,7 @@
 }
 
 .box1, .box2 {
-    transform: skew(-20deg);
+    transform: skew(-60deg);
     height: 100%;
 }
 
@@ -123,7 +123,15 @@
 }
  */
 
- .board_wrap {
+.board_list_wrap {
+    margin-top: 100px;
+}
+
+.board_list a {
+    font-size: .9em;
+}
+
+.board_wrap {
     width: 1000px;
     margin: 100px auto;
 }
@@ -157,6 +165,10 @@
 
 .board_list > div:last-child {
     border-bottom: 1px solid #000;
+}
+
+.date {
+    margin-left: 100px;
 }
 
 .board_list > div > div {

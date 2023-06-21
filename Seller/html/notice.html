@@ -80,26 +80,26 @@
                             </form>
                         </div>
                     </div>
-                    <div class="board_list_wrap">
+                    <div class="board_list_wrap noticelist">
                         <div class="board_list">
                             <div class="top">
                                 <div class="num">번호</div>
                                 <div class="title">제목</div>
-                                <div class="writer">상태</div>
+                                <div class="writer">카테고리</div>
                                 <div class="date">날짜</div>
-                                <div class="count"></div>
+                                <!-- <div class="count"></div> -->
                             </div>
                             <div>
                                 <div class="num">1</div>
                                 <div class="title"><a href="">펀딩제목 사진넣을가...?</a></div>
-                                <div class="writer">배송중</div>
+                                <div class="writer">공지사항</div>
                                 <div class="date">2021.1.15</div>
-                                <div class="count">상세조회?</div>
+                                <!-- <div class="count">상세조회?</div> -->
                             </div>
                         </div>
                         <div class="board_page">
-                            <a href="#" class="bt first"><<</a>
-                            <a href="#" class="bt prev"><</a>
+                            <a href="#" class="bt first"></a>
+                            <a href="#" class="bt prev"></a>
                             <a href="#" class="num on">1</a>
                             <a href="#" class="num">2</a>
                             <a href="#" class="num">3</a>
@@ -108,7 +108,36 @@
                             <a href="#" class="bt next">></a>
                             <a href="#" class="bt last">>></a>
                         </div>
-                </div>
+                    </div>
+                    <div class="board_list_wrap eventlist">
+                        <div class="board_list">
+                            <div class="top">
+                                <div class="num">번호</div>
+                                <div class="title">제목</div>
+                                <div class="writer">카테고리</div>
+                                <div class="date">날짜</div>
+                                <!-- <div class="count"></div> -->
+                            </div>
+                            <div>
+                                <div class="num">1</div>
+                                <div class="title"><a href="">펀딩제목 사진넣을가...?</a></div>
+                                <div class="writer">이벤트</div>
+                                <div class="date">2021.1.15</div>
+                                <!-- <div class="count">상세조회?</div> -->
+                            </div>
+                        </div>
+                        <div class="board_page">
+                            <a href="#" class="bt first"></a>
+                            <a href="#" class="bt prev"></a>
+                            <a href="#" class="num on">1</a>
+                            <a href="#" class="num">2</a>
+                            <a href="#" class="num">3</a>
+                            <a href="#" class="num">4</a>
+                            <a href="#" class="num">5</a>
+                            <a href="#" class="bt next">></a>
+                            <a href="#" class="bt last">>></a>
+                        </div>
+                    </div>
             </section>
         </main>
         <!-- 푸터 -->
@@ -118,5 +147,32 @@
         </footer>
     </div>
     <script src="../../resources/js/index.js"></script>
+    <script>
+
+        window.onload(
+            $('.noticebtn').css('color', 'snow'),
+            $('.noticebtn').css('background', '#f35f4c'),
+            $('.eventlist').hide(),
+
+            $('.noticebtn').click(function(){
+                $('.eventlist').hide();
+                $('.noticelist').show();
+                $('.noticebtn').css('color', 'snow');
+                $('.noticebtn').css('background', '#f35f4c');
+                $('.eventbtn').css('color', 'black');
+                $('.eventbtn').css('background', 'rgb(230, 230, 230)');
+            }),
+    
+            $('.eventbtn').click(function(){
+                $('.noticelist').hide();
+                $('.eventlist').show();
+                $('.noticebtn').css('color', 'black');
+                $('.noticebtn').css('background', 'rgb(230, 230, 230)');
+                $('.eventbtn').css('color', 'snow');
+                $('.eventbtn').css('background', '#f35f4c');
+            })
+        );
+
+    </script>
 </body>
 </html>
