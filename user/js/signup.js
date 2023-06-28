@@ -19,61 +19,44 @@ src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js";
                 }
 
                 // 우편번호와 주소 정보를 해당 필드에 넣는다.
-                document.getElementById('postcode').value = data.zonecode;
-                document.getElementById("adress").value = addr;
+                document.getElementById('zipcode').value = data.zonecode;
+                document.getElementById("baseAddress").value = addr;
                 // 커서를 상세주소 필드로 이동한다.
-                document.getElementById("ditailadress").focus();
+                document.getElementById("detailAddress").focus();
             }
         }).open();
     }
 
-   
-        const review = document.querySelector(".reviewmodal");
-        console.log(review);
-        const btn = document.querySelector(".modal-buttons");
-        const reviewClose = document.querySelector(".review-close");
-        
-    
-        btn.addEventListener('click', openReviewModal);
-        reviewClose.addEventListener('click', closeReviewModal);
-    
-        function openReviewModal() {
-            review.style.display = "block";
-            review.animate([{opacity: 0}, {opacity: 1}], {duration: 300, fill: "forwards"});
-        }
-    
-        function closeReviewModal() {
-            review.animate([{opacity: 1}, {opacity: 0}], {duration: 300, fill: "forwards"}).onfinish = function() {
-                review.style.display = "none";
-                const $img = document.querySelector(".previewDiv");
-                if($img.hasChildNodes()){
-                    $img.replaceChildren();
-                }
-            };
-        }
-      
-            function ReviewreadURL(obj) {
-                
-                let reader = new FileReader();
-                if(!obj.files.length) {
-                    return;
-                }
-                reader.readAsDataURL(obj.files[0]);
-                reader.onload = function (e) {
-                    let $div = $('<div>');
-                    $($div).css('width','120px');
-                    $($div).css('height','120px');
-                    $($div).css('padding','10px 10px 0px 0px');
 
-                    $('.reviewDiv').append($div);
-    
-                    let img = $('<img />');                
-                    $(img).attr('src', e.target.result);
-                    $(img).css('width','100%');
-                    $(img).css('height','100%');
-                    $($div).append(img);
-                }
+//  모달1
+
+            const contactmodal = document.querySelector(".contactmodal");
+            const btn = document.querySelector(".contactBtn");
+            const $span = document.querySelector(".close");
+
+
+            btn.addEventListener('click', openContactModal);
+            $span.addEventListener('click', closeContactModal);
+
+            function openContactModal() {
+                contactmodal.style.display = "block";
+                contactmodal.animate([{opacity: 0}, {opacity: 1}], {duration: 300, fill: "forwards"});
             }
+
+            function closeContactModal() {
+                contactmodal.animate([{opacity: 1}, {opacity: 0}], {duration: 300, fill: "forwards"}).onfinish = function() {
+                    contactmodal.style.display = "none";
+                    const $img = document.querySelector(".contact-imgdiv");
+                    if($img.hasChildNodes()){
+                        $img.replaceChildren();
+                    }
+                };
+            }
+
+
+
+
+
     
 
 

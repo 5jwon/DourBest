@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/user/css/signUp.css">
     <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 </head>
 
 <body>
@@ -71,41 +72,44 @@
                             <span>필수입력사항</span>
                         </div>
                     </div>
-                    <form action="" method="POST">
+                    <!-- 회원 가입 폼 -->
+                    <form id="joinForm" th:action="@{/user/signup}" method="POST" th:object="${memberDTO}">
                         <div class="new memberInfo">
+                            <!-- 아이디 영역 -->
                             <div class="new id-info">
                                 <div class="new1 id-label">
-                                    <label for="userId">아이디</label>
+                                    <label for="memberId">아이디</label>
                                 </div>
                                 <div class="new2 id-input">
-                                    <input type="text" id="userId" size="30" placeholder="아이디를 입력해주세요" required
-                                        minlength="6"><br>
-                                    <div id="idError" class="error"></div>
+                                    <input type="text" name="memberId" id="memberId" size="30" minlength="6"
+                                        placeholder="아이디를 입력해주세요" required><br>
+                                    <div id="idError"></div>
                                 </div>
                                 <div>
-                                    <button class="new cfid" type="button">
-                                        중복확인
-                                    </button>
+                                    <!-- 아이디 중복 확인 -->
+                                    <button class="new cfid" type="button" name="IdCheck">중복확인</button>
                                 </div>
                             </div>
+                            <!-- 패스워드 영역 -->
                             <div class="new password-info">
                                 <div class="new1 password-label">
                                     <label for="password">비밀번호</label>
                                 </div>
                                 <div class="new2 password-input">
-                                    <input type="password" id="password" placeholder="비밀번호를 입력해주세요" required
-                                        minlength="10"><br>
-                                    <div id="pwdError" class="error"></div>
+                                    <input type="password" id="password" name="memberPwd" placeholder="비밀번호를 입력해주세요"
+                                        required minlength="10" maxlength="20"><br>
+                                    <div id="pwdError"></div>
                                 </div>
                             </div>
+                            <!-- 패스워드 재확인 -->
                             <div class="new password-cf">
                                 <div class="new1 password-cf-label">
                                     <label for="passwordConfirm">비밀번호 확인</label>
                                 </div>
                                 <div class="new2 password-cf-input">
-                                    <input type="password" id="passwordConfirm" placeholder="비밀번호를 한번 더 입력해주세요" required
-                                        minlength="10"><br>
-                                    <div id="pwdcError" class="error"></div>
+                                    <input type="password" id="passwordConfirm" name="memberPwd2"
+                                        placeholder="비밀번호를 한번 더 입력해주세요" required minlength="10"><br>
+                                    <div id="pwdcError"></div>
                                 </div>
                             </div>
                             <div class="new name-info">
@@ -113,8 +117,8 @@
                                     <label for="userName">이름</label>
                                 </div>
                                 <div class="new2 name-input">
-                                    <input type="text" id="userName" placeholder="이름을 입력해주세요." required><br>
-                                    <div id="nameError" class="error"></div>
+                                    <input type="text" name="memberName" id="userName" placeholder="이름을 입력해주세요." required ><br>
+                                    <div id="nameError"></div>
                                 </div>
                             </div>
                             <div class="new email-info">
@@ -122,7 +126,7 @@
                                     <label for="email">이메일</label>
                                 </div>
                                 <div class="new2 email-input">
-                                    <input type="email" id="email" placeholder="예 : Dourbest@naver.com" required><br>
+                                    <input type="email" name="memberEmail" id="email" placeholder="예 : Dourbest@naver.com" required><br>
                                     <div id="emailError" class="error"></div>
                                 </div>
                                 <div>
@@ -134,16 +138,16 @@
                                     <label for="phone">휴대폰</label>
                                 </div>
                                 <div class="new2 phone-input">
-                                    <input type="tel" id="phone" placeholder="휴대폰 번호를 입력해주세요" required><br>
+                                    <input type="tel" name="memberPhone" id="phone" placeholder="휴대폰 번호를 입력해주세요" required><br>
                                     <div id="phoneError" class="error"></div>
                                 </div>
                             </div>
                             <div class="new adress-info">
                                 <div>
-                                    <label for="adess-input">주소</label>
+                                    <label for="zipcode">주소</label>
                                 </div>
                                 <div class="new2 aress-input">
-                                    <input type="text" name="adress" id="postcode" placeholder="우편번호" value=""
+                                    <input type="text" name="zipCode" id="zipcode" placeholder="우편번호" value=""
                                         required />
                                 </div>
                                 <div>
@@ -158,30 +162,31 @@
                             </div>
                             <div class="new adress-info">
                                 <div>
-                                    <label for="adess-input"> </label>
+                                    <label for="adress"> </label>
                                 </div>
                                 <div class="new2 aress-input">
-                                    <input type="text" name="adress" id="adress" placeholder="주소" value="" required />
+                                    <input type="text" name="baseAdress" id="baseAddress" placeholder="주소" value=""
+                                        required />
                                 </div>
                             </div>
                             <div class="new adress-info">
                                 <div>
-                                    <label for="adess-input"> </label>
+                                    <label for="adress2"> </label>
                                 </div>
                                 <div class="new2 aress-input2">
-                                    <input type="text" name="adress2" id="ditailadress" placeholder="상세주소" value=""
+                                    <input type="text" name="detailAddress" id="detailAddress" placeholder="상세주소" value=""
                                         required />
                                 </div>
                                 <br>
                                 <br>
                                 <br>
-                                <div class="signtop"></div>
                             </div>
+                            <!-- 약관 부분 -->
                             <div class="personalterms">
                                 <fieldset class="personalterms1">
                                     <label for="TremsArryAll">
                                         <div id="termstitle">
-                                            <legend>이용약관동의</legend>
+                                            <h2>이용약관동의</h2>
                                         </div>
                                         <div class="focus">
                                             <h1 class="focusment2">전체 동의합니다. <input type="checkbox" id="TremsArryAll">
@@ -193,16 +198,18 @@
                                         <div>
                                             <div class="focus">
                                                 <h1 class="focusment2">이용약관 동의 (필수)
-                                                    <input type="checkbox" id="TremsArryAll"><div class="reason"><button class="modal-buttons">더보기</button></div></h1>
-                                                <!-- 모달넣기 -->
-                                                <div class="reviewmodal">
-                                                    <div class="modal-container">
-                                                        <div class="modal-content">
-                                                            <span class="review-close">&times;</span>
-                                                            <h2 class="modal-title">이용약관 동의</h2>
+                                                    <input type="checkbox" id="TermsArryAll">
+                                                    <div class="reason"><button class="contactBtn">더보기</button></div>
+                                                </h1>
+                                                <!-- 모달1넣기 -->
+                                                <div class="contactmodal">
+                                                    <div class="contactmodal-container">
+                                                        <div class="contactmodal-content">
+                                                            <span class="close">&times;</span>
+                                                            <h2 class="contactmodal-title">이용약관 동의</h2>
                                                             <div class="terms-boxs">
-                                                                <div class="article">
-                                                                    <p class="article-text">
+                                                                <div>
+                                                                    <p>
                                                                         개인정보보호법에 따라 네이버에 회원가입 신청하시는 분께 수집하는 개인정보의 항목,
                                                                         개인정보의 수집 및 이용목적, 개인정보의 보유 및 이용기간, 동의 거부권 및 동의 거부
                                                                         시 불이익에 관한 사항을 안내 드리오니 자세히 읽은 후 동의하여 주시기 바랍니다.
@@ -243,49 +250,96 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="focus">
-                                            <h1 class="focusment2">개인정보 수집 이용동의(필수)<input type="checkbox"
-                                                    id="RequiredTerms1 Privacy"><div class="reason">
-                                                        <button class="modal-buttons">더보기</button>
-                                                    </div></h1>
-                                            
-                                        </div>
-                                        <br>
-                                        <input type="checkbox" id="SignupEventAll">
-                                        <span>무료배송 할인쿠폰 등 혜택/정보 수신동의(선택)</span><br>
-                                        <br>
-                                        <input type="checkbox" id="RequiredSignupAge">
-                                        <span>본인은 만 14세 이상입니다.(필수)</span>
-
-
-                            </div>
-                            </fieldset>
-                            <div>
-                                <input class="signSubmit" type="submit" value="가입하기" onclick="">
+                                                <!-- 모달끝 -->
+                                                <div class="focus">
+                                                    <h1 class="focusment2">개인정보 수집 이용동의(필수)<div class="reason"></div>
+                                                        <input type="checkbox" id="RequiredTerms1 Privacy"><button class="contactBtn">더보기</button></h1>
+                                                    <!-- 모달 -->
+                                                    <div class="contactmodal">
+                                                        <div class="contactmodal-container">
+                                                            <div class="contactmodal-content">
+                                                                <span class="close">&times;</span>
+                                                                <h2 class="contactmodal-title">이용약관 동의</h2>
+                                                                <div id="terms-boxs">
+                                                                    <div>
+                                                                        <p>
+                                                                            개인정보보호법에 따라 네이버에 회원가입 신청하시는 분께 수집하는 개인정보의
+                                                                            항목,
+                                                                            개인정보의 수집 및 이용목적, 개인정보의 보유 및 이용기간, 동의 거부권 및
+                                                                            동의 거부
+                                                                            시 불이익에 관한 사항을 안내 드리오니 자세히 읽은 후 동의하여 주시기
+                                                                            바랍니다.
+                                                                        </p>
+                                                                    </div>
+                                                                    <div>
+                                                                        <h4>1. 수집하는 개인정보</h4>
+                                                                        <p>이용자는 회원가입을 하지 않아도 정보 검색, 뉴스 보기 등 대부분의 네이버
+                                                                            서비스를
+                                                                            회원과 동일하게 이용할 수 있습니다. 이용자가 메일, 캘린더, 카페, 블로그
+                                                                            등과 같이
+                                                                            개인화 혹은 회원제 서비스를 이용하기 위해 회원가입을 할 경우, 네이버는 서비스
+                                                                            이용을
+                                                                            위해 필요한 최소한의 개인정보를 수집합니다.</p>
+                                                                    </div>
+                                                                    <div>
+                                                                        <h4>회원가입 시점에 네이버가 이용자로부터 수집하는 개인정보는 아래와 같습니다.
+                                                                        </h4>
+                                                                        <p>- 회원 가입 시 필수항목으로 아이디, 비밀번호, 이름, 생년월일, 성별,
+                                                                            휴대전화번호를, 선택항목으로 본인확인 이메일주소를 수집합니다.</p>
+                                                                        <p>실명 인증된 아이디로 가입 시, 암호화된 동일인 식별정보(CI), 중복가입
+                                                                            확인정보(DI), 내외국인 정보를 함께 수집합니다. 만14세 미만 아동의 경우,
+                                                                            법정대리인 정보(법정대리인의 이름, 생년월일, 성별, 중복가입확인정보(DI),
+                                                                            휴대전화번호)를 추가로 수집합니다.</p>
+                                                                        <p>-비밀번호 없이 회원 가입 시에는 필수항목으로 아이디, 이름, 생년월일,
+                                                                            휴대전화번호를,
+                                                                            선택항목으로 비밀번호를 수집합니다.</p>
+                                                                        <p>-단체 회원가입 시 필수 항목으로 단체아이디, 비밀번호, 단체이름, 이메일주소,
+                                                                            휴대전화번호를, 선택항목으로 단체 대표자명을 수집합니다.</p>
+                                                                    </div>
+                                                                    <div>
+                                                                        <h4>서비스 이용 과정에서 이용자로부터 수집하는 개인정보는 아래와 같습니다.</h4>
+                                                                        <p>-회원정보 또는 개별 서비스에서 프로필 정보(별명, 프로필 사진)를 설정할 수
+                                                                            있습니다.
+                                                                            회원정보에 별명을 입력하지 않은 경우에는 마스킹 처리된 아이디가 별명으로 자동
+                                                                            입력됩니다.</p>
+                                                                        <p>- 네이버 내의 개별 서비스 이용, 이벤트 응모 및 경품 신청 과정에서 해당
+                                                                            서비스의
+                                                                            이용자에 한해 추가 개인정보 수집이 발생할 수 있습니다. 추가로 개인정보를
+                                                                            수집할
+                                                                            경우에는 해당 개인정보 수집 시점에서 이용자에게 ‘수집하는 개인정보 항목,
+                                                                            개인정보의
+                                                                            수집 및 이용목적, 개인정보의 보관기간’에 대해 안내 드리고 동의를 받습니다.
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- 모달끝 -->
+                                                <input type="checkbox" id="RequiredSignupAge"><span>본인은 만 14세 이상입니다.(필수)<br><br><br><br></span>               
+                                                <div class="submit-button" style="align-items: center">
+                                                    <input id="signSubmit" type="submit" value="가입하기"></button>
+                                                </div>
+                                            </fieldset>
                             </div>
                         </div>
+                    </form>
+
                 </div>
-
-                </form>
-    </div>
-    </section>
-    </main>
-    <!-- 푸터 -->
-    <footer>
-        <section></section>
-        <section></section>
-    </footer>
-    </div>
-
-
-
-
-
+            </section>
+        </main>
+        <!-- 스크립트 확인 필요 -->
+        <script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+        <script th:inline="javascript">
+            <!-- 푸터 -->
+            <footer>
+                <section></section>
+                <section></section>
+            </footer>
+    </div >
     <script src="./index.js"></script>
     <script src="/user/js/signup.js"></script>
-
-    <!-- 모달넣기 -->
 </body>
 
 </html>

@@ -104,6 +104,21 @@
     border: 1px solid #f35f4c;
 }
 
+
+.findingButton{
+
+    display: block;
+    padding: 0px 10px;
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+    height: 54px;
+    border-radius: 3px;
+    color: rgb(255, 255, 255);
+    background-color: #f35f4c;
+    border: 0px none;
+}
+
 .finding {
 
     text-align: right;
@@ -116,4 +131,10 @@
     border: 2px solid #f35f4c;
     cursor: pointer;
 
+}
+
+.findIdresult span {
+
+    font-size: 20px;
+    margin-bottom: 5px;
 }

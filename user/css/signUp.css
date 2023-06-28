@@ -11,7 +11,7 @@
 	}
 
 
-.signup h1{
+h1{
     margin-top: 50px;
     margin-bottom: 50px;
     font-size: 30px;
@@ -130,7 +130,26 @@
 }
 
 
-.signSubmit {
+.contactBtn{
+
+    display: contents;
+    margin: 0px auto;
+    width: 20px;
+    height: 10px;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid #f35f4c;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #f35f4c;
+    outline: none;
+    box-sizing: border-box;
+    float:right;
+}
+
+
+#signSubmit {
 
     width: 500px;
     padding-top: 30px;
@@ -157,7 +176,7 @@
 
 }
 
-.signSubmit:hover {
+#signSubmit:hover {
 
     background-color: #f14933;
     border-color: #f14933;
@@ -216,16 +235,43 @@
 .focus {
     width: 700px;
     margin: 40px auto;
-    border-bottom: 1px solid rgb(51, 51, 51);
+    border-bottom: 1px dotted rgb(51, 51, 51);
 
 }
 
-.reason > p {
+.reason p {
         margin-bottom: 13px;
         font-size: 15px;
 }
 
-.reviewContents {
+/* 리뷰 */
+
+#contact fieldset{
+    display: inline-block;
+    direction: rtl;
+    border:0;
+}
+#contact fieldset legend{
+    text-align: right;
+}
+#contact input[type=radio]{
+    display: none;
+}
+#contact fieldset label{
+    font-size: 3em;
+    color: transparent;
+    text-shadow: 0 0 0 #f0f0f0;
+}
+#contact fieldset label:hover{
+    text-shadow: 0 0 0 rgba(250, 208, 0, 0.99);
+}
+#contact fieldset label:hover ~ label{
+    text-shadow: 0 0 0 rgba(250, 208, 0, 0.99);
+}
+#contact fieldset input[type=radio]:checked ~ label{
+    text-shadow: 0 0 0 rgba(250, 208, 0, 0.99);
+}
+.contactContents {
     width: 100%;
     height: 150px;
     padding: 10px;
@@ -236,44 +282,45 @@
     resize: none;
     margin-bottom: 5px;
 }
-.review-close {
+.close {
 color: #aaaaaa;
 position: absolute;
 font-size: 28px;
 font-weight: bold;
-top: 5px;
+top: 0px;
 right: 10px;
 transition: all .1s ease-in;
 }
 
-.review-close:hover,
-.review-close:focus {
+.close:hover,
+.close:focus {
 color: #f35f4c;
 text-decoration: none;
 cursor: pointer;
 }
 
-.modal-title{
+.contactmodal-title{
 font-weight: bold;
 font-size: 28px;
-margin-bottom: 20px;
 }
-.modal-content {
+.contactmodal-content {
 position: relative;
 background-color: #fefefe;
 padding: 40px;
 width: 500px;
+height: 700px;
 border: 1px solid #888;
 border-radius: 16px;
+overflow: hidden auto;
 }
-.modal-container{
+.contactmodal-container{
 display: flex;
 justify-content: center;
 height: 100%;
 align-items: center;
 }
 
-.reviewmodal {
+.contactmodal {
 display: none;
 position: fixed;
 z-index: 1;
@@ -285,17 +332,18 @@ overflow: auto;
 background-color: rgba(0, 0, 0, 0.4);
 }
 
-.modal-title{
+.contactmodal-title{
 margin-top: 0px;
 }
 
-.reviewDiv{
-display: inline-flex;
-position: relative;
-height: 100%;
-margin-bottom: 20px;
+.contactmodal-title{
+
+    margin-bottom: 20px;
 }
 
+.
+
+/* 모달 */
 
 .focus .terms-boxs {
 
@@ -330,7 +378,6 @@ overflow-y:auto;
 
     border: none;
     color: #3c3c3c;
-    width: 76px;
     
 
 }
@@ -343,20 +390,14 @@ overflow-y:auto;
     transition: .4s;
 }
 
-.personalterms h1 {
+.submit-button{
 
-    margin-bottom: 10px;
-    font-size: 20px;
+
+    display: flex;
+    hs
 }
 
-.focusment2 checkbox {
+.terms-boxs {
 
-    padding-left: 15px;
-
-}
-
-.modal-content p{
-
-
-
+    height: 20px;
 }
