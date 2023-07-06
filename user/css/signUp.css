@@ -400,4 +400,15 @@ overflow-y:auto;
 .terms-boxs {
 
     height: 20px;
+    
+}
+
+
+
+.error-message {
+    
+    color: red;
+    display: none;
+    margin-top: 5px;
+
 }

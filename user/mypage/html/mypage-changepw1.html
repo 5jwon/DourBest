@@ -139,29 +139,24 @@
                             <br>
                         </div>
                         <form>
-                        <input type="hidden" value="아이디 찾기">
-                        <div class="inputboxs">
+                            <input type="hidden" value="아이디 찾기">
+                            <div class="inputboxs">
+                                <div>
+                                    <label for="">현재 아이디</label>
+                                    <input data-testid="input-box" type="text" class="userId" value="현재아이디" disabled>
+                                </div>
+                                <div class="boxMargin2">
+                                    <label for="">비밀번호 입력</label>
+                                    <input type="password" class="newpw" placeholder="비밀번호를 입력해주세요" autocomplete="off" value>
+                                </div>
+                                <div class="buttons">
                                     <div>
-                                        <label for="">현재 아이디
-                                        </label>
-                                            <input data-testid="input-box" type="text" class="userId" value="현재아이디" disabled>
-                                    </div>
-                                    <div class="boxMargin2">
-                                        <label for="">비밀번호 입력
-                                        </label>
-                                            <input type="password" class="newpw" placeholder="비밀번호를 입력해주세요" autocomplete="off" value>
-                                        </div>
-                                    <p></p>
-                                    <div class="buttons">
-                                            <div>
-                                            <a href="../html/mypage-changepw.html">
-                                            <button class="findingButton" type="button"> 
-                                                <span class="longinName">재로그인</span>
-                                            </button></a>
-                                            </div>
+                                        <a href="../html/mypage-changepw.html" class="findingButton">
+                                            재로그인
+                                        </a>
                                     </div>
                                 </div>
-                        </div>
+                            </div>
                         </form>
                     </div>
                 </section>

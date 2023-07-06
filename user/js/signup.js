@@ -94,4 +94,65 @@ src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js";
 	else {
 		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
 	}
-	// ]]>
+	
+    // 유효성 검사 자바 스크립트
+
+    
+    function validateForm() {
+
+     
+      var getMail = RegExp(/^[A-Za-z0-9_\.\-]+@[A-Za-z0-9\-]+\.[A-Za-z0-9\-]+/);
+      var getCheck= RegExp(/^[a-zA-Z0-9]{4,12}$/);
+      var getName= RegExp(/^[가-힣]+$/);
+
+
+      if($("#memberId").val() == ""){
+        displayErrorMessage("name-error", "이름을 입력해주세요.");
+        $("#memberId").focus();
+        return false;
+      }
+
+      if (name === "") {
+        displayErrorMessage("name-error", "이름을 입력해주세요.");
+        return false;
+      }
+
+      if (id === "") {
+        displayErrorMessage("id-error", "이름을 입력해주세요.");
+        return false;
+      }
+
+      if (email === "") {
+        displayErrorMessage("email-error", "이메일을 입력해주세요.");
+        return false;
+      }
+
+      // 이메일 유효성 검사
+      var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) {
+        displayErrorMessage("email-error", "유효하지 않은 이메일 주소입니다.");
+        return false;
+      }
+
+      if (password === "") {
+        displayErrorMessage("password-error", "비밀번호를 입력해주세요.");
+        return false;
+      }
+
+      // 비밀번호 유효성 검사
+      var passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,}$/;
+      
+      if (!passwordRegex.test(password)) {
+        displayErrorMessage("password-error", "비밀번호는 최소 8자 이상이며, 대문자, 소문자, 숫자, 특수 문자를 모두 포함해야 합니다.");
+        return false;
+      }
+
+      // 모든 유효성 검사 통과
+      return true;
+    }
+
+    function displayErrorMessage(elementId, message) {
+      var errorElement = document.getElementById(elementId);
+      errorElement.textContent = message;
+      errorElement.style.display = "block";
+    }

@@ -1,0 +1,40 @@
+const pwd = $('#password').val;                                                                               
+    const pwdcheck = $('#passwordCheck').val;  
+
+ 	pwd.addEventListener('keyup', () => {
+		
+		const output = document.querySelector('#pwd-error');                          
+    		const output2 = document.querySelector('#pwdCheck-error'); 
+		const exptext =  /^[a-zA-Z0-9]{4,12}$/;  
+		
+	if(exptext.test(pwd) == true) {   
+                                                                                  
+         console.log($('#password').val);                                         
+         $('#pwd-error').html('Matching').css('color', 'green');                  
+         output2.textContent = '비밀번호가 일치합니다.'                                     
+                                                                      
+        } else {                                                                  
+                                                                                  
+        $('#pwd-error').html('Not Matching').css('color', 'red');                 
+        output.textContent ='비밀번호를 형식에 맞춰 입력해주세요'                                       
+        console.log($('#password').val);                                          
+    	}
+
+	pwdCheck.addEventListener('keyup', () =>{
+
+		if (password ==passwordcheck) {                               
+                                                                                  
+                $('#pwdCheck-error').html('Matching').css('color', 'green');      
+                output2.textContent = '비밀번호가 일치합니다.'                              
+                                                                                  
+            } else {                                                              
+                                                                                  
+                $('#pwdCheck-error').html('Not Matching').css('color', 'red');    
+                output2.textContent = '비밀번호가 일치하지않습니다.'                           
+                                                                                  
+            	   }  
+
+
+	}            
+
+});

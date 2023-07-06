@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="/user/css/signUp.css">
     <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    
 </head>
-
 <body>
     <div class="wrapper">
         <!-- 헤더 -->
@@ -73,7 +73,8 @@
                         </div>
                     </div>
                     <!-- 회원 가입 폼 -->
-                    <form id="joinForm" th:action="@{/user/signup}" method="POST" th:object="${memberDTO}">
+                    <form id="joinForm" th:action="@{/user/signup}" method="POST" th:object="${memberDTO}" onsubmit="validateForm()">
+                        <input type="hidden" name="_csrf" value="{{_csrf.token}}"/>
                         <div class="new memberInfo">
                             <!-- 아이디 영역 -->
                             <div class="new id-info">
@@ -83,7 +84,7 @@
                                 <div class="new2 id-input">
                                     <input type="text" name="memberId" id="memberId" size="30" minlength="6"
                                         placeholder="아이디를 입력해주세요" required><br>
-                                    <div id="idError"></div>
+                                        <span id="id-error" class="error-message"></span><br><br>
                                 </div>
                                 <div>
                                     <!-- 아이디 중복 확인 -->
@@ -98,7 +99,7 @@
                                 <div class="new2 password-input">
                                     <input type="password" id="password" name="memberPwd" placeholder="비밀번호를 입력해주세요"
                                         required minlength="10" maxlength="20"><br>
-                                    <div id="pwdError"></div>
+                                        <span id="password-error" class="error-message"></span><br><br>
                                 </div>
                             </div>
                             <!-- 패스워드 재확인 -->
@@ -106,19 +107,20 @@
                                 <div class="new1 password-cf-label">
                                     <label for="passwordConfirm">비밀번호 확인</label>
                                 </div>
+                                
                                 <div class="new2 password-cf-input">
                                     <input type="password" id="passwordConfirm" name="memberPwd2"
                                         placeholder="비밀번호를 한번 더 입력해주세요" required minlength="10"><br>
-                                    <div id="pwdcError"></div>
-                                </div>
+                                        <span id="password-error" class="error-message"></span><br><br>
+                                    </div>
                             </div>
                             <div class="new name-info">
                                 <div class="new1 name-label">
                                     <label for="userName">이름</label>
                                 </div>
                                 <div class="new2 name-input">
-                                    <input type="text" name="memberName" id="userName" placeholder="이름을 입력해주세요." required ><br>
-                                    <div id="nameError"></div>
+                                    <input type="text" name="memberName" id="memberName" placeholder="이름을 입력해주세요." required ><br>
+                                    <span id="name-error" class="error-message"></span><br><br>
                                 </div>
                             </div>
                             <div class="new email-info">
@@ -127,7 +129,7 @@
                                 </div>
                                 <div class="new2 email-input">
                                     <input type="email" name="memberEmail" id="email" placeholder="예 : Dourbest@naver.com" required><br>
-                                    <div id="emailError" class="error"></div>
+                                    <span id="email-error" class="error-message"></span><br><br>
                                 </div>
                                 <div>
                                     <button class="new emailcf" type="button">중복확인</button>
@@ -189,10 +191,11 @@
                                             <h2>이용약관동의</h2>
                                         </div>
                                         <div class="focus">
-                                            <h1 class="focusment2">전체 동의합니다. <input type="checkbox" id="TremsArryAll">
+                                            <h1 class="focusment2">전체 동의합니다. <input type="checkbox" id="TermsCheck">
                                             </h1>
                                             <div class="reason">
-                                                <p>선택항목에 동의하지 않은 경우도 회원가입 및 일반적인 서비스를 이용할수 있습니다.</p>
+                                                <p>필수항목에 모두 동의를 하셔야 회원가입이 완료됩니다.</p>
+                                                <p>14세이상 체크를 안할경우 성인상품은 제외됩니다.</p>
                                             </div>
                                         </div>
                                         <div>
@@ -244,7 +247,7 @@
                                                                         이용자에 한해 추가 개인정보 수집이 발생할 수 있습니다. 추가로 개인정보를 수집할
                                                                         경우에는 해당 개인정보 수집 시점에서 이용자에게 ‘수집하는 개인정보 항목, 개인정보의
                                                                         수집 및 이용목적, 개인정보의 보관기간’에 대해 안내 드리고 동의를 받습니다.</p>
-                                                                </div>
+                                                                        Map<String, Object> map              </div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -333,13 +336,66 @@
         <script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
         <script th:inline="javascript">
             <!-- 푸터 -->
-            <footer>
-                <section></section>
-                <section></section>
-            </footer>
-    </div >
-    <script src="./index.js"></script>
+            <footer id="footerType" class="footer__wrap section gmarket gray">
+        <h2 class="ir_so">푸터 영역</h2>
+        <div class="footer__inner container">
+            <div class="footer__menu">
+                <div>
+                    <h3>레이아웃 영역</h3>
+                    <ul>
+                        <li><a href="#">레이아웃 유형01</a></li>
+                        <li><a href="#">레이아웃 유형02</a></li>
+                        <li><a href="#">레이아웃 유형03</a></li>
+                        <li><a href="#">레이아웃 유형04</a></li>
+                        <li><a href="#">레이아웃 유형05</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>헤더 영역</h3>
+                    <ul>
+                        <li><a href="#">메뉴 유형01</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>메인 영역</h3>
+                    <ul>
+                        <li><a href="#">이미지 유형01</a></li>
+                        <li><a href="#">동영상 유형02</a></li>
+                        <li><a href="#">슬라이드 유형03</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>컨텐츠 영역</h3>
+                    <ul>
+                        <li><a href="#">텍스트 유형01</a></li>
+                        <li><a href="#">이미지 유형02</a></li>
+                        <li><a href="#">이미지/텍스트03</a></li>
+                        <li><a href="#">카드 유형04</a></li>
+                        <li><a href="#">배너 유형05</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>푸터 영역</h3>
+                    <ul>
+                        <li><a href="#">컨택트 유형01</a></li>
+                        <li><a href="#">푸터 유형02</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>사이트 영역</h3>
+                    <ul>
+                        <li><a href="#">웹표준 사이트</a></li>
+                        <li><a href="#">반응형 사이트</a></li>
+                        <li><a href="#">패럴랙스 사이트</a></li>
+                        <li><a href="#">포트폴리오 사이트</a></li>
+                    </ul>
+                </div>
+            </div>
+            <address class="footer__right">
+                ©2022 webstroyboy. All rights reserved.
+            </address>
+        </div>
+    </footer>
+    </body>
     <script src="/user/js/signup.js"></script>
-</body>
-
 </html>
